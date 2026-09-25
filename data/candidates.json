@@ -1,0 +1,102 @@
+{
+  "source": "Obwieszczenie Miejskiej Komisji Wyborczej w Krakowie z dnia 14 września 2026 r. o zarejestrowanych kandydatach na prezydenta miasta.",
+  "candidates": [
+    {
+      "id": "drewnicki",
+      "ballot": 1,
+      "name": "Michał Krzysztof Drewnicki",
+      "short": "Drewnicki",
+      "age": 36,
+      "education": "wyższe",
+      "party": "członek Prawa i Sprawiedliwości",
+      "committee": "KW Prawo i Sprawiedliwość",
+      "color": "#5b8cff",
+      "withdrawn": false
+    },
+    {
+      "id": "gibala",
+      "ballot": 2,
+      "name": "Łukasz Gibała",
+      "short": "Gibała",
+      "age": 49,
+      "education": "wyższe",
+      "party": "nie należy do partii politycznej",
+      "committee": "KWW Łukasza Gibały – Kraków dla Mieszkańców",
+      "color": "#ff8a3d",
+      "withdrawn": false
+    },
+    {
+      "id": "gosek",
+      "ballot": 3,
+      "name": "Daria Iwona Gosek-Popiołek",
+      "short": "Gosek-Popiołek",
+      "age": 41,
+      "education": "wyższe",
+      "party": "nie należy do partii politycznej",
+      "committee": "KW NL",
+      "color": "#ff5d6c",
+      "withdrawn": false
+    },
+    {
+      "id": "hoffman",
+      "ballot": 4,
+      "name": "Jan Krzysztof Hoffman",
+      "short": "Hoffman",
+      "age": 42,
+      "education": "wyższe",
+      "party": "nie należy do partii politycznej",
+      "committee": "KWW Jana Hoffmana – ReferendumKRK",
+      "color": "#9aa0ab",
+      "withdrawn": true,
+      "note": "Zrezygnował ze startu. Nazwisko zostaje na karcie do głosowania. Głos oddany na niego jest nieważny."
+    },
+    {
+      "id": "klimek",
+      "ballot": 5,
+      "name": "Michał Grzegorz Klimek",
+      "short": "Klimek",
+      "age": 54,
+      "education": "wyższe",
+      "party": "członek Konfederacji Korony Polskiej",
+      "committee": "KW Konfederacja Korony Polskiej",
+      "color": "#f0c14a",
+      "withdrawn": false
+    },
+    {
+      "id": "owca",
+      "ballot": 6,
+      "name": "Aleksandra Katarzyna Owca",
+      "short": "Owca",
+      "age": 34,
+      "education": "wyższe",
+      "party": "członek Partii Razem",
+      "committee": "KW Razem",
+      "color": "#c084fc",
+      "withdrawn": false
+    },
+    {
+      "id": "piatkowska",
+      "ballot": 7,
+      "name": "Monika Jadwiga Piątkowska",
+      "short": "Piątkowska",
+      "age": 52,
+      "education": "wyższe",
+      "party": "członek Koalicji Obywatelskiej",
+      "committee": "KWW Moniki Piątkowskiej – Ponad Podziałami",
+      "color": "#ff7eb3",
+      "withdrawn": false
+    },
+    {
+      "id": "pietrzyk",
+      "ballot": 8,
+      "name": "Sławomir Jan Pietrzyk",
+      "short": "Pietrzyk",
+      "age": 75,
+      "education": "wyższe",
+      "party": "nie należy do partii politycznej",
+      "committee": "KW Socjaldemokracja Polska",
+      "color": "#3ddc97",
+      "withdrawn": false
+    }
+  ]
+}
