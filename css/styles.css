@@ -303,41 +303,49 @@ h1 {
 
 .leaflet-container { font-family: "Source Sans 3", sans-serif; background: #d5d0c6; }
 
-.station-popup .leaflet-popup-content-wrapper {
-  background: #171b21;
-  color: var(--ink);
+.place-sheet {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 22px;
+  z-index: 800;
+  align-items: stretch;
+  gap: 12px;
+  max-height: min(42vh, 300px);
+  padding: 12px 44px 12px 14px;
   border: 1px solid rgba(244, 239, 230, 0.12);
-  border-radius: 18px;
+  border-radius: 16px;
+  background: rgba(23, 27, 33, 0.96);
+  color: var(--ink);
   box-shadow: 0 18px 50px rgba(0, 0, 0, 0.4);
 }
 
-.station-popup .leaflet-popup-tip { background: #171b21; }
+.place-sheet[hidden] { display: none; }
 
-.station-popup .leaflet-popup-close-button {
+.place-sheet:not([hidden]) { display: flex; }
+
+.sheet-close {
+  position: absolute;
   top: 8px;
   right: 8px;
   width: 28px;
   height: 28px;
   padding: 0;
+  border: 0;
   border-radius: 999px;
-  color: var(--ink) !important;
-  font: 700 18px/28px "Source Sans 3", sans-serif !important;
+  background: transparent;
+  color: var(--ink);
+  font: 700 18px/28px "Source Sans 3", sans-serif;
+  cursor: pointer;
 }
 
-.station-popup .leaflet-popup-close-button:hover {
-  background: rgba(244, 239, 230, 0.08);
-}
+.sheet-close:hover { background: rgba(244, 239, 230, 0.08); }
 
-.station-popup .leaflet-popup-content {
-  margin: 14px 14px 12px;
-  width: min(340px, calc(100vw - 48px)) !important;
-  max-height: min(68vh, 520px);
-  overflow: auto;
-  scrollbar-color: rgba(244, 239, 230, 0.28) transparent;
-  scrollbar-width: thin;
+.popup-place {
+  flex: 0 0 210px;
+  min-width: 0;
+  align-self: center;
 }
-
-.popup-place { padding-right: 28px; }
 
 .popup-kicker {
   margin: 0;
@@ -348,7 +356,7 @@ h1 {
   color: var(--await);
 }
 
-.station-popup h3 {
+.place-sheet h3 {
   margin: 4px 0 0;
   font-family: Fraunces, serif;
   font-size: 1.2rem;
@@ -357,22 +365,29 @@ h1 {
   letter-spacing: -0.02em;
 }
 
-.station-popup .place {
+.place-sheet .place {
   margin: 4px 0 0;
   color: var(--muted);
   line-height: 1.3;
 }
 
 .popup-blocks {
-  display: grid;
+  position: relative;
+  display: flex;
   gap: 8px;
-  margin-top: 12px;
+  min-width: 0;
+  margin: 0;
+  overflow-x: auto;
+  scrollbar-color: rgba(244, 239, 230, 0.28) transparent;
+  scrollbar-width: thin;
 }
 
 .precinct-block {
+  flex: 0 0 250px;
   padding: 10px 10px 8px;
   border-radius: 12px;
   background: var(--panel-2);
+  overflow: auto;
 }
 
 .precinct-top {
@@ -539,4 +554,15 @@ h1 {
     right: 8px;
     width: min(210px, 58vw);
   }
+
+  .place-sheet {
+    left: 8px;
+    right: 8px;
+    bottom: 18px;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 46%;
+  }
+
+  .popup-place { flex-basis: auto; align-self: stretch; }
 }
