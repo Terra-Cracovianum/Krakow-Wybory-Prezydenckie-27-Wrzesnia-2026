@@ -28,4 +28,4 @@ Nie dopisujemy wyników z sondaży ani ze zrzutów nieoficjalnych. Kolory przy n
 
 Po zmergowaniu do `main`: Settings → Pages → Deploy from a branch → `main` → `/ (root)`. Strona nie wymaga budowania.
 
-Podgląd linku na X, Facebooku i w komunikatorach bierze się z `og.png` oraz znaczników w `index.html`. Obrazek ma 1200×630.
+Podgląd linku na X, Facebooku i w komunikatorach bierze się z `card.jpg` (1200×630) oraz znaczników w `index.html`.
