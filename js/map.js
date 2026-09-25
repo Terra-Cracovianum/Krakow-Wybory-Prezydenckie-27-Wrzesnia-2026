@@ -367,17 +367,12 @@ function precinctBlock(nr, highlighted) {
       </div>
     </section>`;
   }
-  const counts = state.candidates.map((candidate) => {
-    const votes = row.votes[candidate.id];
-    return typeof votes === "number" ? votes : 0;
-  });
-  const peak = Math.max(1, ...counts);
   const lines = state.candidates
     .map((candidate) => {
       const votes = row.votes[candidate.id];
       const count = typeof votes === "number" ? votes : 0;
       const ahead = candidate.id === leader.id ? " is-ahead" : "";
-      const width = Math.round((count / peak) * 100);
+      const width = row.validVotes > 0 ? (count / row.validVotes) * 100 : 0;
       return `<li class="${ahead.trim()}">
         <span class="who"><span class="swatch" style="background:${candidate.color}"></span><span>${escapeHtml(candidate.short)}</span></span>
         <span class="nums"><strong>${formatCount(votes)}</strong><em>${percentLabel(votes, row.validVotes)}</em></span>
