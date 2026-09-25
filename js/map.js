@@ -32,11 +32,10 @@ async function init() {
   renderCandidates();
 
   const map = L.map("map", { zoomControl: true, minZoom: 11, maxZoom: 18 });
-  L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution:
-      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a> · obwody: <a href="https://msip.krakow.pl/">MSIP Kraków</a>',
-    subdomains: "abcd",
-    maxZoom: 20,
+      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · obwody: <a href="https://msip.krakow.pl/">MSIP Kraków</a>',
+    maxZoom: 19,
   }).addTo(map);
 
   const precinctLayer = L.geoJSON(precincts, {
@@ -44,7 +43,7 @@ async function init() {
     onEachFeature(feature, layer) {
       layer.on({
         mouseover(event) {
-          event.target.setStyle({ weight: 2, color: "#f4efe6" });
+          event.target.setStyle({ weight: 2, color: "#14171c" });
         },
         mouseout(event) {
           precinctLayer.resetStyle(event.target);
