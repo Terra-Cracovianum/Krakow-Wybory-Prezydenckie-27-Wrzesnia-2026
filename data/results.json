@@ -1,0 +1,7303 @@
+{
+  "status": "awaiting",
+  "round": 1,
+  "updatedAt": null,
+  "precinctsTotal": 455,
+  "precinctsReporting": 0,
+  "ballots": null,
+  "validVotes": null,
+  "invalidVotes": null,
+  "turnout": null,
+  "candidates": {
+    "drewnicki": null,
+    "gibala": null,
+    "gosek": null,
+    "hoffman": null,
+    "klimek": null,
+    "owca": null,
+    "piatkowska": null,
+    "pietrzyk": null
+  },
+  "precincts": {
+    "1": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "2": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "3": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "4": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "5": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "6": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "7": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "8": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "9": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "10": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "11": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "12": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "13": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "14": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "15": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "16": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "17": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "18": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "19": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "20": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "21": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "22": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "23": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "24": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "25": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "26": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "27": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "28": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "29": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "30": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "31": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "32": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "33": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "34": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "35": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "36": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "37": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "38": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "39": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "40": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "41": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "42": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "43": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "44": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "45": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "46": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "47": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "48": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "49": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "50": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "51": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "52": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "53": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "54": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "55": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "56": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "57": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "58": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "59": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "60": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "61": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "62": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "63": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "64": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "65": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "66": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "67": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "68": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "69": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "70": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "71": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "72": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "73": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "74": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "75": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "76": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "77": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "78": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "79": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "80": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "81": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "82": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "83": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "84": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "85": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "86": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "87": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "88": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "89": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "90": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "91": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "92": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "93": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "94": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "95": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "96": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "97": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "98": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "99": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "100": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "101": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "102": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "103": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "104": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "105": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "106": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "107": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "108": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "109": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "110": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "111": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "112": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "113": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "114": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "115": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "116": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "117": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "118": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "119": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "120": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "121": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "122": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "123": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "124": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "125": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "126": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "127": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "128": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "129": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "130": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "131": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "132": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "133": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "134": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "135": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "136": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "137": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "138": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "139": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "140": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "141": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "142": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "143": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "144": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "145": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "146": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "147": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "148": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "149": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "150": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "151": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "152": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "153": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "154": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "155": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "156": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "157": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "158": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "159": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "160": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "161": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "162": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "163": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "164": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "165": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "166": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "167": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "168": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "169": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "170": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "171": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "172": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "173": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "174": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "175": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "176": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "177": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "178": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "179": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "180": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "181": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "182": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "183": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "184": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "185": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "186": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "187": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "188": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "189": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "190": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "191": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "192": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "193": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "194": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "195": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "196": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "197": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "198": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "199": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "200": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "201": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "202": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "203": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "204": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "205": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "206": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "207": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "208": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "209": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "210": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "211": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "212": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "213": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "214": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "215": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "216": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "217": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "218": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "219": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "220": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "221": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "222": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "223": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "224": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "225": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "226": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "227": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "228": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "229": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "230": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "231": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "232": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "233": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "234": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "235": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "236": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "237": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "238": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "239": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "240": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "241": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "242": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "243": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "244": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "245": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "246": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "247": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "248": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "249": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "250": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "251": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "252": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "253": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "254": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "255": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "256": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "257": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "258": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "259": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "260": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "261": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "262": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "263": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "264": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "265": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "266": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "267": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "268": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "269": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "270": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "271": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "272": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "273": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "274": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "275": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "276": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "277": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "278": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "279": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "280": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "281": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "282": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "283": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "284": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "285": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "286": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "287": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "288": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "289": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "290": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "291": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "292": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "293": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "294": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "295": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "296": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "297": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "298": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "299": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "300": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "301": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "302": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "303": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "304": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "305": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "306": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "307": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "308": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "309": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "310": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "311": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "312": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "313": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "314": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "315": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "316": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "317": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "318": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "319": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "320": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "321": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "322": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "323": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "324": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "325": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "326": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "327": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "328": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "329": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "330": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "331": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "332": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "333": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "334": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "335": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "336": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "337": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "338": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "339": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "340": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "341": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "342": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "343": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "344": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "345": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "346": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "347": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "348": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "349": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "350": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "351": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "352": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "353": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "354": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "355": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "356": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "357": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "358": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "359": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "360": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "361": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "362": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "363": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "364": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "365": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "366": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "367": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "368": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "369": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "370": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "371": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "372": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "373": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "374": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "375": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "376": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "377": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "378": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "379": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "380": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "381": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "382": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "383": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "384": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "385": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "386": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "387": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "388": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "389": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "390": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "391": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "392": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "393": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "394": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "395": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "396": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "397": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "398": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "399": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "400": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "401": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "402": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "403": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "404": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "405": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "406": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "407": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "408": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "409": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "410": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "411": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "412": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "413": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "414": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "415": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "416": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "418": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "419": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "420": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "421": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "422": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "423": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "424": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "425": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "426": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "427": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "428": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "429": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "430": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "431": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "432": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "433": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "434": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "435": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "436": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "437": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "438": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "439": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "440": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "441": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "442": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "443": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "444": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "445": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "446": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "447": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "448": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "449": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "450": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "451": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "452": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "453": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "454": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "455": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    },
+    "456": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "hoffman": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null
+      }
+    }
+  }
+}
