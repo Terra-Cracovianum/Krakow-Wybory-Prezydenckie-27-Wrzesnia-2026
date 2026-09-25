@@ -74,7 +74,8 @@ async function init() {
     onEachFeature(feature, layer) {
       layer.on({
         mouseover(event) {
-          event.target.setStyle({ weight: 2, color: "#14171c" });
+          const selected = String(feature.properties.nr) === String(state.highlightNr);
+          event.target.setStyle(selected ? stylePrecinct(feature) : { weight: 2, color: "#14171c" });
         },
         mouseout(event) {
           precinctLayer.resetStyle(event.target);
@@ -86,16 +87,17 @@ async function init() {
       });
     },
   }).addTo(map);
+  state.precinctLayer = precinctLayer;
 
   state.markers = L.markerClusterGroup({
     showCoverageOnHover: false,
     maxClusterRadius: 18,
     disableClusteringAtZoom: 14,
-    iconCreateFunction(cluster) {
+    iconCreateFunction() {
       return L.divIcon({
-        html: `<span>${cluster.getChildCount()}</span>`,
+        html: "",
         className: "cluster",
-        iconSize: [34, 34],
+        iconSize: [14, 14],
       });
     },
   });
@@ -136,20 +138,26 @@ async function init() {
 
 function stylePrecinct(feature) {
   const leader = leaderOf(feature.properties.nr);
-  if (!leader) {
-    return {
-      color: "#8b93a7",
-      weight: 1,
-      fillColor: "#243044",
-      fillOpacity: 0.55,
-    };
-  }
+  const selected = String(feature.properties.nr) === String(state.highlightNr);
+  const base = leader
+    ? { color: "#0e1116", weight: 1, fillColor: leader.color, fillOpacity: 0.78 }
+    : { color: "#8b93a7", weight: 1, fillColor: "#243044", fillOpacity: 0.55 };
+  if (!selected) return base;
   return {
-    color: "#0e1116",
-    weight: 1,
-    fillColor: leader.color,
-    fillOpacity: 0.78,
+    color: "#f4efe6",
+    weight: 4,
+    fillColor: base.fillColor,
+    fillOpacity: 0.95,
   };
+}
+
+function paintPrecincts() {
+  const layer = state.precinctLayer;
+  if (!layer) return;
+  layer.eachLayer((shape) => {
+    layer.resetStyle(shape);
+    if (String(shape.feature.properties.nr) === String(state.highlightNr)) shape.bringToFront();
+  });
 }
 
 function leaderOf(nr) {
@@ -188,8 +196,24 @@ function fitCity() {
   fitting = false;
 }
 
+function easeCity() {
+  const map = state.map;
+  if (!map) return;
+  map.invalidateSize({ animate: false });
+  const size = map.getSize();
+  if (size.x < 40 || size.y < 40) return;
+  map.setMinZoom(0);
+  const fitted = map.getBoundsZoom(state.cityBounds, false, L.point(12, 12));
+  if (!Number.isFinite(fitted)) return;
+  map.setMinZoom(fitted);
+  fitting = true;
+  map.flyToBounds(state.cityBounds, { padding: [12, 12], duration: 0.45, animate: true });
+  fitting = false;
+}
+
 function openStation(index, nr) {
   state.highlightNr = nr ? String(nr) : null;
+  paintPrecincts();
   showPlace(state.stations.features[index], state.highlightNr);
   hits.hidden = true;
   query.blur();
@@ -201,12 +225,7 @@ function showPlace(feature, highlightNr) {
   sheet.innerHTML = stationPopup(feature, highlightNr);
   sheet.querySelector(".popup-blocks").style.setProperty("--cols", String(feature.properties.obwody.length));
   sheet.querySelector("[data-close]").addEventListener("click", closeSheet);
-  state.map.invalidateSize({ animate: false });
-  fitCity();
-  requestAnimationFrame(() => {
-    state.map.invalidateSize({ animate: false });
-    fitCity();
-  });
+  requestAnimationFrame(() => easeCity());
 }
 
 function closeSheet() {
@@ -215,12 +234,8 @@ function closeSheet() {
   sheet.hidden = true;
   sheet.innerHTML = "";
   state.highlightNr = null;
-  state.map.invalidateSize({ animate: false });
-  fitCity();
-  requestAnimationFrame(() => {
-    state.map.invalidateSize({ animate: false });
-    fitCity();
-  });
+  paintPrecincts();
+  requestAnimationFrame(() => easeCity());
 }
 
 function renderHits(raw) {
