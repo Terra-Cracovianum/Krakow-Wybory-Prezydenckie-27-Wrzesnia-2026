@@ -79,7 +79,28 @@
           nazwisk na mapie.
         </p>
       </aside>
-      <main id="map" aria-label="Mapa Krakowa"></main>
+      <div class="stage">
+        <main id="map" aria-label="Mapa Krakowa"></main>
+        <aside class="progress" id="progress" aria-label="Postęp liczenia">
+          <p class="progress-kicker">Liczenie</p>
+          <p class="progress-status" id="progress-status">Oczekiwanie</p>
+          <div class="progress-track" aria-hidden="true"><span id="progress-bar"></span></div>
+          <dl>
+            <div>
+              <dt>Obwody policzone</dt>
+              <dd id="progress-precincts">—</dd>
+            </div>
+            <div>
+              <dt>Karty policzone</dt>
+              <dd id="progress-ballots">—</dd>
+            </div>
+            <div>
+              <dt>Ważne głosy</dt>
+              <dd id="progress-valid">—</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
     </div>
     <script
       src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"

@@ -6,6 +6,7 @@ const state = {
   stations: null,
   markers: null,
   markerByIndex: new Map(),
+  highlightNr: null,
 };
 
 const query = document.querySelector("#query");
@@ -50,7 +51,7 @@ async function init() {
         },
         click() {
           const stationIndex = stationIndexFor(feature.properties.nr);
-          if (stationIndex >= 0) openStation(stationIndex);
+          if (stationIndex >= 0) openStation(stationIndex, feature.properties.nr);
         },
       });
     },
@@ -58,7 +59,8 @@ async function init() {
 
   state.markers = L.markerClusterGroup({
     showCoverageOnHover: false,
-    maxClusterRadius: 42,
+    maxClusterRadius: 18,
+    disableClusteringAtZoom: 14,
     iconCreateFunction(cluster) {
       return L.divIcon({
         html: `<span>${cluster.getChildCount()}</span>`,
@@ -77,7 +79,7 @@ async function init() {
       fillColor: "#f4efe6",
       fillOpacity: 0.95,
     });
-    marker.bindPopup(() => stationPopup(feature));
+    marker.bindPopup(() => stationPopup(feature, state.highlightNr), { maxWidth: 340 });
     state.markerByIndex.set(index, marker);
     state.markers.addLayer(marker);
   });
@@ -129,7 +131,8 @@ function stationIndexFor(nr) {
   );
 }
 
-function openStation(index) {
+function openStation(index, nr) {
+  state.highlightNr = nr ? String(nr) : null;
   const marker = state.markerByIndex.get(index);
   state.markers.zoomToShowLayer(marker, () => marker.openPopup());
   hits.hidden = true;
@@ -189,6 +192,40 @@ function renderSummary() {
   document.querySelector("#reporting").textContent =
     `${numberFormat.format(results.precinctsReporting)} / ${numberFormat.format(results.precinctsTotal)}`;
   document.querySelector("#valid").textContent = formatCount(results.validVotes);
+  renderProgress();
+}
+
+function countedSoFar() {
+  let ballots = 0;
+  let valid = 0;
+  let precincts = 0;
+  for (const row of Object.values(state.results.precincts)) {
+    if (!row.reported) continue;
+    precincts += 1;
+    if (typeof row.ballots === "number") ballots += row.ballots;
+    if (typeof row.validVotes === "number") valid += row.validVotes;
+  }
+  return { ballots, valid, precincts };
+}
+
+function renderProgress() {
+  const results = state.results;
+  const counted = countedSoFar();
+  const total = results.precinctsTotal;
+  const waiting = counted.precincts === 0;
+  const status = document.querySelector("#progress-status");
+  status.textContent = waiting
+    ? "Oczekiwanie"
+    : counted.precincts >= total
+      ? "Policzone"
+      : "Spływają";
+  document.querySelector("#progress-precincts").textContent = waiting
+    ? "—"
+    : `${numberFormat.format(counted.precincts)} / ${numberFormat.format(total)}`;
+  document.querySelector("#progress-ballots").textContent = waiting ? "—" : formatCount(counted.ballots);
+  document.querySelector("#progress-valid").textContent = waiting ? "—" : formatCount(counted.valid);
+  const share = total > 0 ? (counted.precincts / total) * 100 : 0;
+  document.querySelector("#progress-bar").style.width = `${share}%`;
 }
 
 function renderCandidates() {
@@ -219,21 +256,45 @@ function renderCandidates() {
     .join("");
 }
 
-function stationPopup(feature) {
+function stationPopup(feature, highlightNr) {
   const props = feature.properties;
-  const rows = props.obwody
-    .map((nr) => {
-      const row = state.results.precincts[nr];
-      const leader = leaderOf(nr);
-      if (!row || !row.reported || !leader) {
-        return `<li><span>Obwód ${escapeHtml(nr)}</span><span class="awaiting">wyniki pojawią się po ogłoszeniu</span></li>`;
-      }
-      return `<li><span>Obwód ${escapeHtml(nr)}</span><span>${escapeHtml(leader.short)} ${formatCount(leader.votes)}</span></li>`;
-    })
+  const blocks = [...props.obwody]
+    .sort((a, b) => Number(a) - Number(b))
+    .map((nr) => precinctBlock(nr, String(nr) === String(highlightNr)))
     .join("");
   return `<h3>${escapeHtml(props.siedziba)}</h3>
-    <p>${escapeHtml(address(props))}</p>
-    <ul class="popup-rows">${rows}</ul>`;
+    <p class="place">${escapeHtml(address(props))}<br>Tu oddaje się głos.</p>
+    ${blocks}`;
+}
+
+function precinctBlock(nr, highlighted) {
+  const row = state.results.precincts[nr];
+  const leader = leaderOf(nr);
+  const focus = highlighted ? " is-focus" : "";
+  if (!row || !row.reported || !leader) {
+    return `<section class="precinct-block is-waiting${focus}">
+      <h4>Obwód ${escapeHtml(nr)}</h4>
+      <p class="awaiting">jeszcze niepoliczone</p>
+    </section>`;
+  }
+  const lines = state.candidates
+    .map((candidate) => {
+      const votes = row.votes[candidate.id];
+      const ahead = candidate.id === leader.id ? " is-ahead" : "";
+      return `<li class="${ahead.trim()}">
+        <span class="swatch" style="background:${candidate.color}"></span>
+        <span>${escapeHtml(candidate.short)}</span>
+        <strong>${formatCount(votes)}</strong>
+        <em>${shareOf(votes, row.validVotes).replace(" · ", "")}</em>
+      </li>`;
+    })
+    .join("");
+  return `<section class="precinct-block${focus}">
+    <h4>Obwód ${escapeHtml(nr)}</h4>
+    <p class="winner">Prowadzi ${escapeHtml(leader.short)} · ${formatCount(leader.votes)} głosów</p>
+    <p class="tallies">Karty ${formatCount(row.ballots)} · ważne ${formatCount(row.validVotes)} · nieważne ${formatCount(row.invalidVotes)}</p>
+    <ul class="vote-lines">${lines}</ul>
+  </section>`;
 }
 
 function address(props) {
