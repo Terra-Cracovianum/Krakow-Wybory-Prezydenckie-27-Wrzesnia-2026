@@ -2,7 +2,7 @@
   "status": "awaiting",
   "round": 1,
   "updatedAt": null,
-  "precinctsTotal": 455,
+  "precinctsTotal": 454,
   "precinctsReporting": 0,
   "ballots": null,
   "validVotes": null,
@@ -6675,6 +6675,22 @@
         "hoffman": null
       }
     },
+    "417": {
+      "reported": false,
+      "ballots": null,
+      "validVotes": null,
+      "invalidVotes": null,
+      "votes": {
+        "drewnicki": null,
+        "gibala": null,
+        "gosek": null,
+        "klimek": null,
+        "owca": null,
+        "piatkowska": null,
+        "pietrzyk": null,
+        "hoffman": null
+      }
+    },
     "418": {
       "reported": false,
       "ballots": null,
@@ -7252,38 +7268,6 @@
       }
     },
     "454": {
-      "reported": false,
-      "ballots": null,
-      "validVotes": null,
-      "invalidVotes": null,
-      "votes": {
-        "drewnicki": null,
-        "gibala": null,
-        "gosek": null,
-        "klimek": null,
-        "owca": null,
-        "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
-      }
-    },
-    "455": {
-      "reported": false,
-      "ballots": null,
-      "validVotes": null,
-      "invalidVotes": null,
-      "votes": {
-        "drewnicki": null,
-        "gibala": null,
-        "gosek": null,
-        "klimek": null,
-        "owca": null,
-        "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
-      }
-    },
-    "456": {
       "reported": false,
       "ballots": null,
       "validVotes": null,
