@@ -104,10 +104,7 @@ async function init() {
       fillColor: "#f4efe6",
       fillOpacity: 0.95,
     });
-    marker.bindPopup(() => stationPopup(feature, state.highlightNr), {
-      maxWidth: 380,
-      className: "station-popup",
-    });
+    marker.on("click", () => openStation(index));
     state.markerByIndex.set(index, marker);
     state.markers.addLayer(marker);
   });
@@ -140,6 +137,7 @@ async function init() {
       event.preventDefault();
       query.focus();
     }
+    if (event.key === "Escape") closeSheet();
   });
 }
 
@@ -182,9 +180,27 @@ function stationIndexFor(nr) {
 function openStation(index, nr) {
   state.highlightNr = nr ? String(nr) : null;
   const marker = state.markerByIndex.get(index);
-  state.markers.zoomToShowLayer(marker, () => marker.openPopup());
+  const feature = state.stations.features[index];
+  state.markers.zoomToShowLayer(marker, () => showPlace(feature, state.highlightNr));
   hits.hidden = true;
   query.blur();
+}
+
+function showPlace(feature, highlightNr) {
+  const sheet = document.querySelector("#place-sheet");
+  sheet.hidden = false;
+  sheet.innerHTML = stationPopup(feature, highlightNr);
+  sheet.querySelector("[data-close]").addEventListener("click", closeSheet);
+  const row = sheet.querySelector(".popup-blocks");
+  const focused = sheet.querySelector(".is-focus");
+  if (row && focused) row.scrollLeft = focused.offsetLeft - 8;
+}
+
+function closeSheet() {
+  const sheet = document.querySelector("#place-sheet");
+  sheet.hidden = true;
+  sheet.innerHTML = "";
+  state.highlightNr = null;
 }
 
 function renderHits(raw) {
@@ -315,7 +331,8 @@ function stationPopup(feature, highlightNr) {
       <h3>${escapeHtml(props.siedziba)}</h3>
       <p class="place">${escapeHtml(address(props))}</p>
     </header>
-    <div class="popup-blocks">${blocks}</div>`;
+    <div class="popup-blocks">${blocks}</div>
+    <button type="button" class="sheet-close" data-close aria-label="Zamknij">×</button>`;
 }
 
 function precinctBlock(nr, highlighted) {
