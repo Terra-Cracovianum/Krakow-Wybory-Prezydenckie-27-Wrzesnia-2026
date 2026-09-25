@@ -233,11 +233,18 @@ h1 {
 
 .stage {
   position: relative;
+  display: flex;
+  flex-direction: column;
   height: 100%;
-  min-height: 420px;
+  min-height: 0;
 }
 
-#map { height: 100%; min-height: 420px; background: #d5d0c6; }
+#map {
+  flex: 1 1 auto;
+  height: auto;
+  min-height: 140px;
+  background: #d5d0c6;
+}
 
 .progress {
   position: absolute;
@@ -304,25 +311,24 @@ h1 {
 .leaflet-container { font-family: "Source Sans 3", sans-serif; background: #d5d0c6; }
 
 .place-sheet {
-  position: absolute;
-  left: 12px;
-  right: 12px;
-  bottom: 22px;
-  z-index: 800;
-  align-items: stretch;
-  gap: 12px;
-  max-height: min(42vh, 300px);
-  padding: 12px 44px 12px 14px;
+  position: relative;
+  flex: 0 0 auto;
+  z-index: 2;
+  gap: 8px;
+  margin: 0 8px 8px;
+  padding: 10px 40px 10px 12px;
   border: 1px solid rgba(244, 239, 230, 0.12);
   border-radius: 16px;
-  background: rgba(23, 27, 33, 0.96);
+  background: #171b21;
   color: var(--ink);
-  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.4);
 }
 
 .place-sheet[hidden] { display: none; }
 
-.place-sheet:not([hidden]) { display: flex; }
+.place-sheet:not([hidden]) {
+  display: flex;
+  flex-direction: column;
+}
 
 .sheet-close {
   position: absolute;
@@ -342,9 +348,11 @@ h1 {
 .sheet-close:hover { background: rgba(244, 239, 230, 0.08); }
 
 .popup-place {
-  flex: 0 0 210px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 12px;
   min-width: 0;
-  align-self: center;
 }
 
 .popup-kicker {
@@ -357,44 +365,42 @@ h1 {
 }
 
 .place-sheet h3 {
-  margin: 4px 0 0;
+  margin: 0;
   font-family: Fraunces, serif;
-  font-size: 1.2rem;
+  font-size: 1.05rem;
   font-weight: 560;
   line-height: 1.15;
   letter-spacing: -0.02em;
 }
 
 .place-sheet .place {
-  margin: 4px 0 0;
+  margin: 0;
   color: var(--muted);
   line-height: 1.3;
 }
 
 .popup-blocks {
-  position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(var(--cols, 1), minmax(0, 1fr));
   gap: 8px;
   min-width: 0;
   margin: 0;
-  overflow-x: auto;
-  scrollbar-color: rgba(244, 239, 230, 0.28) transparent;
-  scrollbar-width: thin;
 }
 
 .precinct-block {
-  flex: 0 0 250px;
-  padding: 10px 10px 8px;
+  container-type: inline-size;
+  min-width: 0;
+  padding: 8px 8px 6px;
   border-radius: 12px;
   background: var(--panel-2);
-  overflow: auto;
 }
 
 .precinct-top {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
   justify-content: space-between;
-  gap: 10px;
+  gap: 2px 8px;
 }
 
 .precinct-block h4 {
@@ -426,7 +432,10 @@ h1 {
 
 .precinct-block.is-waiting { background: transparent; border: 1px dashed rgba(244, 239, 230, 0.18); }
 
-.precinct-block.is-focus { box-shadow: inset 0 0 0 1px rgba(215, 196, 163, 0.7); }
+.precinct-block.is-focus {
+  background: #2a2418;
+  box-shadow: inset 0 0 0 2px var(--await);
+}
 
 .tallies {
   display: grid;
@@ -462,18 +471,19 @@ h1 {
 
 .vote-lines li {
   display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 2px 10px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1px 8px;
   align-items: center;
-  padding: 4px 0 5px;
+  padding: 1px 0 2px;
 }
 
 .vote-lines .who {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   min-width: 0;
-  font-size: 0.86rem;
+  font-size: 0.78rem;
+  overflow-wrap: anywhere;
 }
 
 .vote-lines .swatch {
@@ -485,9 +495,9 @@ h1 {
 
 .vote-lines .nums {
   display: flex;
-  gap: 8px;
+  gap: 6px;
   font-variant-numeric: tabular-nums;
-  font-size: 0.86rem;
+  font-size: 0.78rem;
 }
 
 .vote-lines em {
@@ -513,6 +523,24 @@ h1 {
 
 .vote-lines .is-ahead .who { font-weight: 700; }
 
+@container (max-width: 230px) {
+  .precinct-top { flex-direction: column; align-items: flex-start; }
+
+  .tallies { display: block; }
+
+  .tallies div {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 1px 0;
+    background: none;
+  }
+
+  .vote-lines li { grid-template-columns: minmax(0, 1fr); }
+
+  .vote-lines .nums { justify-content: flex-start; }
+}
+
 .leaflet-div-icon.cluster {
   display: grid;
   place-items: center;
@@ -536,9 +564,9 @@ h1 {
 @media (max-width: 860px) {
   .app {
     grid-template-columns: 1fr;
-    grid-template-rows: auto minmax(58vh, 1fr);
-    height: auto;
-    min-height: 100%;
+    grid-template-rows: minmax(120px, 34vh) minmax(0, 1fr);
+    height: 100%;
+    min-height: 0;
   }
 
   .panel {
@@ -547,7 +575,9 @@ h1 {
     border-bottom: 1px solid var(--line);
   }
 
-  .stage, #map { height: 70vh; }
+  .stage { height: 100%; min-height: 0; }
+
+  #map { min-height: 160px; }
 
   .progress {
     top: 8px;
@@ -555,14 +585,7 @@ h1 {
     width: min(210px, 58vw);
   }
 
-  .place-sheet {
-    left: 8px;
-    right: 8px;
-    bottom: 18px;
-    flex-direction: column;
-    gap: 8px;
-    max-height: 46%;
+  .popup-blocks {
+    grid-template-columns: repeat(auto-fit, minmax(168px, 1fr));
   }
-
-  .popup-place { flex-basis: auto; align-self: stretch; }
 }
