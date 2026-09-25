@@ -231,9 +231,9 @@ h1 {
 
 .sources { margin: 12px 0 0; }
 
-#map { height: 100%; min-height: 420px; background: #0b0d11; }
+#map { height: 100%; min-height: 420px; background: #d5d0c6; }
 
-.leaflet-container { font-family: "Source Sans 3", sans-serif; background: #0b0d11; }
+.leaflet-container { font-family: "Source Sans 3", sans-serif; background: #d5d0c6; }
 
 .leaflet-popup-content-wrapper {
   background: #171b21;
