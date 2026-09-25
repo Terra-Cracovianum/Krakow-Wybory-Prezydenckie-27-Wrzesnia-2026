@@ -231,7 +231,75 @@ h1 {
 
 .sources { margin: 12px 0 0; }
 
+.stage {
+  position: relative;
+  height: 100%;
+  min-height: 420px;
+}
+
 #map { height: 100%; min-height: 420px; background: #d5d0c6; }
+
+.progress {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 800;
+  width: 210px;
+  padding: 12px 14px 10px;
+  border-radius: 14px;
+  background: rgba(20, 23, 28, 0.92);
+  color: var(--ink);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+}
+
+.progress-kicker {
+  margin: 0;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--await);
+}
+
+.progress-status {
+  margin: 2px 0 8px;
+  font-family: Fraunces, serif;
+  font-size: 1.25rem;
+}
+
+.progress-track {
+  height: 6px;
+  border-radius: 99px;
+  background: rgba(244, 239, 230, 0.12);
+  overflow: hidden;
+}
+
+.progress-track span {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: var(--await);
+}
+
+.progress dl {
+  margin: 10px 0 0;
+}
+
+.progress dl div {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 3px 0;
+  font-size: 0.82rem;
+}
+
+.progress dt { color: var(--muted); }
+
+.progress dd {
+  margin: 0;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
 
 .leaflet-container { font-family: "Source Sans 3", sans-serif; background: #d5d0c6; }
 
@@ -244,7 +312,12 @@ h1 {
 
 .leaflet-popup-tip { background: #171b21; }
 
-.leaflet-popup-content { margin: 12px 14px; min-width: 220px; }
+.leaflet-popup-content {
+  margin: 12px 14px;
+  width: 300px;
+  max-height: min(60vh, 420px);
+  overflow: auto;
+}
 
 .leaflet-popup-content h3 {
   margin: 0 0 4px;
@@ -263,6 +336,72 @@ h1 {
   padding: 3px 0;
   font-size: 0.86rem;
 }
+
+.leaflet-popup-content .place { line-height: 1.35; }
+
+.precinct-block {
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(244, 239, 230, 0.14);
+}
+
+.precinct-block h4 {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.precinct-block .winner,
+.precinct-block .tallies,
+.precinct-block .awaiting {
+  margin: 3px 0 0;
+  font-size: 0.82rem;
+}
+
+.precinct-block .winner { font-weight: 700; }
+
+.precinct-block .tallies,
+.precinct-block .awaiting { color: #b7b1a6; }
+
+.precinct-block.is-focus {
+  margin-left: -6px;
+  margin-right: -6px;
+  padding: 8px 6px;
+  border-radius: 10px;
+  background: rgba(215, 196, 163, 0.12);
+  border-top-color: transparent;
+}
+
+.vote-lines {
+  list-style: none;
+  margin: 6px 0 0;
+  padding: 0;
+}
+
+.vote-lines li {
+  display: grid;
+  grid-template-columns: 10px 1fr auto auto;
+  gap: 8px;
+  align-items: center;
+  padding: 2px 0;
+  font-size: 0.82rem;
+}
+
+.vote-lines .swatch {
+  width: 10px;
+  height: 10px;
+  transform: none;
+}
+
+.vote-lines strong { font-variant-numeric: tabular-nums; }
+
+.vote-lines em {
+  min-width: 3.2em;
+  color: #b7b1a6;
+  font-style: normal;
+  text-align: right;
+}
+
+.vote-lines .is-ahead span { font-weight: 700; }
 
 .popup-rows .awaiting { color: var(--muted); }
 
@@ -300,5 +439,11 @@ h1 {
     border-bottom: 1px solid var(--line);
   }
 
-  #map { height: 70vh; }
+  .stage, #map { height: 70vh; }
+
+  .progress {
+    top: 8px;
+    right: 8px;
+    width: min(210px, 58vw);
+  }
 }
