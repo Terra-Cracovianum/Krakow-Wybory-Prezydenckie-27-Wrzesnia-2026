@@ -1,6 +1,6 @@
 # Wybory prezydenta Krakowa · 27 września 2026
 
-Statyczna strona na wieczór wyborczy: mapa Krakowa, wszystkie lokale i obwody oraz lista kandydatów. W `data/results.json` są teraz dane przykładowe (`"sample": true`), żeby widać było spływające obwody. Przed prawdziwymi wynikami trzeba je zastąpić.
+Statyczna strona na wieczór wyborczy: mapa Krakowa, wszystkie lokale i obwody oraz lista kandydatów. `data/results.json` jest pusty i czeka na oficjalne wyniki.
 
 ## Co jest na mapie
 
@@ -12,7 +12,7 @@ Statyczna strona na wieczór wyborczy: mapa Krakowa, wszystkie lokale i obwody o
 
 ## Jak wgrać wyniki
 
-Jedyny plik do zmiany to [`data/results.json`](data/results.json). Przy oficjalnych liczbach ustaw `"sample": false` albo usuń to pole. Dopóki jest `true`, strona pokazuje baner, że dane są przykładowe.
+Jedyny plik do zmiany to [`data/results.json`](data/results.json). Wpisz oficjalne liczby. Pole `"sample": true` zostawia baner, że dane są przykładowe — przy prawdziwych wynikach go nie ustawiaj.
 
 - `status`: `awaiting`, dopóki nie ma liczb; po pierwszych obwodach np. `partial`; po komplecie `final`
 - `updatedAt`: czas aktualizacji, np. `"2026-09-27T22:40:00+02:00"`
