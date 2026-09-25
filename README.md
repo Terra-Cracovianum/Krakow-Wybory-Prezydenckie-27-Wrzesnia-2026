@@ -1,18 +1,18 @@
 # Wybory prezydenta Krakowa · 27 września 2026
 
-Statyczna strona na wieczór wyborczy: mapa Krakowa, wszystkie lokale i obwody oraz lista kandydatów. Wyników jeszcze nie ma. Gdy przyjdą oficjalne liczby, wystarczy uzupełnić jeden plik.
+Statyczna strona na wieczór wyborczy: mapa Krakowa, wszystkie lokale i obwody oraz lista kandydatów. W `data/results.json` są teraz dane przykładowe (`"sample": true`), żeby widać było spływające obwody. Przed prawdziwymi wynikami trzeba je zastąpić.
 
 ## Co jest na mapie
 
 - 412 obwodów stałych (poligony) z warstwy MSIP „Aktualny podział na obwody wyborcze”
 - 252 lokale wyborcze
-- 455 obwodowych komisji, w tym obwody odrębne (szpitale, DPS-y, areszty), które nie mają własnego poligonu i są przypisane do lokalu
+- 455 punktów komisji w warstwie MSIP, o numerach 1–456. Brakuje numeru 417 (w postanowieniu komisarza z 17 sierpnia 2026 r. to Szpital na Siemiradzkiego). Ogłoszenia o tych wyborach podają 454 komisje: 412 stałych i 42 odrębne. Numer 444 to jeden obwód, nie suma.
 
 Źródło geometrii: [MSIP Kraków, K05_Wybory_Dzielnice](https://msip.um.krakow.pl/arcgis/rest/services/Obserwatorium/K05_Wybory_Dzielnice/MapServer). Kandydaci: obwieszczenie Miejskiej Komisji Wyborczej w Krakowie z 14 września 2026 r.
 
 ## Jak wgrać wyniki
 
-Jedyny plik do zmiany to [`data/results.json`](data/results.json).
+Jedyny plik do zmiany to [`data/results.json`](data/results.json). Przy oficjalnych liczbach ustaw `"sample": false` albo usuń to pole. Dopóki jest `true`, strona pokazuje baner, że dane są przykładowe.
 
 - `status`: `awaiting`, dopóki nie ma liczb; po pierwszych obwodach np. `partial`; po komplecie `final`
 - `updatedAt`: czas aktualizacji, np. `"2026-09-27T22:40:00+02:00"`
