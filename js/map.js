@@ -32,11 +32,36 @@ async function init() {
   renderSummary();
   renderCandidates();
 
-  const map = L.map("map", { zoomControl: true, minZoom: 11, maxZoom: 18 });
+  const cityBounds = L.geoJSON(precincts).getBounds();
+  const map = L.map("map", {
+    zoomControl: true,
+    minZoom: 10,
+    maxZoom: 18,
+    maxBounds: cityBounds,
+    maxBoundsViscosity: 1,
+    worldCopyJump: false,
+  });
   L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution:
       '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · obwody: <a href="https://msip.krakow.pl/">MSIP Kraków</a>',
     maxZoom: 19,
+  }).addTo(map);
+
+  const world = [[85, -180], [85, 180], [-85, 180], [-85, -180]];
+  const holes = [];
+  for (const feature of precincts.features) {
+    const polygons = feature.geometry.type === "Polygon"
+      ? [feature.geometry.coordinates]
+      : feature.geometry.coordinates;
+    for (const polygon of polygons) {
+      holes.push(polygon[0].map(([lng, lat]) => [lat, lng]));
+    }
+  }
+  L.polygon([world, ...holes], {
+    stroke: false,
+    fillColor: "#d5d0c6",
+    fillOpacity: 1,
+    interactive: false,
   }).addTo(map);
 
   const precinctLayer = L.geoJSON(precincts, {
@@ -79,12 +104,35 @@ async function init() {
       fillColor: "#f4efe6",
       fillOpacity: 0.95,
     });
-    marker.bindPopup(() => stationPopup(feature, state.highlightNr), { maxWidth: 340 });
+    marker.bindPopup(() => stationPopup(feature, state.highlightNr), {
+      maxWidth: 380,
+      className: "station-popup",
+    });
     state.markerByIndex.set(index, marker);
     state.markers.addLayer(marker);
   });
   map.addLayer(state.markers);
-  map.fitBounds(precinctLayer.getBounds(), { padding: [16, 16] });
+  map.fitBounds(cityBounds, { padding: [16, 16] });
+  let locking = false;
+  const lockToCity = () => {
+    if (locking) return;
+    const size = map.getSize();
+    if (size.x < 50 || size.y < 50) return;
+    const fitted = map.getBoundsZoom(cityBounds, false, L.point(12, 12));
+    if (!Number.isFinite(fitted)) return;
+    const minZoom = Math.max(10, fitted);
+    map.setMinZoom(minZoom);
+    const zoom = Math.max(map.getZoom(), minZoom);
+    const center = map.getCenter();
+    const inside = cityBounds.contains(center);
+    if (zoom === map.getZoom() && inside) return;
+    locking = true;
+    map.setView(inside ? center : cityBounds.getCenter(), zoom, { animate: false });
+    locking = false;
+  };
+  lockToCity();
+  map.on("resize", lockToCity);
+  map.on("zoomend moveend", lockToCity);
 
   query.addEventListener("input", () => renderHits(query.value));
   document.addEventListener("keydown", (event) => {
@@ -262,9 +310,12 @@ function stationPopup(feature, highlightNr) {
     .sort((a, b) => Number(a) - Number(b))
     .map((nr) => precinctBlock(nr, String(nr) === String(highlightNr)))
     .join("");
-  return `<h3>${escapeHtml(props.siedziba)}</h3>
-    <p class="place">${escapeHtml(address(props))}<br>Tu oddaje się głos.</p>
-    ${blocks}`;
+  return `<header class="popup-place">
+      <p class="popup-kicker">Lokal wyborczy</p>
+      <h3>${escapeHtml(props.siedziba)}</h3>
+      <p class="place">${escapeHtml(address(props))}</p>
+    </header>
+    <div class="popup-blocks">${blocks}</div>`;
 }
 
 function precinctBlock(nr, highlighted) {
@@ -273,26 +324,40 @@ function precinctBlock(nr, highlighted) {
   const focus = highlighted ? " is-focus" : "";
   if (!row || !row.reported || !leader) {
     return `<section class="precinct-block is-waiting${focus}">
-      <h4>Obwód ${escapeHtml(nr)}</h4>
-      <p class="awaiting">jeszcze niepoliczone</p>
+      <div class="precinct-top">
+        <h4>Obwód ${escapeHtml(nr)}</h4>
+        <p class="awaiting">jeszcze niepoliczone</p>
+      </div>
     </section>`;
   }
+  const counts = state.candidates.map((candidate) => {
+    const votes = row.votes[candidate.id];
+    return typeof votes === "number" ? votes : 0;
+  });
+  const peak = Math.max(1, ...counts);
   const lines = state.candidates
     .map((candidate) => {
       const votes = row.votes[candidate.id];
+      const count = typeof votes === "number" ? votes : 0;
       const ahead = candidate.id === leader.id ? " is-ahead" : "";
+      const width = Math.round((count / peak) * 100);
       return `<li class="${ahead.trim()}">
-        <span class="swatch" style="background:${candidate.color}"></span>
-        <span>${escapeHtml(candidate.short)}</span>
-        <strong>${formatCount(votes)}</strong>
-        <em>${shareOf(votes, row.validVotes).replace(" · ", "")}</em>
+        <span class="who"><span class="swatch" style="background:${candidate.color}"></span><span>${escapeHtml(candidate.short)}</span></span>
+        <span class="nums"><strong>${formatCount(votes)}</strong><em>${percentLabel(votes, row.validVotes)}</em></span>
+        <span class="meter" aria-hidden="true"><span style="width:${width}%;background:${candidate.color}"></span></span>
       </li>`;
     })
     .join("");
   return `<section class="precinct-block${focus}">
-    <h4>Obwód ${escapeHtml(nr)}</h4>
-    <p class="winner">Prowadzi ${escapeHtml(leader.short)} · ${formatCount(leader.votes)} głosów</p>
-    <p class="tallies">Karty ${formatCount(row.ballots)} · ważne ${formatCount(row.validVotes)} · nieważne ${formatCount(row.invalidVotes)}</p>
+    <div class="precinct-top">
+      <h4>Obwód ${escapeHtml(nr)}</h4>
+      <p class="winner"><span class="swatch" style="background:${leader.color}"></span>${escapeHtml(leader.short)}</p>
+    </div>
+    <dl class="tallies">
+      <div><dt>Karty</dt><dd>${formatCount(row.ballots)}</dd></div>
+      <div><dt>Ważne</dt><dd>${formatCount(row.validVotes)}</dd></div>
+      <div><dt>Nieważne</dt><dd>${formatCount(row.invalidVotes)}</dd></div>
+    </dl>
     <ul class="vote-lines">${lines}</ul>
   </section>`;
 }
@@ -318,8 +383,13 @@ function formatPercent(value) {
 }
 
 function shareOf(votes, valid) {
-  if (typeof votes !== "number" || typeof valid !== "number" || valid <= 0) return "";
-  return ` · ${numberFormat.format(Math.round((votes / valid) * 1000) / 10)}%`;
+  const label = percentLabel(votes, valid);
+  return label === "—" ? "" : ` · ${label}`;
+}
+
+function percentLabel(votes, valid) {
+  if (typeof votes !== "number" || typeof valid !== "number" || valid <= 0) return "—";
+  return `${numberFormat.format(Math.round((votes / valid) * 1000) / 10)}%`;
 }
 
 function escapeHtml(value) {
