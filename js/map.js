@@ -7,6 +7,8 @@ const state = {
   markers: null,
   markerByIndex: new Map(),
   highlightNr: null,
+  map: null,
+  cityBounds: null,
 };
 
 const query = document.querySelector("#query");
@@ -33,8 +35,11 @@ async function init() {
   renderCandidates();
 
   const cityBounds = L.geoJSON(precincts).getBounds();
+  state.cityBounds = cityBounds;
   const map = L.map("map", {
     zoomControl: true,
+    zoomSnap: 0,
+    zoomDelta: 1,
     minZoom: 10,
     maxZoom: 18,
     maxBounds: cityBounds,
@@ -109,27 +114,15 @@ async function init() {
     state.markers.addLayer(marker);
   });
   map.addLayer(state.markers);
-  map.fitBounds(cityBounds, { padding: [16, 16] });
-  let locking = false;
-  const lockToCity = () => {
-    if (locking) return;
-    const size = map.getSize();
-    if (size.x < 50 || size.y < 50) return;
-    const fitted = map.getBoundsZoom(cityBounds, false, L.point(12, 12));
-    if (!Number.isFinite(fitted)) return;
-    const minZoom = Math.max(10, fitted);
-    map.setMinZoom(minZoom);
-    const zoom = Math.max(map.getZoom(), minZoom);
-    const center = map.getCenter();
-    const inside = cityBounds.contains(center);
-    if (zoom === map.getZoom() && inside) return;
-    locking = true;
-    map.setView(inside ? center : cityBounds.getCenter(), zoom, { animate: false });
-    locking = false;
+  state.map = map;
+  fitCity();
+  const refitSoon = () => {
+    map.invalidateSize({ animate: false });
+    fitCity();
   };
-  lockToCity();
-  map.on("resize", lockToCity);
-  map.on("zoomend moveend", lockToCity);
+  map.on("resize", refitSoon);
+  new ResizeObserver(refitSoon).observe(document.querySelector("#map"));
+  document.fonts.ready.then(refitSoon);
 
   query.addEventListener("input", () => renderHits(query.value));
   document.addEventListener("keydown", (event) => {
@@ -177,11 +170,27 @@ function stationIndexFor(nr) {
   );
 }
 
+let fitting = false;
+
+function fitCity() {
+  const map = state.map;
+  if (!map || fitting) return;
+  const size = map.getSize();
+  if (size.x < 40 || size.y < 40) return;
+  map.setMinZoom(0);
+  const fitted = map.getBoundsZoom(state.cityBounds, false, L.point(12, 12));
+  if (!Number.isFinite(fitted)) return;
+  map.setMinZoom(fitted);
+  const zoom = map.getZoom();
+  if (zoom != null && map.getBounds().contains(state.cityBounds) && zoom <= fitted + 0.01) return;
+  fitting = true;
+  map.fitBounds(state.cityBounds, { padding: [12, 12], animate: false });
+  fitting = false;
+}
+
 function openStation(index, nr) {
   state.highlightNr = nr ? String(nr) : null;
-  const marker = state.markerByIndex.get(index);
-  const feature = state.stations.features[index];
-  state.markers.zoomToShowLayer(marker, () => showPlace(feature, state.highlightNr));
+  showPlace(state.stations.features[index], state.highlightNr);
   hits.hidden = true;
   query.blur();
 }
@@ -190,17 +199,28 @@ function showPlace(feature, highlightNr) {
   const sheet = document.querySelector("#place-sheet");
   sheet.hidden = false;
   sheet.innerHTML = stationPopup(feature, highlightNr);
+  sheet.querySelector(".popup-blocks").style.setProperty("--cols", String(feature.properties.obwody.length));
   sheet.querySelector("[data-close]").addEventListener("click", closeSheet);
-  const row = sheet.querySelector(".popup-blocks");
-  const focused = sheet.querySelector(".is-focus");
-  if (row && focused) row.scrollLeft = focused.offsetLeft - 8;
+  state.map.invalidateSize({ animate: false });
+  fitCity();
+  requestAnimationFrame(() => {
+    state.map.invalidateSize({ animate: false });
+    fitCity();
+  });
 }
 
 function closeSheet() {
   const sheet = document.querySelector("#place-sheet");
+  if (sheet.hidden) return;
   sheet.hidden = true;
   sheet.innerHTML = "";
   state.highlightNr = null;
+  state.map.invalidateSize({ animate: false });
+  fitCity();
+  requestAnimationFrame(() => {
+    state.map.invalidateSize({ animate: false });
+    fitCity();
+  });
 }
 
 function renderHits(raw) {
