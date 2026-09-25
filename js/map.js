@@ -175,7 +175,11 @@ function renderHits(raw) {
 function renderSummary() {
   const results = state.results;
   const status = document.querySelector("#status");
-  if (results.status === "awaiting" || results.precinctsReporting === 0) {
+  const sample = document.querySelector("#sample");
+  sample.hidden = !results.sample;
+  if (results.sample) {
+    status.textContent = "Podgląd przykładowych wyników";
+  } else if (results.status === "awaiting" || results.precinctsReporting === 0) {
     status.textContent = "Oczekiwanie na wyniki";
   } else if (results.precinctsReporting < results.precinctsTotal) {
     status.textContent = "Wyniki spływają";
