@@ -556,8 +556,10 @@ function renderCandidates() {
     .map((candidate) => {
       const votes = totals[candidate.id];
       const width = max > 0 && typeof votes === "number" ? (votes / max) * 100 : 0;
-      const share = shareOf(votes, state.results.validVotes);
-      return `<li class="candidate${candidate.withdrawn ? " withdrawn" : ""}">
+      const label = percentLabel(votes, state.results.validVotes);
+      const share = label === "—" ? "" : `<span class="sep"> · </span><span class="share">${label}</span>`;
+      const leader = max > 0 && votes === max ? " is-leader" : "";
+      return `<li class="candidate${candidate.withdrawn ? " withdrawn" : ""}${leader}">
         <header>
           <span class="swatch" style="background:${candidate.color}"></span>
           <h2 title="${escapeHtml(candidate.name)}">${candidate.ballot}. ${escapeHtml(candidate.short)}</h2>
@@ -755,11 +757,6 @@ function formatPercent(value) {
   if (typeof value !== "number" || Number.isNaN(value)) return "—";
   const rounded = pkwRound(value, 2);
   return `${new Intl.NumberFormat("pl-PL", { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(rounded)}%`;
-}
-
-function shareOf(votes, valid) {
-  const label = percentLabel(votes, valid);
-  return label === "—" ? "" : ` · ${label}`;
 }
 
 function percentLabel(votes, valid) {
