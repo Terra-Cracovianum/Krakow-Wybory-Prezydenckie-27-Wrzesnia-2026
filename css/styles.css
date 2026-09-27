@@ -701,8 +701,31 @@ h1 {
   to { opacity: 1; transform: translateX(-50%) translateY(0); }
 }
 
+.confetti {
+  position: fixed;
+  inset: 0;
+  z-index: 800;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.confetti-piece {
+  position: absolute;
+  top: -16px;
+  border-radius: 2px;
+  opacity: 0;
+  animation: confetti-fall linear forwards;
+}
+
+@keyframes confetti-fall {
+  0% { opacity: 0; transform: translate3d(0, -8px, 0) rotate(0deg); }
+  10% { opacity: 1; }
+  100% { opacity: 0; transform: translate3d(var(--drift), 108vh, 0) rotate(var(--spin)); }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .runoff { animation: none; }
+  .confetti-piece { animation: none; display: none; }
   .panel { transition: none; }
   .status.is-flowing::before { animation: none; }
   .status-meter::before { transition: none; }

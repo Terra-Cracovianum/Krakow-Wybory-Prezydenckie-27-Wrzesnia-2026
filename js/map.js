@@ -558,6 +558,35 @@ function renderRunoff() {
   document.querySelector("#runoff-places").innerHTML = shown
     .map((row, index) => runoffPlace(row, index + 1, valid))
     .join("");
+  celebrateCount(shown);
+}
+
+function celebrateCount(rows) {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const seen = "krakow-wybory-confetti";
+  try {
+    if (sessionStorage.getItem(seen)) return;
+    sessionStorage.setItem(seen, "1");
+  } catch {
+    return;
+  }
+  const layer = document.querySelector("#confetti");
+  const colors = rows.map((row) => row.candidate.color);
+  colors.push("#f3e6d4");
+  for (let index = 0; index < 46; index += 1) {
+    const piece = document.createElement("span");
+    piece.className = "confetti-piece";
+    piece.style.left = `${Math.random() * 100}%`;
+    piece.style.background = colors[index % colors.length];
+    piece.style.animationDelay = `${Math.random() * 0.28}s`;
+    piece.style.animationDuration = `${1.55 + Math.random() * 0.7}s`;
+    piece.style.setProperty("--drift", `${Math.round((Math.random() - 0.5) * 140)}px`);
+    piece.style.setProperty("--spin", `${Math.round((Math.random() - 0.5) * 420)}deg`);
+    piece.style.width = `${6 + (index % 3) * 2}px`;
+    piece.style.height = `${9 + (index % 4) * 2}px`;
+    layer.appendChild(piece);
+  }
+  window.setTimeout(() => layer.replaceChildren(), 2600);
 }
 
 function runoffPlace(row, place, valid) {
