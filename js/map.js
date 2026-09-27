@@ -226,6 +226,10 @@ function openStation(index, nr) {
 function showPlace(feature, highlightNr) {
   const city = document.querySelector("#city-view");
   const place = document.querySelector("#place-view");
+  const panel = document.querySelector(".panel");
+  const columns = feature.properties.obwody.length + (feature.properties.obwody.length > 1 ? 1 : 0);
+  panel.classList.add("is-place");
+  panel.style.setProperty("--place-cols", String(columns));
   city.hidden = true;
   place.hidden = false;
   place.innerHTML = stationPopup(feature, highlightNr);
@@ -242,6 +246,9 @@ function closeSheet() {
   place.hidden = true;
   place.innerHTML = "";
   city.hidden = false;
+  const panel = document.querySelector(".panel");
+  panel.classList.remove("is-place");
+  panel.style.removeProperty("--place-cols");
   state.highlightNr = null;
   paintPrecincts();
   requestAnimationFrame(() => easeCity());
@@ -429,17 +436,14 @@ function precinctRow(nr) {
   return state.results.precincts[String(nr)] || null;
 }
 
-function cellClass(nr, highlightNr) {
-  return String(nr) === String(highlightNr) ? "is-focus" : "";
+function cellClass() {
+  return "";
 }
 
-function columnHead(nr, highlighted) {
-  const row = precinctRow(nr);
-  const badge = highlighted ? "Wybrany" : row && row.reported ? "Policzony" : "Niepoliczone";
-  return `<th scope="col" class="${highlighted ? "is-focus" : ""}"${highlighted ? ' aria-current="true"' : ""}>
+function columnHead(nr) {
+  return `<th scope="col">
       <span class="nr-label">Obwód</span>
       <span class="nr">${escapeHtml(nr)}</span>
-      <span class="status-badge${highlighted ? " is-selected" : ""}">${badge}</span>
     </th>`;
 }
 
