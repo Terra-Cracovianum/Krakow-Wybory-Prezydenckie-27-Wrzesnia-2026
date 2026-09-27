@@ -27,6 +27,94 @@ html, body {
   background: #f4f4f2;
 }
 
+.ticker {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 900;
+  display: flex;
+  align-items: stretch;
+  height: 36px;
+  background: #bb1919;
+  color: #fff;
+  overflow: hidden;
+}
+
+.ticker[hidden] { display: none; }
+
+.ticker-label {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  flex: none;
+  margin: 0;
+  padding: 0 14px;
+  background: #9e1212;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.ticker-live {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.ticker-viewport {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  mask-image: linear-gradient(90deg, transparent, #000 12px, #000 calc(100% - 18px), transparent);
+}
+
+.ticker-track {
+  display: flex;
+  width: max-content;
+  animation: ticker-run linear infinite;
+  animation-duration: var(--ticker-time, 28s);
+}
+
+.ticker-track span {
+  flex: none;
+  padding-right: 2.5rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+@keyframes ticker-run {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(var(--shift, 50%) * -1)); }
+}
+
+html.has-ticker,
+html.has-ticker body {
+  height: 100dvh;
+  overflow: hidden;
+}
+
+html.has-ticker body {
+  padding-top: 36px;
+}
+
+html.has-ticker .app {
+  height: 100%;
+  margin-top: 0;
+}
+
 .panel {
   --ink: #172026;
   --muted: #5c6764;
@@ -759,6 +847,7 @@ h1 {
 
 @media (prefers-reduced-motion: reduce) {
   .runoff { animation: none; }
+  .ticker-track { animation: none; }
   .confetti-piece { animation: none; display: none; }
   .panel { transition: none; }
   .status.is-flowing::before { animation: none; }
@@ -1050,6 +1139,24 @@ h1 {
 .leaflet-control-attribution a { color: #172026 !important; }
 
 @media (max-width: 860px) {
+  .ticker {
+    height: calc(34px + env(safe-area-inset-top));
+    padding-top: env(safe-area-inset-top);
+  }
+
+  .ticker-label { padding: 0 12px; font-size: 0.68rem; }
+
+  .ticker-track span { font-size: 0.9rem; }
+
+  html.has-ticker body {
+    padding-top: calc(34px + env(safe-area-inset-top));
+  }
+
+  html.has-ticker .app {
+    height: 100%;
+    margin-top: 0;
+  }
+
   .app {
     flex-direction: column;
     gap: 0;

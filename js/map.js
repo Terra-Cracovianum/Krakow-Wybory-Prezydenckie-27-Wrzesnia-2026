@@ -542,7 +542,10 @@ function renderRunoff() {
   const results = state.results;
   const complete = !results.sample && results.precinctsTotal > 0 && results.precinctsReporting >= results.precinctsTotal;
   card.hidden = !complete;
-  if (!complete) return;
+  if (!complete) {
+    hideTicker();
+    return;
+  }
   const ranked = state.candidates
     .filter((candidate) => !candidate.withdrawn)
     .map((candidate) => ({
@@ -562,7 +565,54 @@ function renderRunoff() {
   document.querySelector("#runoff-places").innerHTML = shown
     .map((row, index) => runoffPlace(row, index + 1, valid))
     .join("");
+  renderTicker(shown, elected);
   celebrateCount(shown);
+}
+
+function hideTicker() {
+  document.querySelector("#ticker").hidden = true;
+  document.documentElement.classList.remove("has-ticker");
+  document.querySelector("#ticker-live").textContent = "";
+  document.querySelector("#ticker-track").replaceChildren();
+}
+
+function renderTicker(shown, elected) {
+  const ticker = document.querySelector("#ticker");
+  const track = document.querySelector("#ticker-track");
+  const text = tickerLine(shown, elected);
+  document.querySelector("#ticker-live").textContent = text;
+  ticker.hidden = false;
+  document.documentElement.classList.add("has-ticker");
+  track.replaceChildren();
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const unit = document.createElement("span");
+  unit.textContent = text;
+  track.appendChild(unit);
+  if (reduce) return;
+  const unitWidth = unit.getBoundingClientRect().width;
+  if (unitWidth < 1) return;
+  const viewport = track.parentElement.clientWidth;
+  const copies = Math.max(2, Math.ceil((viewport * 2) / unitWidth));
+  for (let index = 1; index < copies; index += 1) track.appendChild(unit.cloneNode(true));
+  track.style.setProperty("--shift", `${unitWidth}px`);
+  track.style.setProperty("--ticker-time", `${Math.max(16, unitWidth / 70)}s`);
+}
+
+function tickerLine(shown, elected) {
+  const line = (row) => `${row.candidate.name}, ${formatCount(row.votes)} ${voteNoun(row.votes)}`;
+  if (elected || shown.length < 2) {
+    return `Wybrany w pierwszej turze. ${line(shown[0])}.`;
+  }
+  return `Druga tura, 11 października 2026. Do drugiej tury przechodzą ${line(shown[0])}, i ${line(shown[1])}.`;
+}
+
+function voteNoun(votes) {
+  const value = Math.abs(votes);
+  const mod10 = value % 10;
+  const mod100 = value % 100;
+  if (mod10 === 1 && mod100 !== 11) return "głos";
+  if (mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14)) return "głosy";
+  return "głosów";
 }
 
 function celebrateCount(rows) {
