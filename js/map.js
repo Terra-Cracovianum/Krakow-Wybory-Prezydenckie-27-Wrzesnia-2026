@@ -37,7 +37,7 @@ async function init() {
   const cityBounds = L.geoJSON(precincts).getBounds();
   state.cityBounds = cityBounds;
   const map = L.map("map", {
-    zoomControl: true,
+    zoomControl: false,
     zoomSnap: 0,
     zoomDelta: 1,
     minZoom: 10,
@@ -46,6 +46,7 @@ async function init() {
     maxBoundsViscosity: 1,
     worldCopyJump: false,
   });
+  L.control.zoom({ position: "bottomright" }).addTo(map);
   L.maplibreGL({
     style: "https://tiles.openfreemap.org/styles/positron",
   }).addTo(map);
@@ -58,11 +59,12 @@ async function init() {
     onEachFeature(feature, layer) {
       layer.on({
         mouseover(event) {
-          const selected = String(feature.properties.nr) === String(state.highlightNr);
-          event.target.setStyle(selected ? stylePrecinct(feature) : { weight: 2, color: "#14171c" });
+          event.target.setStyle(hoverPrecinct(feature));
+          if (String(feature.properties.nr) !== String(state.highlightNr)) event.target.bringToFront();
         },
         mouseout(event) {
           precinctLayer.resetStyle(event.target);
+          bringSelectedToFront();
         },
         click() {
           const stationIndex = stationIndexFor(feature.properties.nr);
@@ -120,19 +122,41 @@ async function init() {
   });
 }
 
+const pathEdge = { lineJoin: "round", lineCap: "round" };
+
 function stylePrecinct(feature) {
   const leader = leaderOf(feature.properties.nr);
   const selected = String(feature.properties.nr) === String(state.highlightNr);
   const base = leader
-    ? { color: "#0e1116", weight: 1, fillColor: leader.color, fillOpacity: 0.78 }
-    : { color: "#8b93a7", weight: 1, fillColor: "#243044", fillOpacity: 0.55 };
+    ? { color: "rgba(255,255,255,0.8)", weight: 0.75, opacity: 1, fillColor: leader.color, fillOpacity: 0.7, ...pathEdge }
+    : { color: "rgba(255,255,255,0.45)", weight: 0.6, opacity: 1, fillColor: "#31404c", fillOpacity: 0.4, ...pathEdge };
   if (!selected) return base;
   return {
-    color: "#f4efe6",
-    weight: 4,
-    fillColor: base.fillColor,
-    fillOpacity: 0.95,
+    ...base,
+    color: "#ffffff",
+    weight: 2.25,
+    fillOpacity: Math.min(0.9, base.fillOpacity + 0.22),
   };
+}
+
+function hoverPrecinct(feature) {
+  if (String(feature.properties.nr) === String(state.highlightNr)) return stylePrecinct(feature);
+  const base = stylePrecinct(feature);
+  return {
+    ...base,
+    color: "#ffffff",
+    weight: 1.35,
+    opacity: 0.92,
+    fillOpacity: Math.min(0.62, base.fillOpacity + 0.14),
+  };
+}
+
+function bringSelectedToFront() {
+  const nr = state.highlightNr;
+  if (!nr || !state.precinctLayer) return;
+  state.precinctLayer.eachLayer((shape) => {
+    if (String(shape.feature.properties.nr) === String(nr)) shape.bringToFront();
+  });
 }
 
 function paintPrecincts() {
