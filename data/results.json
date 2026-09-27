@@ -3,11 +3,13 @@
   "round": 1,
   "updatedAt": "2026-09-27T23:06:12+02:00",
   "precinctsTotal": 454,
-  "precinctsReporting": 211,
+  "precinctsReporting": 212,
+  "eligible": 227653,
   "ballots": 97134,
+  "validCards": 97128,
   "validVotes": 96535,
   "invalidVotes": 593,
-  "turnout": 42.7,
+  "turnout": 42.66,
   "candidates": {
     "drewnicki": 17626,
     "gibala": 35675,
@@ -23,6 +25,7 @@
       "reported": true,
       "eligible": 1518,
       "ballots": 660,
+      "validCards": 660,
       "validVotes": 660,
       "invalidVotes": 0,
       "votes": {
@@ -40,6 +43,7 @@
       "reported": true,
       "eligible": 1040,
       "ballots": 443,
+      "validCards": 443,
       "validVotes": 439,
       "invalidVotes": 4,
       "votes": {
@@ -89,6 +93,7 @@
       "reported": true,
       "eligible": 891,
       "ballots": 374,
+      "validCards": 374,
       "validVotes": 373,
       "invalidVotes": 1,
       "votes": {
@@ -106,6 +111,7 @@
       "reported": true,
       "eligible": 1165,
       "ballots": 431,
+      "validCards": 431,
       "validVotes": 429,
       "invalidVotes": 2,
       "votes": {
@@ -123,6 +129,7 @@
       "reported": true,
       "eligible": 1221,
       "ballots": 513,
+      "validCards": 513,
       "validVotes": 513,
       "invalidVotes": 0,
       "votes": {
@@ -188,6 +195,7 @@
       "reported": true,
       "eligible": 651,
       "ballots": 242,
+      "validCards": 242,
       "validVotes": 239,
       "invalidVotes": 3,
       "votes": {
@@ -221,6 +229,7 @@
       "reported": true,
       "eligible": 465,
       "ballots": 210,
+      "validCards": 210,
       "validVotes": 204,
       "invalidVotes": 6,
       "votes": {
@@ -318,6 +327,7 @@
       "reported": true,
       "eligible": 1056,
       "ballots": 464,
+      "validCards": 464,
       "validVotes": 459,
       "invalidVotes": 5,
       "votes": {
@@ -383,6 +393,7 @@
       "reported": true,
       "eligible": 780,
       "ballots": 300,
+      "validCards": 300,
       "validVotes": 297,
       "invalidVotes": 3,
       "votes": {
@@ -400,6 +411,7 @@
       "reported": true,
       "eligible": 1318,
       "ballots": 576,
+      "validCards": 576,
       "validVotes": 572,
       "invalidVotes": 4,
       "votes": {
@@ -417,6 +429,7 @@
       "reported": true,
       "eligible": 892,
       "ballots": 440,
+      "validCards": 440,
       "validVotes": 438,
       "invalidVotes": 2,
       "votes": {
@@ -434,6 +447,7 @@
       "reported": true,
       "eligible": 1443,
       "ballots": 596,
+      "validCards": 596,
       "validVotes": 592,
       "invalidVotes": 4,
       "votes": {
@@ -451,6 +465,7 @@
       "reported": true,
       "eligible": 1078,
       "ballots": 455,
+      "validCards": 455,
       "validVotes": 453,
       "invalidVotes": 2,
       "votes": {
@@ -532,6 +547,7 @@
       "reported": true,
       "eligible": 1564,
       "ballots": 679,
+      "validCards": 679,
       "validVotes": 677,
       "invalidVotes": 2,
       "votes": {
@@ -565,6 +581,7 @@
       "reported": true,
       "eligible": 910,
       "ballots": 362,
+      "validCards": 362,
       "validVotes": 361,
       "invalidVotes": 1,
       "votes": {
@@ -582,6 +599,7 @@
       "reported": true,
       "eligible": 1136,
       "ballots": 521,
+      "validCards": 521,
       "validVotes": 521,
       "invalidVotes": 0,
       "votes": {
@@ -615,6 +633,7 @@
       "reported": true,
       "eligible": 1109,
       "ballots": 466,
+      "validCards": 466,
       "validVotes": 465,
       "invalidVotes": 1,
       "votes": {
@@ -632,6 +651,7 @@
       "reported": true,
       "eligible": 1500,
       "ballots": 683,
+      "validCards": 683,
       "validVotes": 676,
       "invalidVotes": 7,
       "votes": {
@@ -649,6 +669,7 @@
       "reported": true,
       "eligible": 944,
       "ballots": 410,
+      "validCards": 410,
       "validVotes": 408,
       "invalidVotes": 2,
       "votes": {
@@ -682,6 +703,7 @@
       "reported": true,
       "eligible": 1908,
       "ballots": 841,
+      "validCards": 841,
       "validVotes": 836,
       "invalidVotes": 5,
       "votes": {
@@ -699,6 +721,7 @@
       "reported": true,
       "eligible": 1682,
       "ballots": 726,
+      "validCards": 726,
       "validVotes": 722,
       "invalidVotes": 4,
       "votes": {
@@ -732,6 +755,7 @@
       "reported": true,
       "eligible": 967,
       "ballots": 413,
+      "validCards": 413,
       "validVotes": 406,
       "invalidVotes": 7,
       "votes": {
@@ -749,6 +773,7 @@
       "reported": true,
       "eligible": 944,
       "ballots": 398,
+      "validCards": 398,
       "validVotes": 395,
       "invalidVotes": 3,
       "votes": {
@@ -782,6 +807,7 @@
       "reported": true,
       "eligible": 965,
       "ballots": 404,
+      "validCards": 404,
       "validVotes": 401,
       "invalidVotes": 3,
       "votes": {
@@ -847,6 +873,7 @@
       "reported": true,
       "eligible": 1063,
       "ballots": 419,
+      "validCards": 419,
       "validVotes": 416,
       "invalidVotes": 3,
       "votes": {
@@ -912,6 +939,7 @@
       "reported": true,
       "eligible": 973,
       "ballots": 382,
+      "validCards": 382,
       "validVotes": 381,
       "invalidVotes": 1,
       "votes": {
@@ -929,6 +957,7 @@
       "reported": true,
       "eligible": 2083,
       "ballots": 881,
+      "validCards": 881,
       "validVotes": 879,
       "invalidVotes": 2,
       "votes": {
@@ -962,6 +991,7 @@
       "reported": true,
       "eligible": 2068,
       "ballots": 927,
+      "validCards": 927,
       "validVotes": 923,
       "invalidVotes": 4,
       "votes": {
@@ -1075,6 +1105,7 @@
       "reported": true,
       "eligible": 1204,
       "ballots": 507,
+      "validCards": 507,
       "validVotes": 502,
       "invalidVotes": 5,
       "votes": {
@@ -1092,6 +1123,7 @@
       "reported": true,
       "eligible": 1317,
       "ballots": 573,
+      "validCards": 573,
       "validVotes": 572,
       "invalidVotes": 1,
       "votes": {
@@ -1109,6 +1141,7 @@
       "reported": true,
       "eligible": 1519,
       "ballots": 646,
+      "validCards": 646,
       "validVotes": 643,
       "invalidVotes": 3,
       "votes": {
@@ -1126,6 +1159,7 @@
       "reported": true,
       "eligible": 979,
       "ballots": 427,
+      "validCards": 427,
       "validVotes": 425,
       "invalidVotes": 2,
       "votes": {
@@ -1191,6 +1225,7 @@
       "reported": true,
       "eligible": 2321,
       "ballots": 995,
+      "validCards": 995,
       "validVotes": 991,
       "invalidVotes": 4,
       "votes": {
@@ -1208,6 +1243,7 @@
       "reported": true,
       "eligible": 2306,
       "ballots": 990,
+      "validCards": 990,
       "validVotes": 984,
       "invalidVotes": 6,
       "votes": {
@@ -1273,6 +1309,7 @@
       "reported": true,
       "eligible": 1631,
       "ballots": 761,
+      "validCards": 761,
       "validVotes": 754,
       "invalidVotes": 7,
       "votes": {
@@ -1290,6 +1327,7 @@
       "reported": true,
       "eligible": 933,
       "ballots": 448,
+      "validCards": 448,
       "validVotes": 444,
       "invalidVotes": 4,
       "votes": {
@@ -1323,6 +1361,7 @@
       "reported": true,
       "eligible": 1551,
       "ballots": 709,
+      "validCards": 709,
       "validVotes": 707,
       "invalidVotes": 2,
       "votes": {
@@ -1356,6 +1395,7 @@
       "reported": true,
       "eligible": 1312,
       "ballots": 560,
+      "validCards": 560,
       "validVotes": 558,
       "invalidVotes": 2,
       "votes": {
@@ -1405,6 +1445,7 @@
       "reported": true,
       "eligible": 1470,
       "ballots": 602,
+      "validCards": 602,
       "validVotes": 599,
       "invalidVotes": 3,
       "votes": {
@@ -1422,6 +1463,7 @@
       "reported": true,
       "eligible": 1180,
       "ballots": 489,
+      "validCards": 489,
       "validVotes": 484,
       "invalidVotes": 5,
       "votes": {
@@ -1439,6 +1481,7 @@
       "reported": true,
       "eligible": 1664,
       "ballots": 781,
+      "validCards": 781,
       "validVotes": 777,
       "invalidVotes": 4,
       "votes": {
@@ -1456,6 +1499,7 @@
       "reported": true,
       "eligible": 1200,
       "ballots": 500,
+      "validCards": 500,
       "validVotes": 497,
       "invalidVotes": 3,
       "votes": {
@@ -1489,6 +1533,7 @@
       "reported": true,
       "eligible": 1839,
       "ballots": 851,
+      "validCards": 851,
       "validVotes": 846,
       "invalidVotes": 5,
       "votes": {
@@ -1602,6 +1647,7 @@
       "reported": true,
       "eligible": 1427,
       "ballots": 661,
+      "validCards": 661,
       "validVotes": 659,
       "invalidVotes": 2,
       "votes": {
@@ -1619,6 +1665,7 @@
       "reported": true,
       "eligible": 1272,
       "ballots": 568,
+      "validCards": 568,
       "validVotes": 568,
       "invalidVotes": 0,
       "votes": {
@@ -1636,6 +1683,7 @@
       "reported": true,
       "eligible": 1327,
       "ballots": 519,
+      "validCards": 519,
       "validVotes": 518,
       "invalidVotes": 1,
       "votes": {
@@ -1653,6 +1701,7 @@
       "reported": true,
       "eligible": 922,
       "ballots": 373,
+      "validCards": 373,
       "validVotes": 372,
       "invalidVotes": 1,
       "votes": {
@@ -1670,6 +1719,7 @@
       "reported": true,
       "eligible": 1264,
       "ballots": 465,
+      "validCards": 465,
       "validVotes": 463,
       "invalidVotes": 2,
       "votes": {
@@ -1735,6 +1785,7 @@
       "reported": true,
       "eligible": 1699,
       "ballots": 637,
+      "validCards": 637,
       "validVotes": 636,
       "invalidVotes": 1,
       "votes": {
@@ -1800,6 +1851,7 @@
       "reported": true,
       "eligible": 1103,
       "ballots": 501,
+      "validCards": 501,
       "validVotes": 499,
       "invalidVotes": 2,
       "votes": {
@@ -1849,6 +1901,7 @@
       "reported": true,
       "eligible": 1325,
       "ballots": 581,
+      "validCards": 581,
       "validVotes": 578,
       "invalidVotes": 3,
       "votes": {
@@ -1914,6 +1967,7 @@
       "reported": true,
       "eligible": 619,
       "ballots": 281,
+      "validCards": 281,
       "validVotes": 280,
       "invalidVotes": 1,
       "votes": {
@@ -1995,6 +2049,7 @@
       "reported": true,
       "eligible": 762,
       "ballots": 336,
+      "validCards": 336,
       "validVotes": 336,
       "invalidVotes": 0,
       "votes": {
@@ -2108,6 +2163,7 @@
       "reported": true,
       "eligible": 1435,
       "ballots": 664,
+      "validCards": 664,
       "validVotes": 657,
       "invalidVotes": 7,
       "votes": {
@@ -2317,6 +2373,7 @@
       "reported": true,
       "eligible": 952,
       "ballots": 509,
+      "validCards": 509,
       "validVotes": 505,
       "invalidVotes": 4,
       "votes": {
@@ -2574,6 +2631,7 @@
       "reported": true,
       "eligible": 850,
       "ballots": 373,
+      "validCards": 373,
       "validVotes": 373,
       "invalidVotes": 0,
       "votes": {
@@ -2703,6 +2761,7 @@
       "reported": true,
       "eligible": 1935,
       "ballots": 843,
+      "validCards": 843,
       "validVotes": 838,
       "invalidVotes": 5,
       "votes": {
@@ -2720,6 +2779,7 @@
       "reported": true,
       "eligible": 1424,
       "ballots": 610,
+      "validCards": 610,
       "validVotes": 605,
       "invalidVotes": 5,
       "votes": {
@@ -2769,6 +2829,7 @@
       "reported": true,
       "eligible": 1648,
       "ballots": 773,
+      "validCards": 773,
       "validVotes": 770,
       "invalidVotes": 3,
       "votes": {
@@ -2786,6 +2847,7 @@
       "reported": true,
       "eligible": 1130,
       "ballots": 484,
+      "validCards": 484,
       "validVotes": 482,
       "invalidVotes": 2,
       "votes": {
@@ -2819,6 +2881,7 @@
       "reported": true,
       "eligible": 1701,
       "ballots": 708,
+      "validCards": 708,
       "validVotes": 707,
       "invalidVotes": 1,
       "votes": {
@@ -2836,6 +2899,7 @@
       "reported": true,
       "eligible": 1356,
       "ballots": 542,
+      "validCards": 542,
       "validVotes": 539,
       "invalidVotes": 3,
       "votes": {
@@ -2901,6 +2965,7 @@
       "reported": true,
       "eligible": 1368,
       "ballots": 612,
+      "validCards": 612,
       "validVotes": 608,
       "invalidVotes": 4,
       "votes": {
@@ -2918,6 +2983,7 @@
       "reported": true,
       "eligible": 1217,
       "ballots": 507,
+      "validCards": 507,
       "validVotes": 506,
       "invalidVotes": 1,
       "votes": {
@@ -2967,6 +3033,7 @@
       "reported": true,
       "eligible": 1360,
       "ballots": 596,
+      "validCards": 596,
       "validVotes": 594,
       "invalidVotes": 2,
       "votes": {
@@ -3016,6 +3083,7 @@
       "reported": true,
       "eligible": 1341,
       "ballots": 586,
+      "validCards": 586,
       "validVotes": 583,
       "invalidVotes": 3,
       "votes": {
@@ -3337,6 +3405,7 @@
       "reported": true,
       "eligible": 1239,
       "ballots": 525,
+      "validCards": 525,
       "validVotes": 523,
       "invalidVotes": 2,
       "votes": {
@@ -3386,6 +3455,7 @@
       "reported": true,
       "eligible": 809,
       "ballots": 368,
+      "validCards": 368,
       "validVotes": 365,
       "invalidVotes": 3,
       "votes": {
@@ -3403,6 +3473,7 @@
       "reported": true,
       "eligible": 846,
       "ballots": 375,
+      "validCards": 375,
       "validVotes": 374,
       "invalidVotes": 1,
       "votes": {
@@ -3436,6 +3507,7 @@
       "reported": true,
       "eligible": 1578,
       "ballots": 713,
+      "validCards": 713,
       "validVotes": 709,
       "invalidVotes": 4,
       "votes": {
@@ -3469,6 +3541,7 @@
       "reported": true,
       "eligible": 1314,
       "ballots": 596,
+      "validCards": 595,
       "validVotes": 592,
       "invalidVotes": 3,
       "votes": {
@@ -3502,6 +3575,7 @@
       "reported": true,
       "eligible": 1562,
       "ballots": 668,
+      "validCards": 668,
       "validVotes": 666,
       "invalidVotes": 2,
       "votes": {
@@ -3519,6 +3593,7 @@
       "reported": true,
       "eligible": 1524,
       "ballots": 648,
+      "validCards": 648,
       "validVotes": 642,
       "invalidVotes": 6,
       "votes": {
@@ -3552,6 +3627,7 @@
       "reported": true,
       "eligible": 1474,
       "ballots": 657,
+      "validCards": 657,
       "validVotes": 651,
       "invalidVotes": 6,
       "votes": {
@@ -3585,6 +3661,7 @@
       "reported": true,
       "eligible": 1614,
       "ballots": 674,
+      "validCards": 674,
       "validVotes": 670,
       "invalidVotes": 4,
       "votes": {
@@ -3618,6 +3695,7 @@
       "reported": true,
       "eligible": 1893,
       "ballots": 832,
+      "validCards": 832,
       "validVotes": 825,
       "invalidVotes": 7,
       "votes": {
@@ -3635,6 +3713,7 @@
       "reported": true,
       "eligible": 1668,
       "ballots": 732,
+      "validCards": 732,
       "validVotes": 727,
       "invalidVotes": 5,
       "votes": {
@@ -3684,6 +3763,7 @@
       "reported": true,
       "eligible": 1400,
       "ballots": 578,
+      "validCards": 578,
       "validVotes": 576,
       "invalidVotes": 2,
       "votes": {
@@ -3701,6 +3781,7 @@
       "reported": true,
       "eligible": 1083,
       "ballots": 447,
+      "validCards": 447,
       "validVotes": 442,
       "invalidVotes": 5,
       "votes": {
@@ -3782,6 +3863,7 @@
       "reported": true,
       "eligible": 1353,
       "ballots": 597,
+      "validCards": 597,
       "validVotes": 590,
       "invalidVotes": 7,
       "votes": {
@@ -3799,6 +3881,7 @@
       "reported": true,
       "eligible": 1506,
       "ballots": 564,
+      "validCards": 564,
       "validVotes": 562,
       "invalidVotes": 2,
       "votes": {
@@ -3816,6 +3899,7 @@
       "reported": true,
       "eligible": 1709,
       "ballots": 732,
+      "validCards": 732,
       "validVotes": 726,
       "invalidVotes": 6,
       "votes": {
@@ -3913,6 +3997,7 @@
       "reported": true,
       "eligible": 1061,
       "ballots": 488,
+      "validCards": 488,
       "validVotes": 485,
       "invalidVotes": 3,
       "votes": {
@@ -3946,6 +4031,7 @@
       "reported": true,
       "eligible": 976,
       "ballots": 333,
+      "validCards": 333,
       "validVotes": 328,
       "invalidVotes": 5,
       "votes": {
@@ -3963,6 +4049,7 @@
       "reported": true,
       "eligible": 1574,
       "ballots": 600,
+      "validCards": 600,
       "validVotes": 597,
       "invalidVotes": 3,
       "votes": {
@@ -3980,6 +4067,7 @@
       "reported": true,
       "eligible": 1195,
       "ballots": 508,
+      "validCards": 508,
       "validVotes": 505,
       "invalidVotes": 3,
       "votes": {
@@ -3997,6 +4085,7 @@
       "reported": true,
       "eligible": 1521,
       "ballots": 735,
+      "validCards": 735,
       "validVotes": 729,
       "invalidVotes": 6,
       "votes": {
@@ -4014,6 +4103,7 @@
       "reported": true,
       "eligible": 1230,
       "ballots": 589,
+      "validCards": 589,
       "validVotes": 587,
       "invalidVotes": 2,
       "votes": {
@@ -4031,6 +4121,7 @@
       "reported": true,
       "eligible": 1248,
       "ballots": 592,
+      "validCards": 592,
       "validVotes": 586,
       "invalidVotes": 6,
       "votes": {
@@ -4064,6 +4155,7 @@
       "reported": true,
       "eligible": 1624,
       "ballots": 704,
+      "validCards": 704,
       "validVotes": 699,
       "invalidVotes": 5,
       "votes": {
@@ -4081,6 +4173,7 @@
       "reported": true,
       "eligible": 1586,
       "ballots": 636,
+      "validCards": 636,
       "validVotes": 629,
       "invalidVotes": 7,
       "votes": {
@@ -4114,6 +4207,7 @@
       "reported": true,
       "eligible": 1054,
       "ballots": 461,
+      "validCards": 461,
       "validVotes": 459,
       "invalidVotes": 2,
       "votes": {
@@ -4131,6 +4225,7 @@
       "reported": true,
       "eligible": 1073,
       "ballots": 488,
+      "validCards": 488,
       "validVotes": 486,
       "invalidVotes": 2,
       "votes": {
@@ -4164,6 +4259,7 @@
       "reported": true,
       "eligible": 1009,
       "ballots": 351,
+      "validCards": 351,
       "validVotes": 350,
       "invalidVotes": 1,
       "votes": {
@@ -4181,6 +4277,7 @@
       "reported": true,
       "eligible": 1109,
       "ballots": 450,
+      "validCards": 450,
       "validVotes": 450,
       "invalidVotes": 0,
       "votes": {
@@ -4198,6 +4295,7 @@
       "reported": true,
       "eligible": 1335,
       "ballots": 562,
+      "validCards": 562,
       "validVotes": 561,
       "invalidVotes": 1,
       "votes": {
@@ -4231,6 +4329,7 @@
       "reported": true,
       "eligible": 1283,
       "ballots": 612,
+      "validCards": 612,
       "validVotes": 608,
       "invalidVotes": 4,
       "votes": {
@@ -4296,6 +4395,7 @@
       "reported": true,
       "eligible": 1623,
       "ballots": 725,
+      "validCards": 725,
       "validVotes": 719,
       "invalidVotes": 6,
       "votes": {
@@ -4313,6 +4413,7 @@
       "reported": true,
       "eligible": 1873,
       "ballots": 823,
+      "validCards": 823,
       "validVotes": 817,
       "invalidVotes": 6,
       "votes": {
@@ -4330,6 +4431,7 @@
       "reported": true,
       "eligible": 2074,
       "ballots": 875,
+      "validCards": 875,
       "validVotes": 871,
       "invalidVotes": 4,
       "votes": {
@@ -4379,6 +4481,7 @@
       "reported": true,
       "eligible": 1792,
       "ballots": 834,
+      "validCards": 834,
       "validVotes": 828,
       "invalidVotes": 6,
       "votes": {
@@ -4412,6 +4515,7 @@
       "reported": true,
       "eligible": 1908,
       "ballots": 812,
+      "validCards": 812,
       "validVotes": 809,
       "invalidVotes": 3,
       "votes": {
@@ -4445,6 +4549,7 @@
       "reported": true,
       "eligible": 1337,
       "ballots": 590,
+      "validCards": 590,
       "validVotes": 584,
       "invalidVotes": 6,
       "votes": {
@@ -4478,6 +4583,7 @@
       "reported": true,
       "eligible": 1984,
       "ballots": 821,
+      "validCards": 821,
       "validVotes": 815,
       "invalidVotes": 6,
       "votes": {
@@ -4575,6 +4681,7 @@
       "reported": true,
       "eligible": 1800,
       "ballots": 808,
+      "validCards": 807,
       "validVotes": 803,
       "invalidVotes": 4,
       "votes": {
@@ -4608,6 +4715,7 @@
       "reported": true,
       "eligible": 1466,
       "ballots": 640,
+      "validCards": 640,
       "validVotes": 635,
       "invalidVotes": 5,
       "votes": {
@@ -4641,6 +4749,7 @@
       "reported": true,
       "eligible": 1506,
       "ballots": 672,
+      "validCards": 672,
       "validVotes": 666,
       "invalidVotes": 6,
       "votes": {
@@ -4674,6 +4783,7 @@
       "reported": true,
       "eligible": 853,
       "ballots": 373,
+      "validCards": 373,
       "validVotes": 371,
       "invalidVotes": 2,
       "votes": {
@@ -4691,6 +4801,7 @@
       "reported": true,
       "eligible": 1403,
       "ballots": 678,
+      "validCards": 678,
       "validVotes": 671,
       "invalidVotes": 7,
       "votes": {
@@ -4708,6 +4819,7 @@
       "reported": true,
       "eligible": 883,
       "ballots": 363,
+      "validCards": 363,
       "validVotes": 362,
       "invalidVotes": 1,
       "votes": {
@@ -4757,6 +4869,7 @@
       "reported": true,
       "eligible": 1544,
       "ballots": 643,
+      "validCards": 643,
       "validVotes": 637,
       "invalidVotes": 6,
       "votes": {
@@ -4774,6 +4887,7 @@
       "reported": true,
       "eligible": 1106,
       "ballots": 449,
+      "validCards": 448,
       "validVotes": 446,
       "invalidVotes": 2,
       "votes": {
@@ -4807,6 +4921,7 @@
       "reported": true,
       "eligible": 1117,
       "ballots": 483,
+      "validCards": 483,
       "validVotes": 482,
       "invalidVotes": 1,
       "votes": {
@@ -4888,6 +5003,7 @@
       "reported": true,
       "eligible": 1193,
       "ballots": 495,
+      "validCards": 495,
       "validVotes": 495,
       "invalidVotes": 0,
       "votes": {
@@ -4905,6 +5021,7 @@
       "reported": true,
       "eligible": 1148,
       "ballots": 508,
+      "validCards": 508,
       "validVotes": 503,
       "invalidVotes": 5,
       "votes": {
@@ -4922,6 +5039,7 @@
       "reported": true,
       "eligible": 1629,
       "ballots": 667,
+      "validCards": 667,
       "validVotes": 665,
       "invalidVotes": 2,
       "votes": {
@@ -4955,6 +5073,7 @@
       "reported": true,
       "eligible": 1750,
       "ballots": 812,
+      "validCards": 812,
       "validVotes": 805,
       "invalidVotes": 7,
       "votes": {
@@ -4988,6 +5107,7 @@
       "reported": true,
       "eligible": 1408,
       "ballots": 608,
+      "validCards": 608,
       "validVotes": 606,
       "invalidVotes": 2,
       "votes": {
@@ -5053,6 +5173,7 @@
       "reported": true,
       "eligible": 1301,
       "ballots": 587,
+      "validCards": 587,
       "validVotes": 582,
       "invalidVotes": 5,
       "votes": {
@@ -5070,6 +5191,7 @@
       "reported": true,
       "eligible": 912,
       "ballots": 498,
+      "validCards": 498,
       "validVotes": 495,
       "invalidVotes": 3,
       "votes": {
@@ -5167,6 +5289,7 @@
       "reported": true,
       "eligible": 1536,
       "ballots": 715,
+      "validCards": 715,
       "validVotes": 712,
       "invalidVotes": 3,
       "votes": {
@@ -5200,6 +5323,7 @@
       "reported": true,
       "eligible": 1553,
       "ballots": 682,
+      "validCards": 682,
       "validVotes": 681,
       "invalidVotes": 1,
       "votes": {
@@ -5233,6 +5357,7 @@
       "reported": true,
       "eligible": 1656,
       "ballots": 685,
+      "validCards": 685,
       "validVotes": 682,
       "invalidVotes": 3,
       "votes": {
@@ -5298,6 +5423,7 @@
       "reported": true,
       "eligible": 1429,
       "ballots": 641,
+      "validCards": 641,
       "validVotes": 635,
       "invalidVotes": 6,
       "votes": {
@@ -5347,6 +5473,7 @@
       "reported": true,
       "eligible": 1285,
       "ballots": 525,
+      "validCards": 525,
       "validVotes": 524,
       "invalidVotes": 1,
       "votes": {
@@ -5364,6 +5491,7 @@
       "reported": true,
       "eligible": 1577,
       "ballots": 708,
+      "validCards": 708,
       "validVotes": 706,
       "invalidVotes": 2,
       "votes": {
@@ -5381,6 +5509,7 @@
       "reported": true,
       "eligible": 1360,
       "ballots": 483,
+      "validCards": 483,
       "validVotes": 479,
       "invalidVotes": 4,
       "votes": {
@@ -5430,6 +5559,7 @@
       "reported": true,
       "eligible": 1636,
       "ballots": 602,
+      "validCards": 602,
       "validVotes": 599,
       "invalidVotes": 3,
       "votes": {
@@ -5447,6 +5577,7 @@
       "reported": true,
       "eligible": 1717,
       "ballots": 700,
+      "validCards": 700,
       "validVotes": 695,
       "invalidVotes": 5,
       "votes": {
@@ -5464,6 +5595,7 @@
       "reported": true,
       "eligible": 1841,
       "ballots": 787,
+      "validCards": 787,
       "validVotes": 783,
       "invalidVotes": 4,
       "votes": {
@@ -5529,6 +5661,7 @@
       "reported": true,
       "eligible": 972,
       "ballots": 373,
+      "validCards": 373,
       "validVotes": 372,
       "invalidVotes": 1,
       "votes": {
@@ -5594,6 +5727,7 @@
       "reported": true,
       "eligible": 1182,
       "ballots": 330,
+      "validCards": 330,
       "validVotes": 328,
       "invalidVotes": 2,
       "votes": {
@@ -5643,6 +5777,7 @@
       "reported": true,
       "eligible": 1059,
       "ballots": 380,
+      "validCards": 380,
       "validVotes": 377,
       "invalidVotes": 3,
       "votes": {
@@ -5692,6 +5827,7 @@
       "reported": true,
       "eligible": 1117,
       "ballots": 441,
+      "validCards": 438,
       "validVotes": 437,
       "invalidVotes": 1,
       "votes": {
@@ -5709,6 +5845,7 @@
       "reported": true,
       "eligible": 1054,
       "ballots": 402,
+      "validCards": 402,
       "validVotes": 398,
       "invalidVotes": 4,
       "votes": {
@@ -5838,6 +5975,7 @@
       "reported": true,
       "eligible": 1045,
       "ballots": 451,
+      "validCards": 451,
       "validVotes": 445,
       "invalidVotes": 6,
       "votes": {
@@ -5919,6 +6057,7 @@
       "reported": true,
       "eligible": 1398,
       "ballots": 570,
+      "validCards": 570,
       "validVotes": 569,
       "invalidVotes": 1,
       "votes": {
@@ -5952,6 +6091,7 @@
       "reported": true,
       "eligible": 1328,
       "ballots": 505,
+      "validCards": 505,
       "validVotes": 500,
       "invalidVotes": 5,
       "votes": {
@@ -5969,6 +6109,7 @@
       "reported": true,
       "eligible": 1530,
       "ballots": 498,
+      "validCards": 498,
       "validVotes": 493,
       "invalidVotes": 5,
       "votes": {
@@ -6002,6 +6143,7 @@
       "reported": true,
       "eligible": 955,
       "ballots": 332,
+      "validCards": 332,
       "validVotes": 331,
       "invalidVotes": 1,
       "votes": {
@@ -6019,6 +6161,7 @@
       "reported": true,
       "eligible": 1725,
       "ballots": 862,
+      "validCards": 862,
       "validVotes": 860,
       "invalidVotes": 2,
       "votes": {
@@ -6052,6 +6195,7 @@
       "reported": true,
       "eligible": 866,
       "ballots": 344,
+      "validCards": 344,
       "validVotes": 342,
       "invalidVotes": 2,
       "votes": {
@@ -6069,6 +6213,7 @@
       "reported": true,
       "eligible": 864,
       "ballots": 429,
+      "validCards": 429,
       "validVotes": 427,
       "invalidVotes": 2,
       "votes": {
@@ -6086,6 +6231,7 @@
       "reported": true,
       "eligible": 1214,
       "ballots": 499,
+      "validCards": 499,
       "validVotes": 497,
       "invalidVotes": 2,
       "votes": {
@@ -6135,6 +6281,7 @@
       "reported": true,
       "eligible": 1473,
       "ballots": 611,
+      "validCards": 611,
       "validVotes": 604,
       "invalidVotes": 7,
       "votes": {
@@ -6168,6 +6315,7 @@
       "reported": true,
       "eligible": 1402,
       "ballots": 514,
+      "validCards": 514,
       "validVotes": 511,
       "invalidVotes": 3,
       "votes": {
@@ -6185,6 +6333,7 @@
       "reported": true,
       "eligible": 779,
       "ballots": 352,
+      "validCards": 352,
       "validVotes": 351,
       "invalidVotes": 1,
       "votes": {
@@ -6202,6 +6351,7 @@
       "reported": true,
       "eligible": 892,
       "ballots": 380,
+      "validCards": 380,
       "validVotes": 377,
       "invalidVotes": 3,
       "votes": {
@@ -6219,6 +6369,7 @@
       "reported": true,
       "eligible": 896,
       "ballots": 355,
+      "validCards": 355,
       "validVotes": 353,
       "invalidVotes": 2,
       "votes": {
@@ -6236,6 +6387,7 @@
       "reported": true,
       "eligible": 985,
       "ballots": 446,
+      "validCards": 446,
       "validVotes": 443,
       "invalidVotes": 3,
       "votes": {
@@ -6253,6 +6405,7 @@
       "reported": true,
       "eligible": 1214,
       "ballots": 480,
+      "validCards": 480,
       "validVotes": 474,
       "invalidVotes": 6,
       "votes": {
@@ -6270,6 +6423,7 @@
       "reported": true,
       "eligible": 713,
       "ballots": 317,
+      "validCards": 317,
       "validVotes": 314,
       "invalidVotes": 3,
       "votes": {
@@ -6287,6 +6441,7 @@
       "reported": true,
       "eligible": 1091,
       "ballots": 414,
+      "validCards": 414,
       "validVotes": 411,
       "invalidVotes": 3,
       "votes": {
@@ -6320,6 +6475,7 @@
       "reported": true,
       "eligible": 1237,
       "ballots": 512,
+      "validCards": 512,
       "validVotes": 511,
       "invalidVotes": 1,
       "votes": {
@@ -6337,6 +6493,7 @@
       "reported": true,
       "eligible": 1246,
       "ballots": 533,
+      "validCards": 533,
       "validVotes": 532,
       "invalidVotes": 1,
       "votes": {
@@ -6354,6 +6511,7 @@
       "reported": true,
       "eligible": 818,
       "ballots": 345,
+      "validCards": 345,
       "validVotes": 342,
       "invalidVotes": 3,
       "votes": {
@@ -6371,6 +6529,7 @@
       "reported": true,
       "eligible": 992,
       "ballots": 432,
+      "validCards": 432,
       "validVotes": 431,
       "invalidVotes": 1,
       "votes": {
@@ -6388,6 +6547,7 @@
       "reported": true,
       "eligible": 1041,
       "ballots": 418,
+      "validCards": 418,
       "validVotes": 416,
       "invalidVotes": 2,
       "votes": {
@@ -6405,6 +6565,7 @@
       "reported": true,
       "eligible": 1111,
       "ballots": 410,
+      "validCards": 410,
       "validVotes": 405,
       "invalidVotes": 5,
       "votes": {
@@ -6422,6 +6583,7 @@
       "reported": true,
       "eligible": 1503,
       "ballots": 600,
+      "validCards": 600,
       "validVotes": 598,
       "invalidVotes": 2,
       "votes": {
@@ -6439,6 +6601,7 @@
       "reported": true,
       "eligible": 915,
       "ballots": 415,
+      "validCards": 415,
       "validVotes": 415,
       "invalidVotes": 0,
       "votes": {
@@ -6488,6 +6651,7 @@
       "reported": true,
       "eligible": 1063,
       "ballots": 387,
+      "validCards": 387,
       "validVotes": 384,
       "invalidVotes": 3,
       "votes": {
@@ -6521,6 +6685,7 @@
       "reported": true,
       "eligible": 982,
       "ballots": 401,
+      "validCards": 401,
       "validVotes": 398,
       "invalidVotes": 3,
       "votes": {
@@ -6538,6 +6703,7 @@
       "reported": true,
       "eligible": 835,
       "ballots": 375,
+      "validCards": 375,
       "validVotes": 373,
       "invalidVotes": 2,
       "votes": {
@@ -6555,6 +6721,7 @@
       "reported": true,
       "eligible": 1358,
       "ballots": 587,
+      "validCards": 587,
       "validVotes": 585,
       "invalidVotes": 2,
       "votes": {
@@ -6572,6 +6739,7 @@
       "reported": true,
       "eligible": 1758,
       "ballots": 748,
+      "validCards": 748,
       "validVotes": 742,
       "invalidVotes": 6,
       "votes": {
@@ -6589,6 +6757,7 @@
       "reported": true,
       "eligible": 273,
       "ballots": 127,
+      "validCards": 127,
       "validVotes": 127,
       "invalidVotes": 0,
       "votes": {
@@ -6638,6 +6807,7 @@
       "reported": true,
       "eligible": 1523,
       "ballots": 641,
+      "validCards": 641,
       "validVotes": 634,
       "invalidVotes": 7,
       "votes": {
@@ -6655,6 +6825,7 @@
       "reported": true,
       "eligible": 1082,
       "ballots": 504,
+      "validCards": 504,
       "validVotes": 503,
       "invalidVotes": 1,
       "votes": {
@@ -6672,6 +6843,7 @@
       "reported": true,
       "eligible": 1702,
       "ballots": 793,
+      "validCards": 793,
       "validVotes": 787,
       "invalidVotes": 6,
       "votes": {
@@ -6705,6 +6877,7 @@
       "reported": true,
       "eligible": 1930,
       "ballots": 816,
+      "validCards": 816,
       "validVotes": 811,
       "invalidVotes": 5,
       "votes": {
@@ -6754,6 +6927,7 @@
       "reported": true,
       "eligible": 726,
       "ballots": 316,
+      "validCards": 316,
       "validVotes": 310,
       "invalidVotes": 6,
       "votes": {
@@ -6771,6 +6945,7 @@
       "reported": true,
       "eligible": 1282,
       "ballots": 582,
+      "validCards": 582,
       "validVotes": 579,
       "invalidVotes": 3,
       "votes": {
@@ -6788,6 +6963,7 @@
       "reported": true,
       "eligible": 11,
       "ballots": 9,
+      "validCards": 9,
       "validVotes": 9,
       "invalidVotes": 0,
       "votes": {
@@ -6805,6 +6981,7 @@
       "reported": true,
       "eligible": 145,
       "ballots": 54,
+      "validCards": 54,
       "validVotes": 53,
       "invalidVotes": 1,
       "votes": {
@@ -6819,25 +6996,28 @@
       }
     },
     "415": {
-      "reported": false,
-      "ballots": null,
-      "validVotes": null,
-      "invalidVotes": null,
+      "reported": true,
+      "eligible": 10,
+      "ballots": 0,
+      "validCards": 0,
+      "validVotes": 0,
+      "invalidVotes": 0,
       "votes": {
-        "drewnicki": null,
-        "gibala": null,
-        "gosek": null,
-        "hoffman": null,
-        "klimek": null,
-        "owca": null,
-        "piatkowska": null,
-        "pietrzyk": null
+        "drewnicki": 0,
+        "gibala": 0,
+        "gosek": 0,
+        "hoffman": 0,
+        "klimek": 0,
+        "owca": 0,
+        "piatkowska": 0,
+        "pietrzyk": 0
       }
     },
     "416": {
       "reported": true,
       "eligible": 66,
       "ballots": 30,
+      "validCards": 30,
       "validVotes": 30,
       "invalidVotes": 0,
       "votes": {
@@ -6855,6 +7035,7 @@
       "reported": true,
       "eligible": 4,
       "ballots": 2,
+      "validCards": 2,
       "validVotes": 2,
       "invalidVotes": 0,
       "votes": {
@@ -6872,6 +7053,7 @@
       "reported": true,
       "eligible": 293,
       "ballots": 79,
+      "validCards": 79,
       "validVotes": 76,
       "invalidVotes": 3,
       "votes": {
@@ -6889,6 +7071,7 @@
       "reported": true,
       "eligible": 100,
       "ballots": 56,
+      "validCards": 56,
       "validVotes": 56,
       "invalidVotes": 0,
       "votes": {
@@ -6906,6 +7089,7 @@
       "reported": true,
       "eligible": 47,
       "ballots": 20,
+      "validCards": 20,
       "validVotes": 20,
       "invalidVotes": 0,
       "votes": {
@@ -6923,6 +7107,7 @@
       "reported": true,
       "eligible": 42,
       "ballots": 15,
+      "validCards": 15,
       "validVotes": 15,
       "invalidVotes": 0,
       "votes": {
@@ -6940,6 +7125,7 @@
       "reported": true,
       "eligible": 18,
       "ballots": 1,
+      "validCards": 1,
       "validVotes": 1,
       "invalidVotes": 0,
       "votes": {
@@ -6957,6 +7143,7 @@
       "reported": true,
       "eligible": 84,
       "ballots": 59,
+      "validCards": 59,
       "validVotes": 59,
       "invalidVotes": 0,
       "votes": {
@@ -6974,6 +7161,7 @@
       "reported": true,
       "eligible": 69,
       "ballots": 38,
+      "validCards": 38,
       "validVotes": 38,
       "invalidVotes": 0,
       "votes": {
@@ -6991,6 +7179,7 @@
       "reported": true,
       "eligible": 82,
       "ballots": 38,
+      "validCards": 38,
       "validVotes": 32,
       "invalidVotes": 6,
       "votes": {
@@ -7008,6 +7197,7 @@
       "reported": true,
       "eligible": 36,
       "ballots": 17,
+      "validCards": 17,
       "validVotes": 17,
       "invalidVotes": 0,
       "votes": {
@@ -7025,6 +7215,7 @@
       "reported": true,
       "eligible": 40,
       "ballots": 16,
+      "validCards": 16,
       "validVotes": 16,
       "invalidVotes": 0,
       "votes": {
@@ -7042,6 +7233,7 @@
       "reported": true,
       "eligible": 23,
       "ballots": 20,
+      "validCards": 20,
       "validVotes": 20,
       "invalidVotes": 0,
       "votes": {
@@ -7059,6 +7251,7 @@
       "reported": true,
       "eligible": 30,
       "ballots": 28,
+      "validCards": 28,
       "validVotes": 28,
       "invalidVotes": 0,
       "votes": {
@@ -7076,6 +7269,7 @@
       "reported": true,
       "eligible": 66,
       "ballots": 6,
+      "validCards": 6,
       "validVotes": 6,
       "invalidVotes": 0,
       "votes": {
@@ -7093,6 +7287,7 @@
       "reported": true,
       "eligible": 77,
       "ballots": 27,
+      "validCards": 27,
       "validVotes": 26,
       "invalidVotes": 1,
       "votes": {
@@ -7110,6 +7305,7 @@
       "reported": true,
       "eligible": 131,
       "ballots": 50,
+      "validCards": 50,
       "validVotes": 47,
       "invalidVotes": 3,
       "votes": {
@@ -7127,6 +7323,7 @@
       "reported": true,
       "eligible": 44,
       "ballots": 18,
+      "validCards": 18,
       "validVotes": 15,
       "invalidVotes": 3,
       "votes": {
@@ -7144,6 +7341,7 @@
       "reported": true,
       "eligible": 28,
       "ballots": 26,
+      "validCards": 26,
       "validVotes": 26,
       "invalidVotes": 0,
       "votes": {
@@ -7177,6 +7375,7 @@
       "reported": true,
       "eligible": 50,
       "ballots": 14,
+      "validCards": 14,
       "validVotes": 14,
       "invalidVotes": 0,
       "votes": {
@@ -7194,6 +7393,7 @@
       "reported": true,
       "eligible": 24,
       "ballots": 15,
+      "validCards": 15,
       "validVotes": 15,
       "invalidVotes": 0,
       "votes": {
@@ -7211,6 +7411,7 @@
       "reported": true,
       "eligible": 237,
       "ballots": 46,
+      "validCards": 46,
       "validVotes": 43,
       "invalidVotes": 3,
       "votes": {
@@ -7228,6 +7429,7 @@
       "reported": true,
       "eligible": 101,
       "ballots": 38,
+      "validCards": 38,
       "validVotes": 38,
       "invalidVotes": 0,
       "votes": {
@@ -7245,6 +7447,7 @@
       "reported": true,
       "eligible": 88,
       "ballots": 26,
+      "validCards": 26,
       "validVotes": 26,
       "invalidVotes": 0,
       "votes": {
@@ -7262,6 +7465,7 @@
       "reported": true,
       "eligible": 109,
       "ballots": 37,
+      "validCards": 37,
       "validVotes": 36,
       "invalidVotes": 1,
       "votes": {
@@ -7279,6 +7483,7 @@
       "reported": true,
       "eligible": 33,
       "ballots": 15,
+      "validCards": 15,
       "validVotes": 15,
       "invalidVotes": 0,
       "votes": {
@@ -7296,6 +7501,7 @@
       "reported": true,
       "eligible": 83,
       "ballots": 19,
+      "validCards": 19,
       "validVotes": 18,
       "invalidVotes": 1,
       "votes": {
@@ -7313,6 +7519,7 @@
       "reported": true,
       "eligible": 213,
       "ballots": 64,
+      "validCards": 64,
       "validVotes": 60,
       "invalidVotes": 4,
       "votes": {
@@ -7362,6 +7569,7 @@
       "reported": true,
       "eligible": 17,
       "ballots": 16,
+      "validCards": 16,
       "validVotes": 15,
       "invalidVotes": 1,
       "votes": {
@@ -7379,6 +7587,7 @@
       "reported": true,
       "eligible": 40,
       "ballots": 19,
+      "validCards": 19,
       "validVotes": 19,
       "invalidVotes": 0,
       "votes": {
@@ -7396,6 +7605,7 @@
       "reported": true,
       "eligible": 31,
       "ballots": 23,
+      "validCards": 23,
       "validVotes": 21,
       "invalidVotes": 2,
       "votes": {
@@ -7413,6 +7623,7 @@
       "reported": true,
       "eligible": 45,
       "ballots": 16,
+      "validCards": 16,
       "validVotes": 12,
       "invalidVotes": 4,
       "votes": {
@@ -7430,6 +7641,7 @@
       "reported": true,
       "eligible": 43,
       "ballots": 43,
+      "validCards": 43,
       "validVotes": 43,
       "invalidVotes": 0,
       "votes": {
@@ -7447,6 +7659,7 @@
       "reported": true,
       "eligible": 50,
       "ballots": 5,
+      "validCards": 5,
       "validVotes": 5,
       "invalidVotes": 0,
       "votes": {
@@ -7464,6 +7677,7 @@
       "reported": true,
       "eligible": 8,
       "ballots": 8,
+      "validCards": 8,
       "validVotes": 8,
       "invalidVotes": 0,
       "votes": {
@@ -7481,6 +7695,7 @@
       "reported": true,
       "eligible": 57,
       "ballots": 3,
+      "validCards": 3,
       "validVotes": 2,
       "invalidVotes": 1,
       "votes": {
