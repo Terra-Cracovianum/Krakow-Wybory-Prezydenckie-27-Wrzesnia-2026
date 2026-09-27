@@ -7,6 +7,7 @@ const state = {
   highlightNr: null,
   map: null,
   cityBounds: null,
+  focusFeature: null,
 };
 
 const query = document.querySelector("#query");
@@ -84,8 +85,9 @@ async function init() {
   fitCity();
   const refitSoon = () => {
     if (settling) return;
-    map.invalidateSize({ animate: false });
-    fitCity();
+    map.invalidateSize({ animate: false, pan: false });
+    if (placeIsOpen()) fitPrecinct(false);
+    else fitCity();
     syncBasemap();
   };
   map.on("resize", refitSoon);
@@ -112,6 +114,7 @@ function stylePrecinct(feature) {
   const base = leader
     ? { color: "rgba(255,255,255,0.8)", weight: 0.75, opacity: 1, fillColor: leader.color, fillOpacity: 0.7, ...pathEdge }
     : { color: "rgba(255,255,255,0.45)", weight: 0.6, opacity: 1, fillColor: "#31404c", fillOpacity: 0.4, ...pathEdge };
+  if (state.highlightNr && !selected) return { ...base, fillOpacity: base.fillOpacity * 0.45 };
   if (!selected) return base;
   return {
     ...base,
@@ -171,6 +174,8 @@ function stationIndexFor(nr) {
 
 let fitting = false;
 let settling = false;
+let focusDone = null;
+let cancelGlide = () => {};
 
 function viewPadding() {
   const mapEl = document.querySelector("#map").getBoundingClientRect();
@@ -185,7 +190,13 @@ function viewPadding() {
 
 function fitCity() {
   const map = state.map;
-  if (!map || fitting) return;
+  if (!map || fitting === "city") return;
+  if (focusDone) {
+    map.off("moveend", focusDone);
+    focusDone = null;
+  }
+  map.stop();
+  fitting = false;
   const size = map.getSize();
   if (size.x < 40 || size.y < 40) return;
   const pad = viewPadding();
@@ -195,13 +206,91 @@ function fitCity() {
   map.setMinZoom(fitted);
   const zoom = map.getZoom();
   if (zoom != null && map.getBounds().contains(state.cityBounds) && zoom <= fitted + 0.01) return;
-  fitting = true;
+  fitting = "city";
   map.fitBounds(state.cityBounds, { ...pad, animate: false });
   fitting = false;
 }
 
 function easeCity() {
   glideCity();
+}
+
+function placeIsOpen() {
+  return !document.querySelector("#place-view").hidden;
+}
+
+function precinctShape(nr) {
+  let found = null;
+  state.precinctLayer.eachLayer((shape) => {
+    if (String(shape.feature.properties.nr) === String(nr)) found = shape;
+  });
+  return found;
+}
+
+function boundsForNumbers(numbers) {
+  let bounds = null;
+  for (const nr of numbers) {
+    const shape = precinctShape(nr);
+    if (!shape) continue;
+    const next = shape.getBounds();
+    bounds = bounds ? bounds.extend(next) : next;
+  }
+  return bounds;
+}
+
+function focusView() {
+  const feature = state.focusFeature;
+  if (!feature) return null;
+  if (state.highlightNr) {
+    const shape = precinctShape(state.highlightNr);
+    if (shape) return shape.getBounds();
+  }
+  const bounds = boundsForNumbers(feature.properties.obwody);
+  if (bounds) return bounds;
+  const [lng, lat] = feature.geometry.coordinates;
+  return L.latLng(lat, lng).toBounds(450);
+}
+
+function focusPadding() {
+  const mapEl = document.querySelector("#map").getBoundingClientRect();
+  const chip = document.querySelector("#pkw-wait");
+  const zoom = document.querySelector(".leaflet-control-zoom");
+  let top = 48;
+  if (chip) top = Math.max(top, chip.getBoundingClientRect().bottom - mapEl.top + 16);
+  let right = 56;
+  if (zoom) right = Math.max(right, mapEl.right - zoom.getBoundingClientRect().left + 10);
+  return {
+    paddingTopLeft: L.point(24, top),
+    paddingBottomRight: L.point(right, 24),
+  };
+}
+
+function fitPrecinct(animate) {
+  const map = state.map;
+  const bounds = focusView();
+  if (!map || !bounds) return;
+  const size = map.getSize();
+  if (size.x < 40 || size.y < 40) return;
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const motion = animate !== false && !reduce;
+  map.stop();
+  if (focusDone) map.off("moveend", focusDone);
+  let settled = false;
+  let timer = 0;
+  const done = () => {
+    if (settled) return;
+    settled = true;
+    window.clearTimeout(timer);
+    map.off("moveend", done);
+    if (focusDone === done) focusDone = null;
+    fitting = false;
+    syncBasemap();
+  };
+  focusDone = done;
+  fitting = true;
+  map.once("moveend", done);
+  timer = window.setTimeout(done, motion ? 900 : 50);
+  map.fitBounds(bounds, { ...focusPadding(), maxZoom: 16, animate: motion, duration: 0.6 });
 }
 
 function resizeBasemap(layer) {
@@ -227,13 +316,21 @@ function syncBasemap() {
 function glideCity() {
   const map = state.map;
   if (!map) return;
+  cancelGlide();
   const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const panel = document.querySelector(".panel");
-  if (reduce) {
+  const apply = () => {
     settling = false;
-    map.invalidateSize({ animate: false });
-    fitCity();
-    syncBasemap();
+    map.invalidateSize({ animate: false, pan: false });
+    if (placeIsOpen()) fitPrecinct(true);
+    else {
+      fitCity();
+      syncBasemap();
+    }
+  };
+  if (reduce) {
+    cancelGlide = () => {};
+    apply();
     return;
   }
   settling = true;
@@ -241,12 +338,10 @@ function glideCity() {
   const finish = () => {
     if (finished) return;
     finished = true;
-    settling = false;
+    cancelGlide = () => {};
     panel.removeEventListener("transitionend", onEnd);
     window.clearTimeout(fallback);
-    map.invalidateSize({ animate: false });
-    fitCity();
-    syncBasemap();
+    apply();
   };
   const onEnd = (event) => {
     if (event.target !== panel) return;
@@ -255,6 +350,17 @@ function glideCity() {
   };
   panel.addEventListener("transitionend", onEnd);
   const fallback = window.setTimeout(finish, 700);
+  const startWidth = panel.getBoundingClientRect().width;
+  const unchanged = window.setTimeout(() => {
+    if (!finished && panel.getBoundingClientRect().width === startWidth) finish();
+  }, 80);
+  cancelGlide = () => {
+    finished = true;
+    settling = false;
+    panel.removeEventListener("transitionend", onEnd);
+    window.clearTimeout(fallback);
+    window.clearTimeout(unchanged);
+  };
 }
 
 function openStation(index, nr) {
@@ -269,6 +375,7 @@ function showPlace(feature, highlightNr) {
   const city = document.querySelector("#city-view");
   const place = document.querySelector("#place-view");
   const panel = document.querySelector(".panel");
+  state.focusFeature = feature;
   const columns = feature.properties.obwody.length + (feature.properties.obwody.length > 1 ? 1 : 0);
   panel.classList.add("is-place");
   panel.style.setProperty("--place-cols", String(columns));
@@ -292,6 +399,7 @@ function closeSheet() {
   panel.classList.remove("is-place");
   panel.style.removeProperty("--place-cols");
   state.highlightNr = null;
+  state.focusFeature = null;
   paintPrecincts();
   requestAnimationFrame(() => easeCity());
 }
