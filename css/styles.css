@@ -363,11 +363,93 @@ h1 {
   cursor: pointer;
 }
 
+.pkw-chip {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: calc(100% - 32px);
+  padding: 10px 14px 10px 12px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.94);
+  color: var(--ink);
+  box-shadow: 0 10px 28px rgba(23, 32, 38, 0.14);
+  pointer-events: none;
+}
+
+.pkw-mark {
+  position: relative;
+  flex: none;
+  width: 22px;
+  height: 22px;
+}
+
+.pkw-mark::before,
+.pkw-mark::after {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border-radius: 50%;
+  background: var(--await);
+}
+
+.pkw-chip[data-state="awaiting"] .pkw-mark::before,
+.pkw-chip[data-state="partial"] .pkw-mark::before,
+.pkw-chip[data-state="sample"] .pkw-mark::before {
+  inset: 0;
+  background: transparent;
+  border: 1.5px solid rgba(138, 98, 48, 0.45);
+  animation: pkw-wait 2.4s ease-out infinite;
+}
+
+.pkw-chip[data-state="partial"] .pkw-mark::after {
+  background:
+    radial-gradient(circle at center, #fff 0 5px, transparent 5.5px),
+    conic-gradient(var(--await) calc(var(--share) * 1%), rgba(138, 98, 48, 0.18) 0);
+  inset: 1px;
+}
+
+.pkw-chip[data-state="full"] .pkw-mark::before { display: none; }
+
+.pkw-copy {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  gap: 1px;
+}
+
+.pkw-copy strong {
+  font-family: Fraunces, serif;
+  font-size: 0.98rem;
+  font-weight: 560;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.pkw-copy span {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes pkw-wait {
+  0% { transform: scale(0.72); opacity: 0.9; }
+  70% { transform: scale(1); opacity: 0; }
+  100% { transform: scale(1); opacity: 0; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .panel { transition: none; }
   .leaflet-overlay-pane svg path,
   .place-back,
   .sheet-close { transition: none; }
+  .pkw-chip[data-state="awaiting"] .pkw-mark::before,
+  .pkw-chip[data-state="partial"] .pkw-mark::before,
+  .pkw-chip[data-state="sample"] .pkw-mark::before { animation: none; opacity: 0.7; transform: none; }
 }
 
 .sheet-close {

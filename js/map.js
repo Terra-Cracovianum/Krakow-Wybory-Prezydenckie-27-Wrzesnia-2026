@@ -350,6 +350,36 @@ function renderSummary() {
     `${numberFormat.format(results.precinctsReporting)} / ${numberFormat.format(results.precinctsTotal)}`;
   document.querySelector("#valid").textContent = formatCount(results.validVotes);
   renderProgress();
+  renderPkwChip();
+}
+
+function renderPkwChip() {
+  const results = state.results;
+  const chip = document.querySelector("#pkw-wait");
+  const title = document.querySelector("#pkw-title");
+  const detail = document.querySelector("#pkw-detail");
+  const total = results.precinctsTotal;
+  const reported = results.precinctsReporting;
+  const share = total > 0 ? (reported / total) * 100 : 0;
+  chip.style.setProperty("--share", String(share));
+  detail.textContent = `${numberFormat.format(reported)} z ${numberFormat.format(total)} obwodów`;
+  if (results.sample) {
+    chip.dataset.state = "sample";
+    title.textContent = "Podgląd, nie wyniki PKW";
+    return;
+  }
+  if (results.status === "awaiting" || reported === 0) {
+    chip.dataset.state = "awaiting";
+    title.textContent = "Czekamy na wyniki PKW";
+    return;
+  }
+  if (reported < total) {
+    chip.dataset.state = "partial";
+    title.textContent = "Wyniki spływają";
+    return;
+  }
+  chip.dataset.state = "full";
+  title.textContent = results.round === 2 ? "Wyniki drugiej tury" : "Wyniki pełne";
 }
 
 function countedSoFar() {
