@@ -387,10 +387,11 @@ function stationPopup(feature, highlightNr) {
   const statRows = stats
     .map(([label, cell, totalCell]) => {
       const tds = numbers
-        .map((nr) => `<td class="${cellClass(nr, highlightNr)}">${cell(precinctRow(nr))}</td>`)
+        .map((nr) => statCell(cell(precinctRow(nr))))
         .join("");
-      const tail = showTotal ? `<td class="is-total">${totalCell(total)}</td>` : "";
-      return `<tr class="is-stat"><th scope="row">${label}</th>${tds}${tail}</tr>`;
+      const tail = showTotal ? statCell(totalCell(total), "is-total") : "";
+      const last = label === "Nieważne" ? " is-break" : "";
+      return `<tr class="is-stat${last}"><th scope="row">${label}</th>${tds}${tail}</tr>`;
     })
     .join("");
   const candidateRows = state.candidates
@@ -405,7 +406,10 @@ function stationPopup(feature, highlightNr) {
     })
     .join("");
   return `<div class="place-toolbar">
-      <button type="button" class="place-back" data-close>Miasto</button>
+      <button type="button" class="place-back" data-close>
+        <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M10 3.2L5.2 8 10 12.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Miasto
+      </button>
       <button type="button" class="sheet-close" data-close aria-label="Zamknij">
         <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M3.2 3.2l9.6 9.6M12.8 3.2L3.2 12.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
       </button>
@@ -420,7 +424,7 @@ function stationPopup(feature, highlightNr) {
         <caption>Wyniki obwodów w tym lokalu</caption>
         <thead>
           <tr>
-            <th class="result-corner" scope="col"></th>
+            <th class="result-corner" scope="col"><span class="nr-label">Obwód</span></th>
             ${heads}
             ${totalHead}
           </tr>
@@ -434,15 +438,14 @@ function precinctRow(nr) {
   return state.results.precincts[String(nr)] || null;
 }
 
-function cellClass() {
-  return "";
+function columnHead(nr) {
+  return `<th scope="col"><span class="nr">${escapeHtml(nr)}</span></th>`;
 }
 
-function columnHead(nr) {
-  return `<th scope="col">
-      <span class="nr-label">Obwód</span>
-      <span class="nr">${escapeHtml(nr)}</span>
-    </th>`;
+function statCell(text, extra = "") {
+  const empty = text === "—" ? " is-empty" : "";
+  const cls = `${extra}${empty}`.trim();
+  return `<td${cls ? ` class="${cls}"` : ""}>${text}</td>`;
 }
 
 function placeTotals(numbers) {
@@ -485,32 +488,31 @@ function turnoutOf(row) {
   return percentLabel(row.ballots, row.eligible);
 }
 
-function voteCell(candidate, row, nr, highlightNr) {
+function voteCell(candidate, row, nr) {
   const votes = row && row.votes ? row.votes[candidate.id] : null;
-  const cls = cellClass(nr, highlightNr);
-  if (candidate.withdrawn) {
-    return `<td class="${cls} is-withdrawn"><span class="nums"><strong>${formatCount(votes)}</strong></span></td>`;
-  }
+  if (candidate.withdrawn) return countCell(votes, "is-withdrawn");
   const valid = row && row.reported ? row.validVotes : null;
   const leader = leaderOf(nr);
   const ahead = leader && leader.id === candidate.id ? " is-ahead" : "";
-  const width = typeof votes === "number" && typeof valid === "number" && valid > 0 ? (votes / valid) * 100 : 0;
-  return `<td class="${cls}${ahead}">
-      <span class="nums"><strong>${formatCount(votes)}</strong><em>${percentLabel(votes, valid)}</em></span>
-      <span class="meter" aria-hidden="true"><span style="width:${width}%;background:${candidate.color}"></span></span>
-    </td>`;
+  return countCell(votes, ahead, valid, candidate.color);
 }
 
 function voteTotalCell(candidate, total) {
   const votes = total.votes[candidate.id];
-  if (candidate.withdrawn) {
-    return `<td class="is-total is-withdrawn"><span class="nums"><strong>${formatCount(votes)}</strong></span></td>`;
+  if (candidate.withdrawn) return countCell(votes, "is-total is-withdrawn");
+  return countCell(votes, "is-total", total.validVotes, candidate.color);
+}
+
+function countCell(votes, extra = "", valid = null, color = "") {
+  const empty = typeof votes !== "number" ? " is-empty" : "";
+  const cls = `${extra}${empty}`.trim();
+  if (typeof votes !== "number" || valid == null) {
+    return `<td${cls ? ` class="${cls}"` : ""}><span class="nums"><strong>${formatCount(votes)}</strong></span></td>`;
   }
-  const valid = total.validVotes;
-  const width = typeof votes === "number" && typeof valid === "number" && valid > 0 ? (votes / valid) * 100 : 0;
-  return `<td class="is-total">
+  const width = valid > 0 ? (votes / valid) * 100 : 0;
+  return `<td${cls ? ` class="${cls}"` : ""}>
       <span class="nums"><strong>${formatCount(votes)}</strong><em>${percentLabel(votes, valid)}</em></span>
-      <span class="meter" aria-hidden="true"><span style="width:${width}%;background:${candidate.color}"></span></span>
+      <span class="meter" aria-hidden="true"><span style="width:${width}%;background:${color}"></span></span>
     </td>`;
 }
 
