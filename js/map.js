@@ -20,6 +20,29 @@ init().catch((error) => {
   console.error(error);
 });
 
+countVisit();
+
+function countVisit() {
+  const host = location.hostname;
+  if (host === "localhost" || host === "127.0.0.1") return;
+  const seen = "krakow-wybory-visit";
+  try {
+    if (localStorage.getItem(seen)) return;
+  } catch {
+    return;
+  }
+  fetch("https://abacus.jasoncameron.dev/hit/terra-cracovianum.github.io/krakow-wybory-visits", { cache: "no-store" })
+    .then((response) => {
+      if (!response.ok) return;
+      try {
+        localStorage.setItem(seen, "1");
+      } catch {
+        /* the visit is already recorded */
+      }
+    })
+    .catch(() => {});
+}
+
 async function init() {
   const [candidateFile, results, precincts, stations] = await Promise.all([
     fetch("data/candidates.json").then((response) => response.json()),
