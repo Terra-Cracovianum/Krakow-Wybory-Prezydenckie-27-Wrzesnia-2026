@@ -1,22 +1,22 @@
 {
   "status": "partial",
   "round": 1,
-  "updatedAt": "2026-09-27T22:16:12+02:00",
+  "updatedAt": "2026-09-27T22:21:12+02:00",
   "precinctsTotal": 454,
-  "precinctsReporting": 29,
-  "ballots": 4453,
-  "validVotes": 4423,
-  "invalidVotes": 30,
-  "turnout": 41.0,
+  "precinctsReporting": 34,
+  "ballots": 6067,
+  "validVotes": 6030,
+  "invalidVotes": 37,
+  "turnout": 41.7,
   "candidates": {
-    "drewnicki": 929,
-    "gibala": 1657,
-    "gosek": 199,
+    "drewnicki": 1226,
+    "gibala": 2192,
+    "gosek": 283,
     "hoffman": 0,
-    "klimek": 205,
-    "owca": 275,
-    "piatkowska": 1134,
-    "pietrzyk": 24
+    "klimek": 263,
+    "owca": 387,
+    "piatkowska": 1649,
+    "pietrzyk": 30
   },
   "precincts": {
     "1": {
@@ -28,11 +28,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "2": {
@@ -44,11 +44,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "3": {
@@ -60,11 +60,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "4": {
@@ -76,11 +76,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "5": {
@@ -92,11 +92,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "6": {
@@ -108,11 +108,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "7": {
@@ -124,11 +124,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "8": {
@@ -140,11 +140,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "9": {
@@ -156,11 +156,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "10": {
@@ -172,11 +172,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "11": {
@@ -188,11 +188,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "12": {
@@ -204,11 +204,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "13": {
@@ -220,11 +220,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "14": {
@@ -236,11 +236,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "15": {
@@ -252,11 +252,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "16": {
@@ -268,11 +268,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "17": {
@@ -284,11 +284,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "18": {
@@ -300,11 +300,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "19": {
@@ -316,11 +316,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "20": {
@@ -332,11 +332,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "21": {
@@ -348,11 +348,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "22": {
@@ -364,11 +364,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "23": {
@@ -380,11 +380,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "24": {
@@ -396,11 +396,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "25": {
@@ -412,11 +412,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "26": {
@@ -428,11 +428,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "27": {
@@ -444,11 +444,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "28": {
@@ -460,11 +460,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "29": {
@@ -476,11 +476,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "30": {
@@ -492,11 +492,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "31": {
@@ -508,11 +508,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "32": {
@@ -524,11 +524,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "33": {
@@ -540,11 +540,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "34": {
@@ -556,11 +556,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "35": {
@@ -572,11 +572,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "36": {
@@ -588,27 +588,28 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "37": {
-      "reported": false,
-      "ballots": null,
-      "validVotes": null,
-      "invalidVotes": null,
+      "reported": true,
+      "eligible": 1109,
+      "ballots": 466,
+      "validVotes": 465,
+      "invalidVotes": 1,
       "votes": {
-        "drewnicki": null,
-        "gibala": null,
-        "gosek": null,
-        "klimek": null,
-        "owca": null,
-        "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "drewnicki": 66,
+        "gibala": 156,
+        "gosek": 32,
+        "hoffman": 0,
+        "klimek": 14,
+        "owca": 33,
+        "piatkowska": 162,
+        "pietrzyk": 2
       }
     },
     "38": {
@@ -620,11 +621,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "39": {
@@ -636,11 +637,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "40": {
@@ -652,11 +653,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "41": {
@@ -668,11 +669,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "42": {
@@ -684,11 +685,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "43": {
@@ -700,11 +701,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "44": {
@@ -716,11 +717,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "45": {
@@ -732,11 +733,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "46": {
@@ -748,11 +749,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "47": {
@@ -764,11 +765,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "48": {
@@ -780,11 +781,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "49": {
@@ -796,11 +797,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "50": {
@@ -812,27 +813,28 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "51": {
-      "reported": false,
-      "ballots": null,
-      "validVotes": null,
-      "invalidVotes": null,
+      "reported": true,
+      "eligible": 1063,
+      "ballots": 419,
+      "validVotes": 416,
+      "invalidVotes": 3,
       "votes": {
-        "drewnicki": null,
-        "gibala": null,
-        "gosek": null,
-        "klimek": null,
-        "owca": null,
-        "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "drewnicki": 81,
+        "gibala": 155,
+        "gosek": 16,
+        "hoffman": 0,
+        "klimek": 16,
+        "owca": 24,
+        "piatkowska": 121,
+        "pietrzyk": 3
       }
     },
     "52": {
@@ -844,11 +846,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "53": {
@@ -860,11 +862,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "54": {
@@ -876,11 +878,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "55": {
@@ -892,11 +894,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "56": {
@@ -908,11 +910,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "57": {
@@ -924,11 +926,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "58": {
@@ -940,11 +942,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "59": {
@@ -956,11 +958,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "60": {
@@ -972,11 +974,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "61": {
@@ -988,11 +990,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "62": {
@@ -1004,11 +1006,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "63": {
@@ -1020,11 +1022,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "64": {
@@ -1036,11 +1038,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "65": {
@@ -1052,11 +1054,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "66": {
@@ -1068,11 +1070,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "67": {
@@ -1084,11 +1086,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "68": {
@@ -1100,11 +1102,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "69": {
@@ -1116,11 +1118,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "70": {
@@ -1132,11 +1134,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "71": {
@@ -1148,11 +1150,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "72": {
@@ -1164,11 +1166,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "73": {
@@ -1180,11 +1182,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "74": {
@@ -1196,11 +1198,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "75": {
@@ -1212,11 +1214,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "76": {
@@ -1228,11 +1230,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "77": {
@@ -1244,11 +1246,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "78": {
@@ -1260,11 +1262,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "79": {
@@ -1276,11 +1278,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "80": {
@@ -1292,11 +1294,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "81": {
@@ -1308,11 +1310,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "82": {
@@ -1324,11 +1326,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "83": {
@@ -1340,11 +1342,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "84": {
@@ -1356,11 +1358,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "85": {
@@ -1372,11 +1374,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "86": {
@@ -1388,11 +1390,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "87": {
@@ -1404,11 +1406,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "88": {
@@ -1420,11 +1422,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "89": {
@@ -1436,11 +1438,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "90": {
@@ -1452,11 +1454,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "91": {
@@ -1468,11 +1470,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "92": {
@@ -1484,11 +1486,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "93": {
@@ -1500,11 +1502,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "94": {
@@ -1516,11 +1518,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "95": {
@@ -1532,11 +1534,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "96": {
@@ -1548,11 +1550,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "97": {
@@ -1564,11 +1566,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "98": {
@@ -1580,11 +1582,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "99": {
@@ -1596,11 +1598,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "100": {
@@ -1612,11 +1614,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "101": {
@@ -1628,11 +1630,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "102": {
@@ -1644,11 +1646,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "103": {
@@ -1660,11 +1662,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "104": {
@@ -1676,11 +1678,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "105": {
@@ -1692,11 +1694,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "106": {
@@ -1708,11 +1710,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "107": {
@@ -1724,11 +1726,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "108": {
@@ -1740,11 +1742,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "109": {
@@ -1756,11 +1758,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "110": {
@@ -1772,11 +1774,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "111": {
@@ -1788,11 +1790,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "112": {
@@ -1804,11 +1806,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "113": {
@@ -1820,11 +1822,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "114": {
@@ -1836,11 +1838,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "115": {
@@ -1852,27 +1854,28 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "116": {
-      "reported": false,
-      "ballots": null,
-      "validVotes": null,
-      "invalidVotes": null,
+      "reported": true,
+      "eligible": 619,
+      "ballots": 281,
+      "validVotes": 280,
+      "invalidVotes": 1,
       "votes": {
-        "drewnicki": null,
-        "gibala": null,
-        "gosek": null,
-        "klimek": null,
-        "owca": null,
-        "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "drewnicki": 36,
+        "gibala": 85,
+        "gosek": 23,
+        "hoffman": 0,
+        "klimek": 14,
+        "owca": 33,
+        "piatkowska": 89,
+        "pietrzyk": 0
       }
     },
     "117": {
@@ -1884,11 +1887,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "118": {
@@ -1900,11 +1903,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "119": {
@@ -1916,11 +1919,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "120": {
@@ -1932,11 +1935,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "121": {
@@ -1948,11 +1951,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "122": {
@@ -1964,11 +1967,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "123": {
@@ -1980,11 +1983,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "124": {
@@ -1996,11 +1999,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "125": {
@@ -2012,11 +2015,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "126": {
@@ -2028,11 +2031,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "127": {
@@ -2044,11 +2047,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "128": {
@@ -2060,11 +2063,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "129": {
@@ -2076,11 +2079,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "130": {
@@ -2092,11 +2095,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "131": {
@@ -2108,11 +2111,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "132": {
@@ -2124,11 +2127,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "133": {
@@ -2140,11 +2143,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "134": {
@@ -2156,11 +2159,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "135": {
@@ -2172,11 +2175,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "136": {
@@ -2188,11 +2191,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "137": {
@@ -2204,11 +2207,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "138": {
@@ -2220,11 +2223,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "139": {
@@ -2236,11 +2239,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "140": {
@@ -2252,11 +2255,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "141": {
@@ -2268,11 +2271,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "142": {
@@ -2284,11 +2287,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "143": {
@@ -2300,11 +2303,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "144": {
@@ -2316,11 +2319,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "145": {
@@ -2332,11 +2335,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "146": {
@@ -2348,11 +2351,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "147": {
@@ -2364,11 +2367,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "148": {
@@ -2380,11 +2383,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "149": {
@@ -2396,11 +2399,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "150": {
@@ -2412,11 +2415,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "151": {
@@ -2428,11 +2431,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "152": {
@@ -2444,11 +2447,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "153": {
@@ -2460,11 +2463,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "154": {
@@ -2476,11 +2479,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "155": {
@@ -2492,11 +2495,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "156": {
@@ -2508,11 +2511,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "157": {
@@ -2524,11 +2527,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "158": {
@@ -2540,11 +2543,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "159": {
@@ -2556,11 +2559,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "160": {
@@ -2572,11 +2575,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "161": {
@@ -2588,11 +2591,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "162": {
@@ -2604,11 +2607,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "163": {
@@ -2620,11 +2623,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "164": {
@@ -2636,11 +2639,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "165": {
@@ -2652,11 +2655,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "166": {
@@ -2668,11 +2671,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "167": {
@@ -2684,11 +2687,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "168": {
@@ -2700,11 +2703,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "169": {
@@ -2716,11 +2719,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "170": {
@@ -2732,11 +2735,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "171": {
@@ -2748,11 +2751,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "172": {
@@ -2764,11 +2767,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "173": {
@@ -2780,11 +2783,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "174": {
@@ -2796,11 +2799,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "175": {
@@ -2812,11 +2815,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "176": {
@@ -2828,11 +2831,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "177": {
@@ -2844,11 +2847,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "178": {
@@ -2860,11 +2863,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "179": {
@@ -2876,11 +2879,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "180": {
@@ -2892,11 +2895,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "181": {
@@ -2908,11 +2911,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "182": {
@@ -2924,11 +2927,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "183": {
@@ -2940,11 +2943,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "184": {
@@ -2956,11 +2959,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "185": {
@@ -2972,11 +2975,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "186": {
@@ -2988,11 +2991,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "187": {
@@ -3004,11 +3007,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "188": {
@@ -3020,11 +3023,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "189": {
@@ -3036,11 +3039,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "190": {
@@ -3052,11 +3055,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "191": {
@@ -3068,11 +3071,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "192": {
@@ -3084,11 +3087,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "193": {
@@ -3100,11 +3103,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "194": {
@@ -3116,11 +3119,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "195": {
@@ -3132,11 +3135,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "196": {
@@ -3148,11 +3151,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "197": {
@@ -3164,11 +3167,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "198": {
@@ -3180,11 +3183,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "199": {
@@ -3196,11 +3199,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "200": {
@@ -3212,11 +3215,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "201": {
@@ -3228,11 +3231,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "202": {
@@ -3244,11 +3247,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "203": {
@@ -3260,11 +3263,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "204": {
@@ -3276,11 +3279,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "205": {
@@ -3292,11 +3295,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "206": {
@@ -3308,11 +3311,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "207": {
@@ -3324,11 +3327,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "208": {
@@ -3340,11 +3343,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "209": {
@@ -3356,11 +3359,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "210": {
@@ -3372,11 +3375,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "211": {
@@ -3388,11 +3391,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "212": {
@@ -3404,11 +3407,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "213": {
@@ -3420,11 +3423,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "214": {
@@ -3436,11 +3439,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "215": {
@@ -3452,11 +3455,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "216": {
@@ -3468,11 +3471,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "217": {
@@ -3484,11 +3487,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "218": {
@@ -3500,11 +3503,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "219": {
@@ -3516,11 +3519,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "220": {
@@ -3532,11 +3535,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "221": {
@@ -3548,11 +3551,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "222": {
@@ -3564,11 +3567,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "223": {
@@ -3580,11 +3583,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "224": {
@@ -3596,11 +3599,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "225": {
@@ -3612,11 +3615,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "226": {
@@ -3628,11 +3631,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "227": {
@@ -3644,11 +3647,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "228": {
@@ -3660,11 +3663,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "229": {
@@ -3676,11 +3679,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "230": {
@@ -3692,11 +3695,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "231": {
@@ -3708,11 +3711,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "232": {
@@ -3724,11 +3727,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "233": {
@@ -3740,11 +3743,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "234": {
@@ -3756,11 +3759,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "235": {
@@ -3772,11 +3775,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "236": {
@@ -3788,11 +3791,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "237": {
@@ -3804,11 +3807,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "238": {
@@ -3820,11 +3823,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "239": {
@@ -3836,11 +3839,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "240": {
@@ -3852,11 +3855,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "241": {
@@ -3868,11 +3871,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "242": {
@@ -3884,11 +3887,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "243": {
@@ -3900,11 +3903,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "244": {
@@ -3916,11 +3919,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "245": {
@@ -3932,11 +3935,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "246": {
@@ -3948,11 +3951,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "247": {
@@ -3964,11 +3967,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "248": {
@@ -3980,11 +3983,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "249": {
@@ -3996,11 +3999,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "250": {
@@ -4012,11 +4015,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "251": {
@@ -4028,11 +4031,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "252": {
@@ -4044,11 +4047,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "253": {
@@ -4060,11 +4063,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "254": {
@@ -4076,11 +4079,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "255": {
@@ -4092,11 +4095,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "256": {
@@ -4108,11 +4111,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "257": {
@@ -4124,11 +4127,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "258": {
@@ -4140,11 +4143,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "259": {
@@ -4156,11 +4159,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "260": {
@@ -4172,11 +4175,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "261": {
@@ -4188,11 +4191,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "262": {
@@ -4204,11 +4207,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "263": {
@@ -4220,11 +4223,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "264": {
@@ -4236,11 +4239,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "265": {
@@ -4252,11 +4255,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "266": {
@@ -4268,11 +4271,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "267": {
@@ -4284,11 +4287,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "268": {
@@ -4300,11 +4303,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "269": {
@@ -4316,11 +4319,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "270": {
@@ -4332,11 +4335,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "271": {
@@ -4348,11 +4351,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "272": {
@@ -4364,11 +4367,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "273": {
@@ -4380,11 +4383,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "274": {
@@ -4396,11 +4399,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "275": {
@@ -4412,11 +4415,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "276": {
@@ -4428,11 +4431,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "277": {
@@ -4444,11 +4447,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "278": {
@@ -4460,11 +4463,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "279": {
@@ -4476,11 +4479,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "280": {
@@ -4492,11 +4495,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "281": {
@@ -4508,11 +4511,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "282": {
@@ -4524,11 +4527,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "283": {
@@ -4540,11 +4543,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "284": {
@@ -4556,11 +4559,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "285": {
@@ -4589,11 +4592,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "287": {
@@ -4605,11 +4608,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "288": {
@@ -4621,11 +4624,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "289": {
@@ -4637,11 +4640,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "290": {
@@ -4653,11 +4656,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "291": {
@@ -4669,11 +4672,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "292": {
@@ -4685,11 +4688,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "293": {
@@ -4701,11 +4704,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "294": {
@@ -4717,11 +4720,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "295": {
@@ -4733,11 +4736,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "296": {
@@ -4749,11 +4752,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "297": {
@@ -4765,11 +4768,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "298": {
@@ -4781,11 +4784,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "299": {
@@ -4797,11 +4800,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "300": {
@@ -4813,11 +4816,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "301": {
@@ -4829,11 +4832,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "302": {
@@ -4845,11 +4848,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "303": {
@@ -4861,11 +4864,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "304": {
@@ -4877,11 +4880,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "305": {
@@ -4893,11 +4896,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "306": {
@@ -4909,11 +4912,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "307": {
@@ -4925,11 +4928,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "308": {
@@ -4941,11 +4944,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "309": {
@@ -4957,11 +4960,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "310": {
@@ -4973,11 +4976,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "311": {
@@ -4989,11 +4992,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "312": {
@@ -5005,11 +5008,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "313": {
@@ -5021,11 +5024,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "314": {
@@ -5037,11 +5040,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "315": {
@@ -5053,11 +5056,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "316": {
@@ -5069,11 +5072,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "317": {
@@ -5085,11 +5088,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "318": {
@@ -5101,11 +5104,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "319": {
@@ -5117,11 +5120,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "320": {
@@ -5133,11 +5136,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "321": {
@@ -5149,11 +5152,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "322": {
@@ -5165,11 +5168,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "323": {
@@ -5181,11 +5184,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "324": {
@@ -5197,11 +5200,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "325": {
@@ -5213,11 +5216,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "326": {
@@ -5229,11 +5232,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "327": {
@@ -5245,11 +5248,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "328": {
@@ -5261,11 +5264,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "329": {
@@ -5277,11 +5280,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "330": {
@@ -5293,11 +5296,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "331": {
@@ -5309,11 +5312,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "332": {
@@ -5325,11 +5328,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "333": {
@@ -5341,11 +5344,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "334": {
@@ -5357,11 +5360,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "335": {
@@ -5373,11 +5376,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "336": {
@@ -5389,11 +5392,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "337": {
@@ -5405,11 +5408,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "338": {
@@ -5421,11 +5424,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "339": {
@@ -5437,11 +5440,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "340": {
@@ -5453,11 +5456,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "341": {
@@ -5469,11 +5472,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "342": {
@@ -5485,11 +5488,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "343": {
@@ -5501,11 +5504,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "344": {
@@ -5534,11 +5537,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "346": {
@@ -5550,11 +5553,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "347": {
@@ -5566,11 +5569,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "348": {
@@ -5582,11 +5585,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "349": {
@@ -5598,11 +5601,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "350": {
@@ -5614,11 +5617,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "351": {
@@ -5630,11 +5633,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "352": {
@@ -5646,11 +5649,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "353": {
@@ -5662,11 +5665,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "354": {
@@ -5678,11 +5681,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "355": {
@@ -5694,11 +5697,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "356": {
@@ -5710,11 +5713,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "357": {
@@ -5726,11 +5729,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "358": {
@@ -5742,11 +5745,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "359": {
@@ -5758,11 +5761,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "360": {
@@ -5774,11 +5777,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "361": {
@@ -5807,11 +5810,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "363": {
@@ -5823,11 +5826,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "364": {
@@ -5839,11 +5842,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "365": {
@@ -5855,11 +5858,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "366": {
@@ -5871,11 +5874,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "367": {
@@ -5887,11 +5890,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "368": {
@@ -5903,11 +5906,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "369": {
@@ -5919,27 +5922,28 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "370": {
-      "reported": false,
-      "ballots": null,
-      "validVotes": null,
-      "invalidVotes": null,
+      "reported": true,
+      "eligible": 864,
+      "ballots": 429,
+      "validVotes": 427,
+      "invalidVotes": 2,
       "votes": {
-        "drewnicki": null,
-        "gibala": null,
-        "gosek": null,
-        "klimek": null,
-        "owca": null,
-        "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "drewnicki": 113,
+        "gibala": 135,
+        "gosek": 12,
+        "hoffman": 0,
+        "klimek": 11,
+        "owca": 22,
+        "piatkowska": 133,
+        "pietrzyk": 1
       }
     },
     "371": {
@@ -5951,11 +5955,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "372": {
@@ -5967,11 +5971,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "373": {
@@ -5983,11 +5987,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "374": {
@@ -5999,11 +6003,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "375": {
@@ -6015,11 +6019,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "376": {
@@ -6031,11 +6035,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "377": {
@@ -6047,11 +6051,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "378": {
@@ -6097,11 +6101,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "381": {
@@ -6130,11 +6134,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "383": {
@@ -6146,11 +6150,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "384": {
@@ -6162,11 +6166,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "385": {
@@ -6178,11 +6182,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "386": {
@@ -6194,11 +6198,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "387": {
@@ -6244,11 +6248,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "390": {
@@ -6260,11 +6264,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "391": {
@@ -6276,11 +6280,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "392": {
@@ -6292,11 +6296,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "393": {
@@ -6308,11 +6312,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "394": {
@@ -6324,11 +6328,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "395": {
@@ -6340,11 +6344,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "396": {
@@ -6356,11 +6360,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "397": {
@@ -6372,11 +6376,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "398": {
@@ -6388,11 +6392,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "399": {
@@ -6421,11 +6425,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "401": {
@@ -6454,11 +6458,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "403": {
@@ -6470,11 +6474,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "404": {
@@ -6486,11 +6490,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "405": {
@@ -6502,11 +6506,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "406": {
@@ -6518,11 +6522,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "407": {
@@ -6534,11 +6538,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "408": {
@@ -6550,11 +6554,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "409": {
@@ -6566,11 +6570,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "410": {
@@ -6582,11 +6586,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "411": {
@@ -6598,11 +6602,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "412": {
@@ -6614,11 +6618,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "413": {
@@ -6664,11 +6668,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "416": {
@@ -6714,11 +6718,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "419": {
@@ -6730,11 +6734,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "420": {
@@ -6797,11 +6801,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "424": {
@@ -6830,11 +6834,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "426": {
@@ -6863,11 +6867,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "428": {
@@ -6879,11 +6883,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "429": {
@@ -6895,11 +6899,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "430": {
@@ -6928,11 +6932,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "432": {
@@ -6944,11 +6948,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "433": {
@@ -6960,11 +6964,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "434": {
@@ -6993,11 +6997,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "436": {
@@ -7009,11 +7013,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "437": {
@@ -7042,11 +7046,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "439": {
@@ -7058,11 +7062,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "440": {
@@ -7074,11 +7078,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "441": {
@@ -7158,11 +7162,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "446": {
@@ -7174,11 +7178,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "447": {
@@ -7190,27 +7194,28 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "448": {
-      "reported": false,
-      "ballots": null,
-      "validVotes": null,
-      "invalidVotes": null,
+      "reported": true,
+      "eligible": 40,
+      "ballots": 19,
+      "validVotes": 19,
+      "invalidVotes": 0,
       "votes": {
-        "drewnicki": null,
-        "gibala": null,
-        "gosek": null,
-        "klimek": null,
-        "owca": null,
-        "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "drewnicki": 1,
+        "gibala": 4,
+        "gosek": 1,
+        "hoffman": 0,
+        "klimek": 3,
+        "owca": 0,
+        "piatkowska": 10,
+        "pietrzyk": 0
       }
     },
     "449": {
@@ -7222,11 +7227,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "450": {
@@ -7238,11 +7243,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     },
     "451": {
@@ -7305,11 +7310,11 @@
         "drewnicki": null,
         "gibala": null,
         "gosek": null,
+        "hoffman": null,
         "klimek": null,
         "owca": null,
         "piatkowska": null,
-        "pietrzyk": null,
-        "hoffman": null
+        "pietrzyk": null
       }
     }
   }
