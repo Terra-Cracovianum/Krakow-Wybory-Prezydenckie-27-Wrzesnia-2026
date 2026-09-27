@@ -446,12 +446,14 @@ function renderSummary() {
   const status = document.querySelector("#status");
   const sample = document.querySelector("#sample");
   sample.hidden = !results.sample;
+  const flowing = !results.sample && results.precinctsReporting > 0 && results.precinctsReporting < results.precinctsTotal;
+  status.classList.toggle("is-flowing", flowing);
   if (results.sample) {
     status.textContent = "Podgląd przykładowych wyników";
   } else if (results.status === "awaiting" || results.precinctsReporting === 0) {
     status.textContent = "Oczekiwanie na wyniki";
-  } else if (results.precinctsReporting < results.precinctsTotal) {
-    status.textContent = "Wyniki spływają";
+  } else if (flowing) {
+    status.textContent = `Wyniki spływają · ${numberFormat.format(results.precinctsReporting)} z ${numberFormat.format(results.precinctsTotal)}`;
   } else {
     status.textContent = results.round === 2 ? "Wyniki drugiej tury" : "Wyniki pełne";
   }
@@ -472,24 +474,30 @@ function renderPkwChip() {
   const reported = results.precinctsReporting;
   const share = total > 0 ? (reported / total) * 100 : 0;
   chip.style.setProperty("--share", String(share));
-  detail.textContent = `${numberFormat.format(reported)} z ${numberFormat.format(total)} obwodów`;
+  const countLine = `${numberFormat.format(reported)} z ${numberFormat.format(total)} obwodów`;
+  const percent = new Intl.NumberFormat("pl-PL", { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(share);
+  const countedShare = `<b>${percent}%</b><span>${numberFormat.format(reported)} z ${numberFormat.format(total)} obwodów</span>`;
   if (results.sample) {
     chip.dataset.state = "sample";
     title.textContent = "Podgląd, nie wyniki PKW";
+    detail.textContent = countLine;
     return;
   }
   if (results.status === "awaiting" || reported === 0) {
     chip.dataset.state = "awaiting";
     title.textContent = "Czekamy na wyniki PKW";
+    detail.textContent = countLine;
     return;
   }
   if (reported < total) {
     chip.dataset.state = "partial";
     title.textContent = "Wyniki spływają";
+    detail.innerHTML = countedShare;
     return;
   }
   chip.dataset.state = "full";
   title.textContent = results.round === 2 ? "Wyniki drugiej tury" : "Wyniki pełne";
+  detail.innerHTML = countedShare;
 }
 
 function countedSoFar() {
@@ -511,11 +519,14 @@ function renderProgress() {
   const total = results.precinctsTotal;
   const waiting = counted.precincts === 0;
   const status = document.querySelector("#progress-status");
+  const percent = new Intl.NumberFormat("pl-PL", { minimumFractionDigits: 1, maximumFractionDigits: 1 }).format(
+    total > 0 ? (counted.precincts / total) * 100 : 0
+  );
   status.textContent = waiting
     ? "Oczekiwanie"
     : counted.precincts >= total
       ? "Policzone"
-      : "Spływają";
+      : `${percent}% policzone`;
   document.querySelector("#progress-precincts").textContent = waiting
     ? "—"
     : `${numberFormat.format(counted.precincts)} / ${numberFormat.format(total)}`;
