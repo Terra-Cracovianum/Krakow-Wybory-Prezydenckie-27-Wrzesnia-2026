@@ -491,8 +491,12 @@ function renderSummary() {
     statusLabel.textContent = results.round === 2 ? "Wyniki drugiej tury" : "Wyniki pełne";
   }
   document.querySelector("#turnout").textContent = formatPercent(officialTurnout(results));
-  document.querySelector("#reporting").textContent =
-    `${numberFormat.format(results.precinctsReporting)} / ${numberFormat.format(results.precinctsTotal)}`;
+  const reporting = document.querySelector("#reporting");
+  const counted = document.createElement("b");
+  counted.textContent = numberFormat.format(results.precinctsReporting);
+  const ofTotal = document.createElement("em");
+  ofTotal.textContent = ` / ${numberFormat.format(results.precinctsTotal)}`;
+  reporting.replaceChildren(counted, ofTotal);
   document.querySelector("#valid").textContent = formatCount(results.validVotes);
   renderProgress();
   renderPkwChip();
