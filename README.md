@@ -20,7 +20,14 @@ Jedyny plik do zmiany to [`data/results.json`](data/results.json). Wpisz oficjal
 - `precinctsReporting` i `precinctsTotal` (454)
 - `ballots`, `validVotes`, `invalidVotes`, `turnout` (frekwencja jako liczba procent, np. `54.2`)
 - `candidates`: głosy w całym mieście, klucze jak w [`data/candidates.json`](data/candidates.json)
-- `precincts`: jeden wpis na numer obwodu. Uzupełniony obwód ma `"reported": true` i liczby w `votes`. Mapa koloruje go barwą prowadzącego. Dopóki `reported` jest `false`, obwód zostaje szary
+- `precincts`: jeden wpis na numer obwodu. Uzupełniony obwód ma `"reported": true`. Dopóki `reported` jest `false`, obwód zostaje szary, a w raporcie lokalu widać „—”
+  - `eligible`: uprawnieni do głosowania
+  - `ballots`: wydane karty do głosowania
+  - `validVotes`: głosy ważne
+  - `invalidVotes`: głosy nieważne
+  - `votes`: głosy na kandydatów, klucze jak w `candidates.json`, także `hoffman`
+
+Frekwencja w raporcie lokalu to `ballots / eligible`, gdy oba pola są liczbami. Bez uprawnionych zostaje „—”. Głosy Hoffmana zapisuj w `votes.hoffman`, ale nie wliczaj ich do `validVotes`: w tabeli widać liczbę i adnotację „wycofany”, bez procentu i paska, i nie malują mapy. Kolumna „Razem” sumuje tylko obwody z `reported: true` i podpisuje, ile z nich już spłynęło.
 
 Nie dopisujemy wyników z sondaży ani ze zrzutów nieoficjalnych. Kolory przy nazwiskach służą tylko do czytania mapy.
 

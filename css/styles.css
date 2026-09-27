@@ -341,7 +341,7 @@ h1 {
   .place-sheet:not([hidden]) { animation: none; }
   .leaflet-overlay-pane svg path,
   .sheet-close,
-  .precinct-block.is-focus { transition: none; }
+  .result-table .is-focus { transition: none; }
 }
 
 .sheet-close {
@@ -402,35 +402,123 @@ h1 {
 
 .popup-blocks {
   grid-area: blocks;
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 8px;
-  align-items: stretch;
   min-width: 0;
   margin: 0;
+  overflow-x: auto;
 }
 
-.precinct-block {
-  container-type: inline-size;
-  flex: 1 1 0;
-  min-width: 0;
-  padding: 10px 12px 10px;
-  border: 1px solid rgba(23, 32, 38, 0.08);
-  border-radius: 12px;
-  background: var(--panel-2);
+.result-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-variant-numeric: tabular-nums;
 }
 
-.precinct-top {
+.result-table caption {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.result-table th,
+.result-table td {
+  padding: 3px 8px;
+  text-align: right;
+  vertical-align: middle;
+  border-bottom: 1px solid rgba(23, 32, 38, 0.08);
+  white-space: nowrap;
+}
+
+.result-table thead th {
+  padding-bottom: 8px;
+  text-align: center;
+  vertical-align: bottom;
+  border-bottom: 1px solid rgba(23, 32, 38, 0.16);
+}
+
+.result-table tbody th,
+.result-table .result-corner {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  min-width: 148px;
+  background: #fff;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.82rem;
+}
+
+.result-table .is-stat th,
+.result-table .is-stat td {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.result-table .is-focus {
+  background: #f6f5f2;
+  transition: background 0.2s ease;
+}
+
+.result-table thead .is-focus { box-shadow: inset 0 3px 0 #172026; }
+
+.result-table .is-total { background: #f7f8f7; }
+
+.result-table .who {
   display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 2px 8px;
+  align-items: center;
+  gap: 6px;
 }
 
-.precinct-block h4 {
-  margin: 0;
-  font-size: 0.95rem;
+.result-table .swatch {
+  width: 8px;
+  height: 8px;
+  flex: none;
+  transform: none;
+}
+
+.result-table .nums {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+  font-size: 0.82rem;
+}
+
+.result-table .nums em {
+  min-width: 3.2em;
+  color: var(--muted);
+  font-style: normal;
+}
+
+.result-table .meter {
+  display: block;
+  height: 3px;
+  margin-top: 3px;
+  border-radius: 99px;
+  background: rgba(23, 32, 38, 0.1);
+  overflow: hidden;
+}
+
+.result-table .meter span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.result-table .is-ahead .nums strong { font-weight: 700; }
+
+.result-table .withdrawn-note {
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .nr-label {
@@ -446,15 +534,24 @@ h1 {
   display: block;
   margin-top: 1px;
   font-family: Fraunces, serif;
-  font-size: 1.35rem;
+  font-size: 1.15rem;
   font-weight: 560;
   letter-spacing: -0.03em;
   line-height: 1;
   font-variant-numeric: tabular-nums;
 }
 
+.nr-note {
+  display: block;
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
 .status-badge {
-  margin: 0;
+  display: inline-block;
+  margin: 6px 0 0;
   padding: 3px 8px;
   border-radius: 999px;
   background: rgba(138, 98, 48, 0.14);
@@ -467,148 +564,6 @@ h1 {
 .status-badge.is-selected {
   background: #172026;
   color: #fff;
-}
-
-.precinct-block .winner {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin: 0;
-  font-size: 0.86rem;
-  font-weight: 700;
-}
-
-.precinct-block .winner .swatch {
-  width: 8px;
-  height: 8px;
-  transform: none;
-}
-
-.precinct-block .awaiting {
-  margin: 8px 0 0;
-  max-width: 32ch;
-  color: var(--muted);
-  font-size: 0.84rem;
-  font-weight: 500;
-  line-height: 1.35;
-}
-
-.precinct-block.is-waiting {
-  flex: 1 1 0;
-  max-width: 340px;
-  background: #f4f5f4;
-}
-
-.precinct-block.is-focus {
-  background: #fff;
-  border-color: transparent;
-  box-shadow: inset 3px 0 0 #172026;
-  outline: 1px solid rgba(23, 32, 38, 0.28);
-  transition: box-shadow 0.2s ease, background 0.2s ease, outline-color 0.2s ease;
-}
-
-.tallies {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 6px;
-  margin: 8px 0 0;
-}
-
-.tallies div {
-  padding: 6px 8px;
-  border-radius: 8px;
-  background: rgba(23, 32, 38, 0.04);
-}
-
-.tallies dt {
-  color: var(--muted);
-  font-size: 0.68rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.tallies dd {
-  margin: 1px 0 0;
-  font-weight: 700;
-  font-variant-numeric: tabular-nums;
-}
-
-.vote-lines {
-  list-style: none;
-  margin: 8px 0 0;
-  padding: 0;
-}
-
-.vote-lines li {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 1px 8px;
-  align-items: center;
-  padding: 1px 0 2px;
-}
-
-.vote-lines .who {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  min-width: 0;
-  font-size: 0.78rem;
-  overflow-wrap: anywhere;
-}
-
-.vote-lines .swatch {
-  width: 8px;
-  height: 8px;
-  flex: none;
-  transform: none;
-}
-
-.vote-lines .nums {
-  display: flex;
-  gap: 6px;
-  font-variant-numeric: tabular-nums;
-  font-size: 0.78rem;
-}
-
-.vote-lines em {
-  min-width: 3.4em;
-  color: var(--muted);
-  font-style: normal;
-  text-align: right;
-}
-
-.vote-lines .meter {
-  grid-column: 1 / -1;
-  height: 3px;
-  border-radius: 99px;
-  background: rgba(23, 32, 38, 0.1);
-  overflow: hidden;
-}
-
-.vote-lines .meter span {
-  display: block;
-  height: 100%;
-  border-radius: inherit;
-}
-
-.vote-lines .is-ahead .who { font-weight: 700; }
-
-@container (max-width: 230px) {
-  .precinct-top { flex-direction: column; align-items: flex-start; }
-
-  .tallies { display: block; }
-
-  .tallies div {
-    display: flex;
-    justify-content: space-between;
-    gap: 8px;
-    padding: 1px 0;
-    background: none;
-  }
-
-  .vote-lines li { grid-template-columns: minmax(0, 1fr); }
-
-  .vote-lines .nums { justify-content: flex-start; }
 }
 
 .leaflet-control-zoom {
@@ -657,8 +612,4 @@ h1 {
     right: 8px;
     bottom: 8px;
   }
-
-  .popup-blocks { flex-wrap: wrap; }
-
-  .precinct-block.is-waiting { max-width: none; flex-basis: calc(50% - 4px); }
 }

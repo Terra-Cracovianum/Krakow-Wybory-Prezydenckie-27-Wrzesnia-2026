@@ -145,6 +145,7 @@ function leaderOf(nr) {
   if (!row || !row.reported) return null;
   let best = null;
   for (const candidate of state.candidates) {
+    if (candidate.withdrawn) continue;
     const votes = row.votes[candidate.id];
     if (typeof votes !== "number") continue;
     if (!best || votes > best.votes) best = { ...candidate, votes };
@@ -231,7 +232,6 @@ function showPlace(feature, highlightNr) {
   const sheet = document.querySelector("#place-sheet");
   sheet.hidden = false;
   sheet.innerHTML = stationPopup(feature, highlightNr);
-  sheet.querySelector(".popup-blocks").style.setProperty("--cols", String(feature.properties.obwody.length));
   sheet.querySelector("[data-close]").addEventListener("click", closeSheet);
   liftZoom();
   requestAnimationFrame(() => easeCity());
@@ -375,60 +375,147 @@ function renderCandidates() {
 
 function stationPopup(feature, highlightNr) {
   const props = feature.properties;
-  const blocks = [...props.obwody]
-    .sort((a, b) => Number(a) - Number(b))
-    .map((nr) => precinctBlock(nr, String(nr) === String(highlightNr)))
+  const numbers = [...props.obwody].sort((a, b) => Number(a) - Number(b));
+  const showTotal = numbers.length > 1;
+  const total = showTotal ? placeTotals(numbers) : null;
+  const heads = numbers.map((nr) => columnHead(nr, String(nr) === String(highlightNr))).join("");
+  const totalHead = showTotal
+    ? `<th scope="col" class="is-total"><span class="nr-label">Razem</span><span class="nr-note">${total.reportedCount} z ${numbers.length}</span></th>`
+    : "";
+  const stats = [
+    ["Uprawnieni", (row) => formatCount(row && row.eligible), (sum) => formatCount(sum.eligible)],
+    ["Frekwencja", turnoutOf, turnoutOf],
+    ["Ważne", (row) => formatCount(row && row.validVotes), (sum) => formatCount(sum.validVotes)],
+    ["Nieważne", (row) => formatCount(row && row.invalidVotes), (sum) => formatCount(sum.invalidVotes)],
+  ];
+  const statRows = stats
+    .map(([label, cell, totalCell]) => {
+      const tds = numbers
+        .map((nr) => `<td class="${cellClass(nr, highlightNr)}">${cell(precinctRow(nr))}</td>`)
+        .join("");
+      const tail = showTotal ? `<td class="is-total">${totalCell(total)}</td>` : "";
+      return `<tr class="is-stat"><th scope="row">${label}</th>${tds}${tail}</tr>`;
+    })
+    .join("");
+  const candidateRows = state.candidates
+    .map((candidate) => {
+      const note = candidate.withdrawn ? `<span class="withdrawn-note">wycofany</span>` : "";
+      const tds = numbers.map((nr) => voteCell(candidate, precinctRow(nr), nr, highlightNr)).join("");
+      const tail = showTotal ? voteTotalCell(candidate, total) : "";
+      return `<tr>
+        <th scope="row"><span class="who"><span class="swatch" style="background:${candidate.color}"></span><span>${escapeHtml(candidate.short)}</span>${note}</span></th>
+        ${tds}${tail}
+      </tr>`;
+    })
     .join("");
   return `<header class="popup-place">
       <p class="popup-kicker">Lokal wyborczy</p>
       <h3>${escapeHtml(props.siedziba)}</h3>
       <p class="place">${escapeHtml(address(props))}</p>
     </header>
-    <div class="popup-blocks">${blocks}</div>
+    <div class="popup-blocks">
+      <table class="result-table">
+        <caption>Wyniki obwodów w tym lokalu</caption>
+        <thead>
+          <tr>
+            <th class="result-corner" scope="col"></th>
+            ${heads}
+            ${totalHead}
+          </tr>
+        </thead>
+        <tbody>${statRows}${candidateRows}</tbody>
+      </table>
+    </div>
     <button type="button" class="sheet-close" data-close aria-label="Zamknij">
       <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M3.2 3.2l9.6 9.6M12.8 3.2L3.2 12.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
     </button>`;
 }
 
-function precinctBlock(nr, highlighted) {
-  const row = state.results.precincts[nr];
-  const leader = leaderOf(nr);
-  const focus = highlighted ? " is-focus" : "";
-  if (!row || !row.reported || !leader) {
-    const badge = highlighted ? "Wybrany" : "Niepoliczone";
-    return `<section class="precinct-block is-waiting${focus}"${highlighted ? ' aria-current="true"' : ""}>
-      <div class="precinct-top">
-        <h4><span class="nr-label">Obwód</span><span class="nr">${escapeHtml(nr)}</span></h4>
-        <p class="status-badge${highlighted ? " is-selected" : ""}">${badge}</p>
-      </div>
-      <p class="awaiting">PKW nie ogłosiła jeszcze wyniku tego obwodu.</p>
-    </section>`;
+function precinctRow(nr) {
+  return state.results.precincts[String(nr)] || null;
+}
+
+function cellClass(nr, highlightNr) {
+  return String(nr) === String(highlightNr) ? "is-focus" : "";
+}
+
+function columnHead(nr, highlighted) {
+  const row = precinctRow(nr);
+  const badge = highlighted ? "Wybrany" : row && row.reported ? "Policzony" : "Niepoliczone";
+  return `<th scope="col" class="${highlighted ? "is-focus" : ""}"${highlighted ? ' aria-current="true"' : ""}>
+      <span class="nr-label">Obwód</span>
+      <span class="nr">${escapeHtml(nr)}</span>
+      <span class="status-badge${highlighted ? " is-selected" : ""}">${badge}</span>
+    </th>`;
+}
+
+function placeTotals(numbers) {
+  const rows = numbers.map((nr) => precinctRow(nr)).filter((row) => row && row.reported);
+  const votes = {};
+  for (const candidate of state.candidates) votes[candidate.id] = sumVotes(rows, candidate.id);
+  return {
+    reportedCount: rows.length,
+    eligible: sumField(rows, "eligible"),
+    ballots: sumField(rows, "ballots"),
+    validVotes: sumField(rows, "validVotes"),
+    invalidVotes: sumField(rows, "invalidVotes"),
+    votes,
+  };
+}
+
+function sumField(rows, key) {
+  if (!rows.length) return null;
+  let total = 0;
+  for (const row of rows) {
+    if (typeof row[key] !== "number") return null;
+    total += row[key];
   }
-  const lines = state.candidates
-    .map((candidate) => {
-      const votes = row.votes[candidate.id];
-      const count = typeof votes === "number" ? votes : 0;
-      const ahead = candidate.id === leader.id ? " is-ahead" : "";
-      const width = row.validVotes > 0 ? (count / row.validVotes) * 100 : 0;
-      return `<li class="${ahead.trim()}">
-        <span class="who"><span class="swatch" style="background:${candidate.color}"></span><span>${escapeHtml(candidate.short)}</span></span>
-        <span class="nums"><strong>${formatCount(votes)}</strong><em>${percentLabel(votes, row.validVotes)}</em></span>
-        <span class="meter" aria-hidden="true"><span style="width:${width}%;background:${candidate.color}"></span></span>
-      </li>`;
-    })
-    .join("");
-  return `<section class="precinct-block${focus}"${highlighted ? ' aria-current="true"' : ""}>
-    <div class="precinct-top">
-      <h4><span class="nr-label">Obwód</span><span class="nr">${escapeHtml(nr)}</span></h4>
-      <p class="winner"><span class="swatch" style="background:${leader.color}"></span>${escapeHtml(leader.short)} prowadzi</p>
-    </div>
-    <dl class="tallies">
-      <div><dt>Karty</dt><dd>${formatCount(row.ballots)}</dd></div>
-      <div><dt>Ważne</dt><dd>${formatCount(row.validVotes)}</dd></div>
-      <div><dt>Nieważne</dt><dd>${formatCount(row.invalidVotes)}</dd></div>
-    </dl>
-    <ul class="vote-lines">${lines}</ul>
-  </section>`;
+  return total;
+}
+
+function sumVotes(rows, id) {
+  if (!rows.length) return null;
+  let total = 0;
+  for (const row of rows) {
+    const value = row.votes && row.votes[id];
+    if (typeof value !== "number") return null;
+    total += value;
+  }
+  return total;
+}
+
+function turnoutOf(row) {
+  if (!row || typeof row.ballots !== "number" || typeof row.eligible !== "number" || row.eligible <= 0) return "—";
+  return percentLabel(row.ballots, row.eligible);
+}
+
+function voteCell(candidate, row, nr, highlightNr) {
+  const votes = row && row.votes ? row.votes[candidate.id] : null;
+  const cls = cellClass(nr, highlightNr);
+  if (candidate.withdrawn) {
+    return `<td class="${cls} is-withdrawn"><span class="nums"><strong>${formatCount(votes)}</strong></span></td>`;
+  }
+  const valid = row && row.reported ? row.validVotes : null;
+  const leader = leaderOf(nr);
+  const ahead = leader && leader.id === candidate.id ? " is-ahead" : "";
+  const width = typeof votes === "number" && typeof valid === "number" && valid > 0 ? (votes / valid) * 100 : 0;
+  return `<td class="${cls}${ahead}">
+      <span class="nums"><strong>${formatCount(votes)}</strong><em>${percentLabel(votes, valid)}</em></span>
+      <span class="meter" aria-hidden="true"><span style="width:${width}%;background:${candidate.color}"></span></span>
+    </td>`;
+}
+
+function voteTotalCell(candidate, total) {
+  const votes = total.votes[candidate.id];
+  if (candidate.withdrawn) {
+    return `<td class="is-total is-withdrawn"><span class="nums"><strong>${formatCount(votes)}</strong></span></td>`;
+  }
+  const valid = total.validVotes;
+  const width = typeof votes === "number" && typeof valid === "number" && valid > 0 ? (votes / valid) * 100 : 0;
+  return `<td class="is-total">
+      <span class="nums"><strong>${formatCount(votes)}</strong><em>${percentLabel(votes, valid)}</em></span>
+      <span class="meter" aria-hidden="true"><span style="width:${width}%;background:${candidate.color}"></span></span>
+    </td>`;
 }
 
 function address(props) {
