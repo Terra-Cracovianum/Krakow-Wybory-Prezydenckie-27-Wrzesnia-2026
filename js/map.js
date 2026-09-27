@@ -193,7 +193,6 @@ let fitting = false;
 function viewPadding() {
   const mapEl = document.querySelector("#map").getBoundingClientRect();
   const panel = document.querySelector(".panel").getBoundingClientRect();
-  const sheet = document.querySelector("#place-sheet");
   const zoom = document.querySelector(".leaflet-control-zoom");
   const gap = 18;
   let left = 16;
@@ -205,7 +204,6 @@ function viewPadding() {
     if (coversWidth) top = Math.max(top, panel.bottom - mapEl.top + gap);
     else left = Math.max(left, panel.right - mapEl.left + gap);
   }
-  if (sheet && !sheet.hidden) bottom = Math.max(bottom, sheet.getBoundingClientRect().height + gap);
   if (zoom) right = Math.max(right, mapEl.right - zoom.getBoundingClientRect().left + 10);
   return {
     paddingTopLeft: L.point(left, top),
@@ -402,7 +400,9 @@ function stationPopup(feature, highlightNr) {
       <p class="place">${escapeHtml(address(props))}</p>
     </header>
     <div class="popup-blocks">${blocks}</div>
-    <button type="button" class="sheet-close" data-close aria-label="Zamknij">×</button>`;
+    <button type="button" class="sheet-close" data-close aria-label="Zamknij">
+      <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M3.2 3.2l9.6 9.6M12.8 3.2L3.2 12.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>`;
 }
 
 function precinctBlock(nr, highlighted) {
@@ -410,11 +410,13 @@ function precinctBlock(nr, highlighted) {
   const leader = leaderOf(nr);
   const focus = highlighted ? " is-focus" : "";
   if (!row || !row.reported || !leader) {
-    return `<section class="precinct-block is-waiting${focus}">
+    const badge = highlighted ? "Wybrany" : "Niepoliczone";
+    return `<section class="precinct-block is-waiting${focus}"${highlighted ? ' aria-current="true"' : ""}>
       <div class="precinct-top">
-        <h4>Obwód ${escapeHtml(nr)}</h4>
-        <p class="awaiting">jeszcze niepoliczone</p>
+        <h4><span class="nr-label">Obwód</span><span class="nr">${escapeHtml(nr)}</span></h4>
+        <p class="status-badge${highlighted ? " is-selected" : ""}">${badge}</p>
       </div>
+      <p class="awaiting">PKW nie ogłosiła jeszcze wyniku tego obwodu.</p>
     </section>`;
   }
   const lines = state.candidates
@@ -430,10 +432,10 @@ function precinctBlock(nr, highlighted) {
       </li>`;
     })
     .join("");
-  return `<section class="precinct-block${focus}">
+  return `<section class="precinct-block${focus}"${highlighted ? ' aria-current="true"' : ""}>
     <div class="precinct-top">
-      <h4>Obwód ${escapeHtml(nr)}</h4>
-      <p class="winner"><span class="swatch" style="background:${leader.color}"></span>${escapeHtml(leader.short)}</p>
+      <h4><span class="nr-label">Obwód</span><span class="nr">${escapeHtml(nr)}</span></h4>
+      <p class="winner"><span class="swatch" style="background:${leader.color}"></span>${escapeHtml(leader.short)} prowadzi</p>
     </div>
     <dl class="tallies">
       <div><dt>Karty</dt><dd>${formatCount(row.ballots)}</dd></div>
