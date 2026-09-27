@@ -19,18 +19,25 @@ html, body {
 }
 
 .app {
-  display: grid;
-  grid-template-columns: minmax(320px, 400px) 1fr;
+  position: relative;
   height: 100%;
+  height: 100dvh;
 }
 
 .panel {
+  position: absolute;
+  z-index: 700;
+  top: 16px;
+  left: 16px;
+  width: min(352px, calc(100% - 32px));
+  max-height: calc(100% - 32px);
   overflow: auto;
-  padding: 28px 24px 32px;
-  border-right: 1px solid var(--line);
-  background:
-    radial-gradient(1200px 400px at -10% -20%, rgba(215, 196, 163, 0.16), transparent 50%),
-    var(--panel);
+  padding: 24px 22px 28px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  background: rgba(20, 23, 28, 0.9);
+  box-shadow: 0 18px 50px rgba(23, 32, 38, 0.18);
+  backdrop-filter: blur(18px);
 }
 
 .kicker {
@@ -140,6 +147,7 @@ h1 {
 
 .hits button {
   width: 100%;
+  min-height: 44px;
   padding: 8px 12px;
   border: 0;
   border-bottom: 1px solid var(--line);
@@ -232,10 +240,10 @@ h1 {
 .sources { margin: 12px 0 0; }
 
 .stage {
-  position: relative;
+  position: absolute;
+  inset: 0;
   display: flex;
   flex-direction: column;
-  height: 100%;
   min-height: 0;
 }
 
@@ -315,7 +323,7 @@ h1 {
 .place-sheet {
   position: relative;
   flex: 0 0 auto;
-  z-index: 2;
+  z-index: 850;
   gap: 8px;
   margin: 0 8px 8px;
   padding: 10px 40px 10px 12px;
@@ -339,7 +347,8 @@ h1 {
 }
 
 .leaflet-overlay-pane svg path {
-  transition: fill 0.35s ease, fill-opacity 0.35s ease, stroke 0.35s ease, stroke-width 0.35s ease;
+  transition: fill 0.18s ease, fill-opacity 0.18s ease, stroke 0.18s ease, stroke-width 0.18s ease, stroke-opacity 0.18s ease;
+  cursor: pointer;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -568,28 +577,44 @@ h1 {
   box-shadow: none;
 }
 
-.leaflet-control-attribution {
-  background: rgba(20, 23, 28, 0.8) !important;
-  color: #b7b1a6 !important;
+.leaflet-control-zoom {
+  border: 0 !important;
+  box-shadow: 0 10px 28px rgba(23, 32, 38, 0.14) !important;
 }
 
-.leaflet-control-attribution a { color: #f4efe6 !important; }
+.leaflet-control-zoom a {
+  width: 44px !important;
+  height: 44px !important;
+  line-height: 44px !important;
+  color: #172026 !important;
+  background: rgba(255, 255, 255, 0.94) !important;
+}
+
+.leaflet-control-zoom a:hover { background: #fff !important; }
+
+.leaflet-bar a:first-child { border-radius: 12px 12px 0 0 !important; }
+
+.leaflet-bar a:last-child { border-radius: 0 0 12px 12px !important; }
+
+.leaflet-control-attribution {
+  background: rgba(255, 255, 255, 0.88) !important;
+  color: #3d4744 !important;
+  border-radius: 8px;
+  font-size: 11px;
+}
+
+.leaflet-control-attribution a { color: #172026 !important; }
 
 @media (max-width: 860px) {
-  .app {
-    grid-template-columns: 1fr;
-    grid-template-rows: minmax(120px, 34vh) minmax(0, 1fr);
-    height: 100%;
-    min-height: 0;
-  }
-
   .panel {
-    max-height: none;
-    border-right: 0;
-    border-bottom: 1px solid var(--line);
+    top: 8px;
+    left: 8px;
+    width: calc(100% - 16px);
+    max-height: 38vh;
+    border-radius: 16px;
   }
 
-  .stage { height: 100%; min-height: 0; }
+  .stage { inset: 0; }
 
   #map { min-height: 160px; }
 
