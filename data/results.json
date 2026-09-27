@@ -1,24 +1,24 @@
 {
   "status": "partial",
   "round": 1,
-  "updatedAt": "2026-09-27T23:12:28+02:00",
+  "updatedAt": "2026-09-27T23:14:12+02:00",
   "precinctsTotal": 454,
-  "precinctsReporting": 242,
-  "eligible": 269677,
-  "ballots": 115507,
-  "validCards": 115497,
-  "validVotes": 114806,
-  "invalidVotes": 691,
-  "turnout": 42.83,
+  "precinctsReporting": 245,
+  "eligible": 274316,
+  "ballots": 117647,
+  "validCards": 117637,
+  "validVotes": 116943,
+  "invalidVotes": 694,
+  "turnout": 42.88,
   "candidates": {
-    "drewnicki": 20822,
-    "gibala": 42121,
-    "gosek": 5316,
+    "drewnicki": 21185,
+    "gibala": 42955,
+    "gosek": 5444,
     "hoffman": 0,
-    "klimek": 4735,
-    "owca": 7746,
-    "piatkowska": 33618,
-    "pietrzyk": 448
+    "klimek": 4816,
+    "owca": 7900,
+    "piatkowska": 34190,
+    "pietrzyk": 453
   },
   "precincts": {
     "1": {
@@ -2520,19 +2520,21 @@
       }
     },
     "149": {
-      "reported": false,
-      "ballots": null,
-      "validVotes": null,
-      "invalidVotes": null,
+      "reported": true,
+      "eligible": 1093,
+      "ballots": 529,
+      "validCards": 529,
+      "validVotes": 529,
+      "invalidVotes": 0,
       "votes": {
-        "drewnicki": null,
-        "gibala": null,
-        "gosek": null,
-        "hoffman": null,
-        "klimek": null,
-        "owca": null,
-        "piatkowska": null,
-        "pietrzyk": null
+        "drewnicki": 57,
+        "gibala": 155,
+        "gosek": 55,
+        "hoffman": 0,
+        "klimek": 18,
+        "owca": 49,
+        "piatkowska": 191,
+        "pietrzyk": 4
       }
     },
     "150": {
@@ -2686,19 +2688,21 @@
       }
     },
     "159": {
-      "reported": false,
-      "ballots": null,
-      "validVotes": null,
-      "invalidVotes": null,
+      "reported": true,
+      "eligible": 1166,
+      "ballots": 539,
+      "validCards": 539,
+      "validVotes": 538,
+      "invalidVotes": 1,
       "votes": {
-        "drewnicki": null,
-        "gibala": null,
-        "gosek": null,
-        "hoffman": null,
-        "klimek": null,
-        "owca": null,
-        "piatkowska": null,
-        "pietrzyk": null
+        "drewnicki": 75,
+        "gibala": 193,
+        "gosek": 31,
+        "hoffman": 0,
+        "klimek": 10,
+        "owca": 30,
+        "piatkowska": 198,
+        "pietrzyk": 1
       }
     },
     "160": {
@@ -5664,19 +5668,21 @@
       }
     },
     "334": {
-      "reported": false,
-      "ballots": null,
-      "validVotes": null,
-      "invalidVotes": null,
+      "reported": true,
+      "eligible": 2380,
+      "ballots": 1072,
+      "validCards": 1072,
+      "validVotes": 1070,
+      "invalidVotes": 2,
       "votes": {
-        "drewnicki": null,
-        "gibala": null,
-        "gosek": null,
-        "hoffman": null,
-        "klimek": null,
-        "owca": null,
-        "piatkowska": null,
-        "pietrzyk": null
+        "drewnicki": 231,
+        "gibala": 486,
+        "gosek": 42,
+        "hoffman": 0,
+        "klimek": 53,
+        "owca": 75,
+        "piatkowska": 183,
+        "pietrzyk": 0
       }
     },
     "335": {
