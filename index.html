@@ -47,6 +47,13 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <div id="ticker" class="ticker" hidden>
+      <p class="ticker-label">Ważne</p>
+      <p id="ticker-live" class="ticker-live" aria-live="polite"></p>
+      <div class="ticker-viewport" aria-hidden="true">
+        <div class="ticker-track" id="ticker-track"></div>
+      </div>
+    </div>
     <div class="app">
       <aside class="panel">
         <header class="mast">
