@@ -14,7 +14,9 @@ const query = document.querySelector("#query");
 const hits = document.querySelector("#hits");
 
 init().catch((error) => {
-  document.querySelector("#status").textContent = "Nie udało się wczytać mapy";
+  const label = document.querySelector("#status-label");
+  if (label) label.textContent = "Nie udało się wczytać mapy";
+  else document.querySelector("#status").textContent = "Nie udało się wczytać mapy";
   console.error(error);
 });
 
@@ -444,20 +446,28 @@ function renderHits(raw) {
 function renderSummary() {
   const results = state.results;
   const status = document.querySelector("#status");
+  const statusLabel = document.querySelector("#status-label");
+  const statusMeta = document.querySelector("#status-meta");
+  const statusMeter = document.querySelector(".status-meter");
   const sample = document.querySelector("#sample");
   sample.hidden = !results.sample;
   const flowing = !results.sample && results.precinctsReporting > 0 && results.precinctsReporting < results.precinctsTotal;
+  const share = results.precinctsTotal > 0 ? (results.precinctsReporting / results.precinctsTotal) * 100 : 0;
   status.classList.toggle("is-flowing", flowing);
+  statusMeter.hidden = !flowing;
+  statusMeta.hidden = !flowing;
+  if (flowing) status.style.setProperty("--share", String(share));
   if (results.sample) {
-    status.textContent = "Podgląd przykładowych wyników";
+    statusLabel.textContent = "Podgląd przykładowych wyników";
   } else if (results.status === "awaiting" || results.precinctsReporting === 0) {
-    status.textContent = "Oczekiwanie na wyniki";
+    statusLabel.textContent = "Oczekiwanie na wyniki";
   } else if (flowing) {
-    status.textContent = `Wyniki spływają · ${numberFormat.format(results.precinctsReporting)} z ${numberFormat.format(results.precinctsTotal)}`;
+    statusLabel.textContent = "Wyniki spływają";
+    statusMeta.textContent = `${formatPercent(share)} · ${numberFormat.format(results.precinctsReporting)} z ${numberFormat.format(results.precinctsTotal)}`;
   } else {
-    status.textContent = results.round === 2 ? "Wyniki drugiej tury" : "Wyniki pełne";
+    statusLabel.textContent = results.round === 2 ? "Wyniki drugiej tury" : "Wyniki pełne";
   }
-  document.querySelector("#turnout").textContent = formatPercent(results.turnout);
+  document.querySelector("#turnout").textContent = formatPercent(officialTurnout(results));
   document.querySelector("#reporting").textContent =
     `${numberFormat.format(results.precinctsReporting)} / ${numberFormat.format(results.precinctsTotal)}`;
   document.querySelector("#valid").textContent = formatCount(results.validVotes);
@@ -475,8 +485,7 @@ function renderPkwChip() {
   const share = total > 0 ? (reported / total) * 100 : 0;
   chip.style.setProperty("--share", String(share));
   const countLine = `${numberFormat.format(reported)} z ${numberFormat.format(total)} obwodów`;
-  const percent = new Intl.NumberFormat("pl-PL", { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(share);
-  const countedShare = `<b>${percent}%</b><span>${numberFormat.format(reported)} z ${numberFormat.format(total)} obwodów</span>`;
+  const countedShare = `<b>${formatPercent(share)}</b><span>${numberFormat.format(reported)} z ${numberFormat.format(total)} obwodów</span>`;
   if (results.sample) {
     chip.dataset.state = "sample";
     title.textContent = "Podgląd, nie wyniki PKW";
@@ -519,14 +528,12 @@ function renderProgress() {
   const total = results.precinctsTotal;
   const waiting = counted.precincts === 0;
   const status = document.querySelector("#progress-status");
-  const percent = new Intl.NumberFormat("pl-PL", { minimumFractionDigits: 1, maximumFractionDigits: 1 }).format(
-    total > 0 ? (counted.precincts / total) * 100 : 0
-  );
+  const percent = formatPercent(total > 0 ? (counted.precincts / total) * 100 : 0);
   status.textContent = waiting
     ? "Oczekiwanie"
     : counted.precincts >= total
       ? "Policzone"
-      : `${percent}% policzone`;
+      : `${percent} policzone`;
   document.querySelector("#progress-precincts").textContent = waiting
     ? "—"
     : `${numberFormat.format(counted.precincts)} / ${numberFormat.format(total)}`;
@@ -678,9 +685,17 @@ function sumVotes(rows, id) {
   return total;
 }
 
+function officialTurnout(results) {
+  const cards = typeof results.validCards === "number" ? results.validCards : results.ballots;
+  if (typeof cards !== "number" || typeof results.eligible !== "number" || results.eligible <= 0) return results.turnout;
+  return (100 * cards) / results.eligible;
+}
+
 function turnoutOf(row) {
-  if (!row || typeof row.ballots !== "number" || typeof row.eligible !== "number" || row.eligible <= 0) return "—";
-  return percentLabel(row.ballots, row.eligible);
+  if (!row || typeof row.eligible !== "number" || row.eligible <= 0) return "—";
+  const cards = typeof row.validCards === "number" ? row.validCards : row.ballots;
+  if (typeof cards !== "number") return "—";
+  return percentLabel(cards, row.eligible);
 }
 
 function voteCell(candidate, row, nr) {
@@ -725,10 +740,15 @@ function formatCount(value) {
   return typeof value === "number" ? numberFormat.format(value) : "—";
 }
 
+function pkwRound(value, digits) {
+  const shifted = Number(`${value}e${digits}`);
+  return Number(`${Math.round(shifted)}e-${digits}`);
+}
+
 function formatPercent(value) {
-  return typeof value === "number"
-    ? `${numberFormat.format(value)}%`
-    : "—";
+  if (typeof value !== "number" || Number.isNaN(value)) return "—";
+  const rounded = pkwRound(value, 2);
+  return `${new Intl.NumberFormat("pl-PL", { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(rounded)}%`;
 }
 
 function shareOf(votes, valid) {
@@ -738,7 +758,7 @@ function shareOf(votes, valid) {
 
 function percentLabel(votes, valid) {
   if (typeof votes !== "number" || typeof valid !== "number" || valid <= 0) return "—";
-  return `${numberFormat.format(Math.round((votes / valid) * 1000) / 10)}%`;
+  return formatPercent((100 * votes) / valid);
 }
 
 function escapeHtml(value) {
