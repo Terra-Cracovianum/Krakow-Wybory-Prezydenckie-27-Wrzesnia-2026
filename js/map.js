@@ -496,6 +496,7 @@ function renderSummary() {
   document.querySelector("#valid").textContent = formatCount(results.validVotes);
   renderProgress();
   renderPkwChip();
+  renderRunoff();
 }
 
 function renderPkwChip() {
@@ -530,6 +531,46 @@ function renderPkwChip() {
   chip.dataset.state = "full";
   title.textContent = results.round === 2 ? "Wyniki drugiej tury" : "Wyniki pełne";
   detail.innerHTML = countedShare;
+}
+
+function renderRunoff() {
+  const card = document.querySelector("#runoff");
+  const results = state.results;
+  const complete = !results.sample && results.precinctsTotal > 0 && results.precinctsReporting >= results.precinctsTotal;
+  card.hidden = !complete;
+  if (!complete) return;
+  const ranked = state.candidates
+    .filter((candidate) => !candidate.withdrawn)
+    .map((candidate) => ({
+      candidate,
+      votes: typeof results.candidates[candidate.id] === "number" ? results.candidates[candidate.id] : 0,
+    }))
+    .sort((a, b) => b.votes - a.votes || a.candidate.ballot - b.candidate.ballot);
+  const valid = results.validVotes;
+  const leader = ranked[0];
+  const elected = leader && typeof valid === "number" && valid > 0 && leader.votes * 2 > valid;
+  card.classList.toggle("is-elected", elected);
+  document.querySelector("#runoff-kicker").textContent =
+    `Policzone · ${numberFormat.format(results.precinctsReporting)} z ${numberFormat.format(results.precinctsTotal)}`;
+  document.querySelector("#runoff-title").textContent = elected ? "Wybrany w pierwszej turze" : "Druga tura";
+  document.querySelector("#runoff-when").textContent = elected ? "Ponad połowa ważnych głosów" : "11 października 2026";
+  const shown = elected ? ranked.slice(0, 1) : ranked.slice(0, 2);
+  document.querySelector("#runoff-places").innerHTML = shown
+    .map((row, index) => runoffPlace(row, index + 1, valid))
+    .join("");
+}
+
+function runoffPlace(row, place, valid) {
+  const { candidate, votes } = row;
+  const width = typeof valid === "number" && valid > 0 ? (votes / valid) * 100 : 0;
+  return `<li class="runoff-place">
+    <span class="runoff-mark" style="background:${candidate.color}">${place}</span>
+    <span class="runoff-copy">
+      <strong>${escapeHtml(candidate.name)}</strong>
+      <span>${formatCount(votes)} · ${percentLabel(votes, valid)}</span>
+    </span>
+    <span class="runoff-bar" aria-hidden="true"><span style="width:${width}%;background:${candidate.color}"></span></span>
+  </li>`;
 }
 
 function countedSoFar() {

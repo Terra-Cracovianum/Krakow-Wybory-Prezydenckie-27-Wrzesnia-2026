@@ -590,7 +590,119 @@ h1 {
   100% { transform: translateX(380%); }
 }
 
+.runoff {
+  position: absolute;
+  z-index: 500;
+  left: 50%;
+  bottom: 22px;
+  width: min(520px, calc(100% - 48px));
+  padding: 16px 18px 14px;
+  border: 1px solid rgba(23, 32, 38, 0.08);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 18px 44px rgba(23, 32, 38, 0.16);
+  color: var(--ink);
+  transform: translateX(-50%);
+  animation: runoff-in 0.55s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.runoff-kicker {
+  margin: 0;
+  color: var(--await);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.runoff h2 {
+  margin: 4px 0 0;
+  font-family: Fraunces, serif;
+  font-size: 1.7rem;
+  font-weight: 560;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+.runoff-when {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.runoff-places {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.runoff.is-elected .runoff-places { grid-template-columns: 1fr; }
+
+.runoff-place {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  gap: 4px 10px;
+  align-items: center;
+  min-width: 0;
+}
+
+.runoff-mark {
+  grid-row: span 2;
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.runoff-copy {
+  min-width: 0;
+}
+
+.runoff-copy strong {
+  display: block;
+  overflow: hidden;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.runoff-copy span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+}
+
+.runoff-bar {
+  grid-column: 2;
+  height: 5px;
+  border-radius: 99px;
+  background: rgba(23, 32, 38, 0.08);
+  overflow: hidden;
+}
+
+.runoff-bar span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+}
+
+@keyframes runoff-in {
+  from { opacity: 0; transform: translateX(-50%) translateY(12px); }
+  to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
 @media (prefers-reduced-motion: reduce) {
+  .runoff { animation: none; }
   .panel { transition: none; }
   .status.is-flowing::before { animation: none; }
   .status-meter::before { transition: none; }
@@ -1055,6 +1167,20 @@ h1 {
   .nr { font-size: 1.2rem; }
 
   .leaflet-control-zoom { margin-top: 10px !important; margin-left: 10px !important; }
+
+  .runoff {
+    bottom: 10px;
+    width: min(420px, calc(100% - 20px));
+    padding: 12px 12px 10px;
+  }
+
+  .runoff h2 { font-size: 1.35rem; }
+
+  .runoff-places { gap: 8px; margin-top: 10px; }
+
+  .runoff-copy strong { font-size: 0.84rem; }
+
+  .runoff-copy span { font-size: 0.75rem; }
 }
 
 @media (max-width: 860px) and (max-height: 700px) {
