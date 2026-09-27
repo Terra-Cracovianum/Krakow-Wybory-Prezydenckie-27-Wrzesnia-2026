@@ -76,7 +76,9 @@ h1 {
 }
 
 .status {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   margin: 8px 0 0;
   padding: 3px 8px;
   border: 1px solid rgba(138, 98, 48, 0.35);
@@ -84,6 +86,22 @@ h1 {
   color: var(--await);
   font-size: 0.78rem;
   font-weight: 700;
+}
+
+.status.is-flowing {
+  padding: 7px 12px 7px 10px;
+  background: rgba(138, 98, 48, 0.1);
+  font-size: 0.92rem;
+}
+
+.status.is-flowing::before {
+  content: "";
+  flex: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--await);
+  box-shadow: 0 0 0 4px rgba(138, 98, 48, 0.16);
 }
 
 .sample {
@@ -134,10 +152,10 @@ h1 {
 
 .count-line .progress-track {
   grid-column: 1 / -1;
-  height: 4px;
-  margin: 0;
+  height: 6px;
+  margin: 2px 0 0;
   border-radius: 99px;
-  background: rgba(23, 32, 38, 0.08);
+  background: rgba(138, 98, 48, 0.14);
   overflow: hidden;
 }
 
@@ -409,11 +427,56 @@ h1 {
   animation: pkw-wait 2.4s ease-out infinite;
 }
 
+.pkw-chip[data-state="partial"] .pkw-mark {
+  width: 58px;
+  height: 58px;
+}
+
+.pkw-chip[data-state="partial"] .pkw-mark::before {
+  display: none;
+}
+
 .pkw-chip[data-state="partial"] .pkw-mark::after {
-  inset: 4px;
+  inset: 0;
   background:
-    radial-gradient(circle at center, #fff 0 7px, transparent 8px),
-    conic-gradient(var(--await) calc(var(--share) * 1%), rgba(138, 98, 48, 0.16) 0);
+    radial-gradient(circle at center, #fff 0 18px, transparent 19px),
+    conic-gradient(from -90deg, var(--await) calc(var(--share) * 1%), rgba(138, 98, 48, 0.16) 0);
+}
+
+.pkw-chip[data-state="partial"] .pkw-copy strong,
+.pkw-chip[data-state="full"] .pkw-copy strong {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--await);
+}
+
+.pkw-chip[data-state="partial"] #pkw-detail,
+.pkw-chip[data-state="full"] #pkw-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.pkw-chip[data-state="partial"] #pkw-detail b,
+.pkw-chip[data-state="full"] #pkw-detail b {
+  font-family: Fraunces, serif;
+  font-size: 2.6rem;
+  font-weight: 560;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+  color: var(--ink);
+}
+
+.pkw-chip[data-state="partial"] .pkw-track {
+  height: 8px;
+  margin-top: 8px;
 }
 
 .pkw-chip[data-state="full"] .pkw-mark::before { display: none; }
@@ -500,6 +563,8 @@ h1 {
   .pkw-mark::after { inset: 11px; }
   .pkw-copy strong { font-size: 1.2rem; }
   #pkw-detail { font-size: 0.88rem; }
+  .pkw-chip[data-state="partial"] #pkw-detail b,
+  .pkw-chip[data-state="full"] #pkw-detail b { font-size: 2.1rem; }
 }
 
 .sheet-close {
