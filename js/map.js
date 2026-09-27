@@ -164,7 +164,6 @@ let fitting = false;
 function viewPadding() {
   const mapEl = document.querySelector("#map").getBoundingClientRect();
   const panel = document.querySelector(".panel").getBoundingClientRect();
-  const sheet = document.querySelector("#place-sheet");
   const zoom = document.querySelector(".leaflet-control-zoom");
   const gap = 18;
   let left = 16;
@@ -175,10 +174,6 @@ function viewPadding() {
     const coversWidth = panel.width > mapEl.width * 0.72;
     if (coversWidth) top = Math.max(top, panel.bottom - mapEl.top + gap);
     else left = Math.max(left, panel.right - mapEl.left + gap);
-  }
-  if (sheet && !sheet.hidden) {
-    const overlap = mapEl.bottom - sheet.getBoundingClientRect().top;
-    if (overlap > 0) bottom = Math.max(bottom, overlap + gap);
   }
   if (zoom) right = Math.max(right, mapEl.right - zoom.getBoundingClientRect().left + 10);
   return {
@@ -229,28 +224,24 @@ function openStation(index, nr) {
 }
 
 function showPlace(feature, highlightNr) {
-  const sheet = document.querySelector("#place-sheet");
-  sheet.hidden = false;
-  sheet.innerHTML = stationPopup(feature, highlightNr);
-  sheet.querySelector("[data-close]").addEventListener("click", closeSheet);
-  liftZoom();
+  const city = document.querySelector("#city-view");
+  const place = document.querySelector("#place-view");
+  city.hidden = true;
+  place.hidden = false;
+  place.innerHTML = stationPopup(feature, highlightNr);
+  place.querySelectorAll("[data-close]").forEach((button) => {
+    button.addEventListener("click", closeSheet);
+  });
   requestAnimationFrame(() => easeCity());
 }
 
-function liftZoom() {
-  const zoom = document.querySelector(".leaflet-bottom.leaflet-right");
-  const sheet = document.querySelector("#place-sheet");
-  if (!zoom) return;
-  const lift = sheet && !sheet.hidden ? sheet.offsetHeight + 20 : 0;
-  zoom.style.marginBottom = lift ? `${lift}px` : "";
-}
-
 function closeSheet() {
-  const sheet = document.querySelector("#place-sheet");
-  if (sheet.hidden) return;
-  sheet.hidden = true;
-  sheet.innerHTML = "";
-  liftZoom();
+  const city = document.querySelector("#city-view");
+  const place = document.querySelector("#place-view");
+  if (place.hidden) return;
+  place.hidden = true;
+  place.innerHTML = "";
+  city.hidden = false;
   state.highlightNr = null;
   paintPrecincts();
   requestAnimationFrame(() => easeCity());
@@ -408,7 +399,13 @@ function stationPopup(feature, highlightNr) {
       </tr>`;
     })
     .join("");
-  return `<header class="popup-place">
+  return `<div class="place-toolbar">
+      <button type="button" class="place-back" data-close>Miasto</button>
+      <button type="button" class="sheet-close" data-close aria-label="Zamknij">
+        <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M3.2 3.2l9.6 9.6M12.8 3.2L3.2 12.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <header class="popup-place">
       <p class="popup-kicker">Lokal wyborczy</p>
       <h3>${escapeHtml(props.siedziba)}</h3>
       <p class="place">${escapeHtml(address(props))}</p>
@@ -425,10 +422,7 @@ function stationPopup(feature, highlightNr) {
         </thead>
         <tbody>${statRows}${candidateRows}</tbody>
       </table>
-    </div>
-    <button type="button" class="sheet-close" data-close aria-label="Zamknij">
-      <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M3.2 3.2l9.6 9.6M12.8 3.2L3.2 12.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-    </button>`;
+    </div>`;
 }
 
 function precinctRow(nr) {

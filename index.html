@@ -59,46 +59,46 @@
           </p>
         </header>
 
-        <section class="totals" aria-label="Wyniki miasta">
-          <div>
-            <span>Frekwencja</span>
-            <strong id="turnout">—</strong>
-          </div>
-          <div>
-            <span>Obwody</span>
-            <strong id="reporting">0 / 454</strong>
-          </div>
-          <div>
-            <span>Ważne głosy</span>
-            <strong id="valid">—</strong>
-          </div>
-        </section>
-        <div class="count-line" id="progress" aria-label="Postęp liczenia">
-          <span id="progress-status">Oczekiwanie</span>
-          <span id="progress-precincts">—</span>
-          <span id="progress-ballots" hidden>—</span>
-          <span id="progress-valid" hidden>—</span>
-          <div class="progress-track" aria-hidden="true"><span id="progress-bar"></span></div>
-        </div>
-
         <label class="search">
           <span>Szukaj lokalu lub numeru obwodu</span>
           <input id="query" type="search" placeholder="np. 12 albo Dietla" autocomplete="off" />
         </label>
         <ul class="hits" id="hits" hidden></ul>
 
-        <ol class="candidates" id="candidates"></ol>
-
-        <p class="rule">
-          Druga tura 11 października 2026, jeśli nikt nie przekroczy połowy głosów.
-        </p>
-        <p class="sources">
-          454 komisje PKW, numery 1–454. Podkład OpenFreeMap, lokale MSIP Kraków.
-        </p>
+        <div id="city-view">
+          <section class="totals" aria-label="Wyniki miasta">
+            <div>
+              <span>Frekwencja</span>
+              <strong id="turnout">—</strong>
+            </div>
+            <div>
+              <span>Obwody</span>
+              <strong id="reporting">0 / 454</strong>
+            </div>
+            <div>
+              <span>Ważne głosy</span>
+              <strong id="valid">—</strong>
+            </div>
+          </section>
+          <div class="count-line" id="progress" aria-label="Postęp liczenia">
+            <span id="progress-status">Oczekiwanie</span>
+            <span id="progress-precincts">—</span>
+            <span id="progress-ballots" hidden>—</span>
+            <span id="progress-valid" hidden>—</span>
+            <div class="progress-track" aria-hidden="true"><span id="progress-bar"></span></div>
+          </div>
+          <ol class="candidates" id="candidates"></ol>
+          <p class="rule">
+            Druga tura 11 października 2026, jeśli nikt nie przekroczy połowy głosów.
+          </p>
+          <p class="sources">
+            454 komisje PKW, numery 1–454. Podkład OpenFreeMap, lokale MSIP Kraków.
+          </p>
+        </div>
+        <div id="place-view" hidden></div>
       </aside>
       <div class="stage">
         <main id="map" aria-label="Mapa Krakowa"></main>
-        <aside class="place-sheet" id="place-sheet" hidden aria-label="Lokal wyborczy"></aside>
       </div>
     </div>
     <script
