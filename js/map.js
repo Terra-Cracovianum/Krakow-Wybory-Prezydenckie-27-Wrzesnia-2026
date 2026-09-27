@@ -42,7 +42,7 @@ async function init() {
     zoomDelta: 1,
     minZoom: 10,
     maxZoom: 18,
-    maxBounds: cityBounds,
+    maxBounds: cityBounds.pad(0.85),
     maxBoundsViscosity: 1,
     worldCopyJump: false,
   });
@@ -109,7 +109,9 @@ async function init() {
     fitCity();
   };
   map.on("resize", refitSoon);
-  new ResizeObserver(refitSoon).observe(document.querySelector("#map"));
+  const refitObserver = new ResizeObserver(refitSoon);
+  refitObserver.observe(document.querySelector("#map"));
+  refitObserver.observe(document.querySelector(".panel"));
   document.fonts.ready.then(refitSoon);
 
   query.addEventListener("input", () => renderHits(query.value));
@@ -188,19 +190,43 @@ function stationIndexFor(nr) {
 
 let fitting = false;
 
+function viewPadding() {
+  const mapEl = document.querySelector("#map").getBoundingClientRect();
+  const panel = document.querySelector(".panel").getBoundingClientRect();
+  const sheet = document.querySelector("#place-sheet");
+  const zoom = document.querySelector(".leaflet-control-zoom");
+  const gap = 18;
+  let left = 16;
+  let top = 16;
+  let right = 56;
+  let bottom = 16;
+  if (panel.width > 0 && panel.bottom > mapEl.top && panel.top < mapEl.bottom) {
+    const coversWidth = panel.width > mapEl.width * 0.72;
+    if (coversWidth) top = Math.max(top, panel.bottom - mapEl.top + gap);
+    else left = Math.max(left, panel.right - mapEl.left + gap);
+  }
+  if (sheet && !sheet.hidden) bottom = Math.max(bottom, sheet.getBoundingClientRect().height + gap);
+  if (zoom) right = Math.max(right, mapEl.right - zoom.getBoundingClientRect().left + 10);
+  return {
+    paddingTopLeft: L.point(left, top),
+    paddingBottomRight: L.point(right, bottom),
+  };
+}
+
 function fitCity() {
   const map = state.map;
   if (!map || fitting) return;
   const size = map.getSize();
   if (size.x < 40 || size.y < 40) return;
+  const pad = viewPadding();
   map.setMinZoom(0);
-  const fitted = map.getBoundsZoom(state.cityBounds, false, L.point(12, 12));
+  const fitted = map.getBoundsZoom(state.cityBounds, false, pad.paddingTopLeft.add(pad.paddingBottomRight));
   if (!Number.isFinite(fitted)) return;
   map.setMinZoom(fitted);
   const zoom = map.getZoom();
   if (zoom != null && map.getBounds().contains(state.cityBounds) && zoom <= fitted + 0.01) return;
   fitting = true;
-  map.fitBounds(state.cityBounds, { padding: [12, 12], animate: false });
+  map.fitBounds(state.cityBounds, { ...pad, animate: false });
   fitting = false;
 }
 
@@ -210,12 +236,13 @@ function easeCity() {
   map.invalidateSize({ animate: false });
   const size = map.getSize();
   if (size.x < 40 || size.y < 40) return;
+  const pad = viewPadding();
   map.setMinZoom(0);
-  const fitted = map.getBoundsZoom(state.cityBounds, false, L.point(12, 12));
+  const fitted = map.getBoundsZoom(state.cityBounds, false, pad.paddingTopLeft.add(pad.paddingBottomRight));
   if (!Number.isFinite(fitted)) return;
   map.setMinZoom(fitted);
   fitting = true;
-  map.flyToBounds(state.cityBounds, { padding: [12, 12], duration: 0.45, animate: true });
+  map.flyToBounds(state.cityBounds, { ...pad, duration: 0.45, animate: true });
   fitting = false;
 }
 
@@ -352,10 +379,10 @@ function renderCandidates() {
       return `<li class="candidate${candidate.withdrawn ? " withdrawn" : ""}">
         <header>
           <span class="swatch" style="background:${candidate.color}"></span>
-          <h2>${candidate.ballot}. ${escapeHtml(candidate.name)}</h2>
+          <h2 title="${escapeHtml(candidate.name)}">${candidate.ballot}. ${escapeHtml(candidate.short)}</h2>
           <span class="count">${formatCount(votes)}${share}</span>
         </header>
-        <p class="meta">${escapeHtml(candidate.committee)} · ${candidate.age} lat · ${escapeHtml(candidate.education)} · ${escapeHtml(candidate.party)}</p>
+        <p class="meta">${escapeHtml(candidate.committee)}</p>
         ${candidate.note ? `<p class="note">${escapeHtml(candidate.note)}</p>` : ""}
         <div class="bar" aria-hidden="true"><span style="width:${width}%;background:${candidate.color}"></span></div>
       </li>`;

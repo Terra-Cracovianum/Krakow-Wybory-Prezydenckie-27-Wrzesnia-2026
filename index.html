@@ -81,6 +81,13 @@
             <strong id="valid">—</strong>
           </div>
         </section>
+        <div class="count-line" id="progress" aria-label="Postęp liczenia">
+          <span id="progress-status">Oczekiwanie</span>
+          <span id="progress-precincts">—</span>
+          <span id="progress-ballots" hidden>—</span>
+          <span id="progress-valid" hidden>—</span>
+          <div class="progress-track" aria-hidden="true"><span id="progress-bar"></span></div>
+        </div>
 
         <label class="search">
           <span>Szukaj lokalu lub numeru obwodu</span>
@@ -91,38 +98,14 @@
         <ol class="candidates" id="candidates"></ol>
 
         <p class="rule">
-          Jeśli nikt nie zdobędzie ponad połowy ważnych głosów, druga tura odbędzie się
-          11 października 2026.
+          Druga tura 11 października 2026, jeśli nikt nie przekroczy połowy głosów.
         </p>
         <p class="sources">
-          Lokale: lista obwodowych komisji PKW dla Krakowa — 454 komisje, numery 1–454
-          (412 stałych i 42 odrębne, w tym Szpital na Siemiradzkiego jako 417).
-          Podkład: OpenFreeMap. Położenie budynków z MSIP Kraków; cztery adresy spoza tej warstwy ustawione według OpenStreetMap.
-          Kandydaci: obwieszczenie Miejskiej Komisji Wyborczej z 14 września 2026 r.
-          Kolory służą tylko do odróżnienia nazwisk na mapie.
+          454 komisje PKW, numery 1–454. Podkład OpenFreeMap, lokale MSIP Kraków.
         </p>
       </aside>
       <div class="stage">
         <main id="map" aria-label="Mapa Krakowa"></main>
-        <aside class="progress" id="progress" aria-label="Postęp liczenia">
-          <p class="progress-kicker">Liczenie</p>
-          <p class="progress-status" id="progress-status">Oczekiwanie</p>
-          <div class="progress-track" aria-hidden="true"><span id="progress-bar"></span></div>
-          <dl>
-            <div>
-              <dt>Obwody policzone</dt>
-              <dd id="progress-precincts">—</dd>
-            </div>
-            <div>
-              <dt>Karty policzone</dt>
-              <dd id="progress-ballots">—</dd>
-            </div>
-            <div>
-              <dt>Ważne głosy</dt>
-              <dd id="progress-valid">—</dd>
-            </div>
-          </dl>
-        </aside>
         <aside class="place-sheet" id="place-sheet" hidden aria-label="Lokal wyborczy"></aside>
       </div>
     </div>
