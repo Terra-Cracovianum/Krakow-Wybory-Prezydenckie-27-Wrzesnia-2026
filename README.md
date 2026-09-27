@@ -5,8 +5,8 @@ Statyczna strona na wieczór wyborczy: mapa Krakowa, wszystkie lokale i obwody o
 ## Co jest na mapie
 
 - 454 obwodowe komisje wyborcze, numery 1–454, z listy PKW dla gminy Kraków: 412 stałych i 42 odrębne. Numer 417 to Szpital na Siemiradzkiego. Numer 444 to jeden obwód, nie suma.
-- 250 lokali (kilka obwodów bywa w jednym budynku)
-- 412 obwodów stałych (poligony) z warstwy MSIP „Aktualny podział na obwody wyborcze”
+- 250 lokali (kilka obwodów bywa w jednym budynku). Mapa nie stawia przy nich kropek.
+- 412 obwodów stałych (poligony) z warstwy MSIP „Aktualny podział na obwody wyborcze”. Kliknięcie obwodu otwiera lokal. Komisje odrębne, bez poligonu, są w wyszukiwarce.
 
 Lista komisji: [PKW, komisje obwodowe, gmina 4485](https://wybory.gov.pl/wojtburmistrz_2024_2029/pl/4485/organy_wyborcze/komisje_obwodowe). Podkład: [OpenFreeMap](https://openfreemap.org/), styl Positron. Położenie budynków: [MSIP Kraków, K05_Wybory_Dzielnice](https://msip.um.krakow.pl/arcgis/rest/services/Obserwatorium/K05_Wybory_Dzielnice/MapServer). Cztery adresy z listy PKW nie miały punktu w MSIP (Lubelska 29, Wadowicka 8W, Henryka Siemiradzkiego 1, Forteczna 22) — ich współrzędne pochodzą z OpenStreetMap. Kandydaci: obwieszczenie Miejskiej Komisji Wyborczej w Krakowie z 14 września 2026 r.
 

@@ -4,8 +4,6 @@ const state = {
   candidates: [],
   results: null,
   stations: null,
-  markers: null,
-  markerByIndex: new Map(),
   highlightNr: null,
   map: null,
   cityBounds: null,
@@ -74,34 +72,6 @@ async function init() {
     },
   }).addTo(map);
   state.precinctLayer = precinctLayer;
-
-  state.markers = L.markerClusterGroup({
-    showCoverageOnHover: false,
-    maxClusterRadius: 18,
-    disableClusteringAtZoom: 14,
-    iconCreateFunction() {
-      return L.divIcon({
-        html: "",
-        className: "cluster",
-        iconSize: [14, 14],
-      });
-    },
-  });
-
-  stations.features.forEach((feature, index) => {
-    const [lng, lat] = feature.geometry.coordinates;
-    const marker = L.circleMarker([lat, lng], {
-      radius: 5,
-      color: "#14171c",
-      weight: 1,
-      fillColor: "#f4efe6",
-      fillOpacity: 0.95,
-    });
-    marker.on("click", () => openStation(index));
-    state.markerByIndex.set(index, marker);
-    state.markers.addLayer(marker);
-  });
-  map.addLayer(state.markers);
   state.map = map;
   fitCity();
   const refitSoon = () => {
