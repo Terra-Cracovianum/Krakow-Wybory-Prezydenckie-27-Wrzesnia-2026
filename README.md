@@ -8,7 +8,7 @@ Statyczna strona na wieczór wyborczy: mapa Krakowa, wszystkie lokale i obwody o
 - 250 lokali (kilka obwodów bywa w jednym budynku)
 - 412 obwodów stałych (poligony) z warstwy MSIP „Aktualny podział na obwody wyborcze”
 
-Lista komisji: [PKW, komisje obwodowe, gmina 4485](https://wybory.gov.pl/wojtburmistrz_2024_2029/pl/4485/organy_wyborcze/komisje_obwodowe). Położenie budynków: [MSIP Kraków, K05_Wybory_Dzielnice](https://msip.um.krakow.pl/arcgis/rest/services/Obserwatorium/K05_Wybory_Dzielnice/MapServer). Cztery adresy z listy PKW nie miały punktu w MSIP (Lubelska 29, Wadowicka 8W, Henryka Siemiradzkiego 1, Forteczna 22) — ich współrzędne pochodzą z OpenStreetMap. Kandydaci: obwieszczenie Miejskiej Komisji Wyborczej w Krakowie z 14 września 2026 r.
+Lista komisji: [PKW, komisje obwodowe, gmina 4485](https://wybory.gov.pl/wojtburmistrz_2024_2029/pl/4485/organy_wyborcze/komisje_obwodowe). Podkład: [OpenFreeMap](https://openfreemap.org/), styl Positron. Położenie budynków: [MSIP Kraków, K05_Wybory_Dzielnice](https://msip.um.krakow.pl/arcgis/rest/services/Obserwatorium/K05_Wybory_Dzielnice/MapServer). Cztery adresy z listy PKW nie miały punktu w MSIP (Lubelska 29, Wadowicka 8W, Henryka Siemiradzkiego 1, Forteczna 22) — ich współrzędne pochodzą z OpenStreetMap. Kandydaci: obwieszczenie Miejskiej Komisji Wyborczej w Krakowie z 14 września 2026 r.
 
 ## Jak wgrać wyniki
 
@@ -28,4 +28,4 @@ Nie dopisujemy wyników z sondaży ani ze zrzutów nieoficjalnych. Kolory przy n
 
 Po zmergowaniu do `main`: Settings → Pages → Deploy from a branch → `main` → `/ (root)`. Strona nie wymaga budowania.
 
-Podgląd linku na X, Facebooku i w komunikatorach bierze się z `map-card.jpg` (1200×630, mapa Krakowa) oraz znaczników w `index.html`.
+Podgląd linku na X, Facebooku i w komunikatorach bierze się z `map-card-topo.jpg` (1200×630, jasna mapa Krakowa) oraz znaczników w `index.html`.
