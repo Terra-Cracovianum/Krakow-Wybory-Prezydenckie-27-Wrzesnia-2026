@@ -193,6 +193,7 @@ let fitting = false;
 function viewPadding() {
   const mapEl = document.querySelector("#map").getBoundingClientRect();
   const panel = document.querySelector(".panel").getBoundingClientRect();
+  const sheet = document.querySelector("#place-sheet");
   const zoom = document.querySelector(".leaflet-control-zoom");
   const gap = 18;
   let left = 16;
@@ -203,6 +204,10 @@ function viewPadding() {
     const coversWidth = panel.width > mapEl.width * 0.72;
     if (coversWidth) top = Math.max(top, panel.bottom - mapEl.top + gap);
     else left = Math.max(left, panel.right - mapEl.left + gap);
+  }
+  if (sheet && !sheet.hidden) {
+    const overlap = mapEl.bottom - sheet.getBoundingClientRect().top;
+    if (overlap > 0) bottom = Math.max(bottom, overlap + gap);
   }
   if (zoom) right = Math.max(right, mapEl.right - zoom.getBoundingClientRect().left + 10);
   return {
@@ -258,7 +263,16 @@ function showPlace(feature, highlightNr) {
   sheet.innerHTML = stationPopup(feature, highlightNr);
   sheet.querySelector(".popup-blocks").style.setProperty("--cols", String(feature.properties.obwody.length));
   sheet.querySelector("[data-close]").addEventListener("click", closeSheet);
+  liftZoom();
   requestAnimationFrame(() => easeCity());
+}
+
+function liftZoom() {
+  const zoom = document.querySelector(".leaflet-bottom.leaflet-right");
+  const sheet = document.querySelector("#place-sheet");
+  if (!zoom) return;
+  const lift = sheet && !sheet.hidden ? sheet.offsetHeight + 20 : 0;
+  zoom.style.marginBottom = lift ? `${lift}px` : "";
 }
 
 function closeSheet() {
@@ -266,6 +280,7 @@ function closeSheet() {
   if (sheet.hidden) return;
   sheet.hidden = true;
   sheet.innerHTML = "";
+  liftZoom();
   state.highlightNr = null;
   paintPrecincts();
   requestAnimationFrame(() => easeCity());
