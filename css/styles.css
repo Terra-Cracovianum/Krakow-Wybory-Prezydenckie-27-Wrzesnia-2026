@@ -51,6 +51,12 @@ html, body {
   box-shadow: 0 12px 36px rgba(23, 32, 38, 0.12);
 }
 
+.mast {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .kicker {
   margin: 0;
   letter-spacing: 0.16em;
@@ -79,6 +85,7 @@ h1 {
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  order: 4;
   margin: 8px 0 0;
   padding: 3px 8px;
   border: 1px solid rgba(138, 98, 48, 0.35);
@@ -89,9 +96,15 @@ h1 {
 }
 
 .status.is-flowing {
-  padding: 7px 12px 7px 10px;
+  order: -1;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 0 0 12px;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 14px;
   background: rgba(138, 98, 48, 0.1);
-  font-size: 0.92rem;
+  font-size: 0.95rem;
 }
 
 .status.is-flowing::before {
@@ -101,7 +114,40 @@ h1 {
   height: 8px;
   border-radius: 50%;
   background: var(--await);
-  box-shadow: 0 0 0 4px rgba(138, 98, 48, 0.16);
+  box-shadow: 0 0 0 0 rgba(138, 98, 48, 0.4);
+  animation: status-live 2.4s ease-out infinite;
+}
+
+#status-meta {
+  margin-left: auto;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+}
+
+.status-meter {
+  flex: 1 0 100%;
+  height: 5px;
+  margin-top: 8px;
+  border-radius: 99px;
+  background: rgba(138, 98, 48, 0.16);
+  overflow: hidden;
+}
+
+.status-meter::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: calc(var(--share, 0) * 1%);
+  border-radius: inherit;
+  background: var(--await);
+  transition: width 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes status-live {
+  0% { box-shadow: 0 0 0 0 rgba(138, 98, 48, 0.45); }
+  70% { box-shadow: 0 0 0 8px rgba(138, 98, 48, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(138, 98, 48, 0); }
 }
 
 .sample {
@@ -297,6 +343,12 @@ h1 {
   flex: 1 1 auto;
   min-height: 0;
   overflow: auto;
+  scrollbar-width: none;
+}
+
+#city-view::-webkit-scrollbar,
+#place-view::-webkit-scrollbar {
+  display: none;
 }
 
 #city-view[hidden],
@@ -540,6 +592,8 @@ h1 {
 
 @media (prefers-reduced-motion: reduce) {
   .panel { transition: none; }
+  .status.is-flowing::before { animation: none; }
+  .status-meter::before { transition: none; }
   .leaflet-overlay-pane svg path,
   .place-back,
   .sheet-close { transition: none; }
