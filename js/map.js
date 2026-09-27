@@ -76,8 +76,8 @@ async function init() {
   state.map = map;
   fitCity();
   const refitSoon = () => {
-    map.invalidateSize({ animate: false });
-    fitCity();
+    map.invalidateSize({ animate: false, pan: false });
+    if (!settling) fitCity();
   };
   map.on("resize", refitSoon);
   const refitObserver = new ResizeObserver(refitSoon);
@@ -161,6 +161,7 @@ function stationIndexFor(nr) {
 }
 
 let fitting = false;
+let settling = false;
 
 function viewPadding() {
   const mapEl = document.querySelector("#map").getBoundingClientRect();
@@ -198,20 +199,61 @@ function glideCity() {
   const map = state.map;
   if (!map) return;
   const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const started = performance.now();
-  const step = (now) => {
+  if (reduce) {
+    settling = false;
+    map.invalidateSize({ animate: false });
+    fitCity();
+    return;
+  }
+  const panel = document.querySelector(".panel");
+  settling = true;
+  let finished = false;
+  const finish = () => {
+    if (finished) return;
+    finished = true;
+    settling = false;
+    panel.removeEventListener("transitionend", onEnd);
+    window.clearTimeout(fallback);
+    map.invalidateSize({ animate: false });
+    settleCity();
+  };
+  const onEnd = (event) => {
+    if (event.target !== panel) return;
+    if (event.propertyName !== "width" && event.propertyName !== "flex-basis") return;
+    finish();
+  };
+  panel.addEventListener("transitionend", onEnd);
+  const fallback = window.setTimeout(finish, 700);
+  const step = () => {
+    if (!settling) return;
     map.invalidateSize({ animate: false, pan: false });
-    const size = map.getSize();
-    if (size.x < 40 || size.y < 40) return;
-    const pad = viewPadding();
-    map.setMinZoom(0);
-    const fitted = map.getBoundsZoom(state.cityBounds, false, pad.paddingTopLeft.add(pad.paddingBottomRight));
-    if (!Number.isFinite(fitted)) return;
-    map.setMinZoom(fitted);
-    map.fitBounds(state.cityBounds, { ...pad, animate: false });
-    if (!reduce && now - started < 450) requestAnimationFrame(step);
+    requestAnimationFrame(step);
   };
   requestAnimationFrame(step);
+}
+
+function settleCity() {
+  const map = state.map;
+  if (!map || fitting) return;
+  const size = map.getSize();
+  if (size.x < 40 || size.y < 40) return;
+  const pad = viewPadding();
+  map.setMinZoom(0);
+  const fitted = map.getBoundsZoom(state.cityBounds, false, pad.paddingTopLeft.add(pad.paddingBottomRight));
+  if (!Number.isFinite(fitted)) return;
+  map.setMinZoom(fitted);
+  const zoom = map.getZoom();
+  if (zoom != null && map.getBounds().contains(state.cityBounds) && Math.abs(zoom - fitted) < 0.05) return;
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduce) {
+    map.fitBounds(state.cityBounds, { ...pad, animate: false });
+    return;
+  }
+  fitting = true;
+  map.once("moveend", () => {
+    fitting = false;
+  });
+  map.flyToBounds(state.cityBounds, { ...pad, duration: 0.45, easeLinearity: 0.85 });
 }
 
 function openStation(index, nr) {
