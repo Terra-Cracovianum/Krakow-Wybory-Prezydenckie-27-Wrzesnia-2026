@@ -46,28 +46,12 @@ async function init() {
     maxBoundsViscosity: 1,
     worldCopyJump: false,
   });
-  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    attribution:
-      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · obwody: <a href="https://msip.krakow.pl/">MSIP Kraków</a>',
-    maxZoom: 19,
+  L.maplibreGL({
+    style: "https://tiles.openfreemap.org/styles/positron",
   }).addTo(map);
-
-  const world = [[85, -180], [85, 180], [-85, 180], [-85, -180]];
-  const holes = [];
-  for (const feature of precincts.features) {
-    const polygons = feature.geometry.type === "Polygon"
-      ? [feature.geometry.coordinates]
-      : feature.geometry.coordinates;
-    for (const polygon of polygons) {
-      holes.push(polygon[0].map(([lng, lat]) => [lat, lng]));
-    }
-  }
-  L.polygon([world, ...holes], {
-    stroke: false,
-    fillColor: "#d5d0c6",
-    fillOpacity: 1,
-    interactive: false,
-  }).addTo(map);
+  map.attributionControl.addAttribution(
+    '<a href="https://openfreemap.org/">OpenFreeMap</a> © <a href="https://openmaptiles.org/">OpenMapTiles</a> <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · obwody: <a href="https://msip.krakow.pl/">MSIP Kraków</a>'
+  );
 
   const precinctLayer = L.geoJSON(precincts, {
     style: stylePrecinct,

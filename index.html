@@ -16,8 +16,8 @@
     <meta property="og:title" content="Wybory prezydenta Krakowa · 27 września 2026" />
     <meta property="og:description" content="Mapa wszystkich lokali i obwodów oraz wyniki przedterminowych wyborów prezydenta Krakowa." />
     <meta property="og:url" content="https://terra-cracovianum.github.io/Krakow-Wybory-Prezydenckie-27-Wrzesnia-2026/" />
-    <meta property="og:image" content="https://terra-cracovianum.github.io/Krakow-Wybory-Prezydenckie-27-Wrzesnia-2026/map-card.jpg" />
-    <meta property="og:image:secure_url" content="https://terra-cracovianum.github.io/Krakow-Wybory-Prezydenckie-27-Wrzesnia-2026/map-card.jpg" />
+    <meta property="og:image" content="https://terra-cracovianum.github.io/Krakow-Wybory-Prezydenckie-27-Wrzesnia-2026/map-card-topo.jpg" />
+    <meta property="og:image:secure_url" content="https://terra-cracovianum.github.io/Krakow-Wybory-Prezydenckie-27-Wrzesnia-2026/map-card-topo.jpg" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -25,7 +25,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Wybory prezydenta Krakowa · 27 września 2026" />
     <meta name="twitter:description" content="Mapa wszystkich lokali i obwodów oraz wyniki przedterminowych wyborów prezydenta Krakowa." />
-    <meta name="twitter:image" content="https://terra-cracovianum.github.io/Krakow-Wybory-Prezydenckie-27-Wrzesnia-2026/map-card.jpg" />
+    <meta name="twitter:image" content="https://terra-cracovianum.github.io/Krakow-Wybory-Prezydenckie-27-Wrzesnia-2026/map-card-topo.jpg" />
     <meta name="twitter:image:alt" content="Mapa wyborów prezydenta Krakowa, 27 września 2026" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,6 +37,11 @@
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
       integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.css"
       crossorigin=""
     />
     <link
@@ -92,7 +97,7 @@
         <p class="sources">
           Lokale: lista obwodowych komisji PKW dla Krakowa — 454 komisje, numery 1–454
           (412 stałych i 42 odrębne, w tym Szpital na Siemiradzkiego jako 417).
-          Położenie budynków z MSIP Kraków; cztery adresy spoza tej warstwy ustawione według OpenStreetMap.
+          Podkład: OpenFreeMap. Położenie budynków z MSIP Kraków; cztery adresy spoza tej warstwy ustawione według OpenStreetMap.
           Kandydaci: obwieszczenie Miejskiej Komisji Wyborczej z 14 września 2026 r.
           Kolory służą tylko do odróżnienia nazwisk na mapie.
         </p>
@@ -126,6 +131,8 @@
       integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
       crossorigin=""
     ></script>
+    <script src="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.js"></script>
+    <script src="https://unpkg.com/@maplibre/maplibre-gl-leaflet@0.1.0/leaflet-maplibre-gl.js"></script>
     <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
     <script src="js/map.js"></script>
   </body>
