@@ -163,22 +163,12 @@ let fitting = false;
 
 function viewPadding() {
   const mapEl = document.querySelector("#map").getBoundingClientRect();
-  const panel = document.querySelector(".panel").getBoundingClientRect();
   const zoom = document.querySelector(".leaflet-control-zoom");
-  const gap = 18;
-  let left = 16;
-  let top = 16;
   let right = 56;
-  let bottom = 16;
-  if (panel.width > 0 && panel.bottom > mapEl.top && panel.top < mapEl.bottom) {
-    const coversWidth = panel.width > mapEl.width * 0.72;
-    if (coversWidth) top = Math.max(top, panel.bottom - mapEl.top + gap);
-    else left = Math.max(left, panel.right - mapEl.left + gap);
-  }
   if (zoom) right = Math.max(right, mapEl.right - zoom.getBoundingClientRect().left + 10);
   return {
-    paddingTopLeft: L.point(left, top),
-    paddingBottomRight: L.point(right, bottom),
+    paddingTopLeft: L.point(16, 16),
+    paddingBottomRight: L.point(right, 16),
   };
 }
 
@@ -200,19 +190,27 @@ function fitCity() {
 }
 
 function easeCity() {
+  glideCity();
+}
+
+function glideCity() {
   const map = state.map;
   if (!map) return;
-  map.invalidateSize({ animate: false });
-  const size = map.getSize();
-  if (size.x < 40 || size.y < 40) return;
-  const pad = viewPadding();
-  map.setMinZoom(0);
-  const fitted = map.getBoundsZoom(state.cityBounds, false, pad.paddingTopLeft.add(pad.paddingBottomRight));
-  if (!Number.isFinite(fitted)) return;
-  map.setMinZoom(fitted);
-  fitting = true;
-  map.flyToBounds(state.cityBounds, { ...pad, duration: 0.45, animate: true });
-  fitting = false;
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const started = performance.now();
+  const step = (now) => {
+    map.invalidateSize({ animate: false, pan: false });
+    const size = map.getSize();
+    if (size.x < 40 || size.y < 40) return;
+    const pad = viewPadding();
+    map.setMinZoom(0);
+    const fitted = map.getBoundsZoom(state.cityBounds, false, pad.paddingTopLeft.add(pad.paddingBottomRight));
+    if (!Number.isFinite(fitted)) return;
+    map.setMinZoom(fitted);
+    map.fitBounds(state.cityBounds, { ...pad, animate: false });
+    if (!reduce && now - started < 450) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
 }
 
 function openStation(index, nr) {

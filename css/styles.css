@@ -19,9 +19,12 @@ html, body {
 }
 
 .app {
-  position: relative;
+  display: flex;
+  gap: 12px;
   height: 100%;
   height: 100dvh;
+  padding: 12px;
+  background: #f4f4f2;
 }
 
 .panel {
@@ -30,15 +33,16 @@ html, body {
   --line: rgba(23, 32, 38, 0.1);
   --panel-2: #f4f5f4;
   --await: #8a6230;
-  position: absolute;
-  z-index: 700;
-  top: 12px;
-  left: 12px;
-  width: min(320px, calc(100% - 24px));
+  position: relative;
+  z-index: 1;
+  flex: 0 0 min(320px, calc(100% - 280px));
+  width: min(320px, calc(100% - 280px));
+  height: 100%;
   display: flex;
   flex-direction: column;
-  max-height: calc(100% - 24px);
+  max-height: none;
   overflow: hidden;
+  transition: flex-basis 0.45s cubic-bezier(0.22, 1, 0.36, 1), width 0.45s cubic-bezier(0.22, 1, 0.36, 1);
   padding: 14px 14px 8px;
   border: 1px solid rgba(23, 32, 38, 0.08);
   border-radius: 18px;
@@ -281,6 +285,7 @@ h1 {
 #place-view[hidden] { display: none; }
 
 .panel.is-place {
+  flex-basis: min(calc(220px + var(--place-cols, 1) * 128px), calc(100% - 280px));
   width: min(calc(220px + var(--place-cols, 1) * 128px), calc(100% - 280px));
 }
 
@@ -323,14 +328,19 @@ h1 {
 .sources { margin: 2px 0 0; }
 
 .stage {
-  position: absolute;
-  inset: 0;
+  position: relative;
+  flex: 1 1 auto;
+  min-width: 0;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 18px;
   background: #f4f4f2;
 }
 
 #map {
   position: absolute;
   inset: 0;
+  border-radius: 18px;
   background: #f4f4f2;
 }
 
@@ -344,6 +354,7 @@ h1 {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .panel { transition: none; }
   .leaflet-overlay-pane svg path,
   .place-back,
   .sheet-close { transition: none; }
@@ -572,16 +583,22 @@ h1 {
 .leaflet-control-attribution a { color: #172026 !important; }
 
 @media (max-width: 860px) {
+  .app {
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+  }
+
   .panel,
   .panel.is-place {
-    top: 8px;
-    left: 8px;
-    width: calc(100% - 16px);
+    flex-basis: auto;
+    width: 100%;
+    height: auto;
     max-height: min(52vh, calc(100% - 180px));
     border-radius: 16px;
   }
 
-  .stage { inset: 0; }
+  .stage { min-height: 160px; }
 
   #map { min-height: 0; }
 }
