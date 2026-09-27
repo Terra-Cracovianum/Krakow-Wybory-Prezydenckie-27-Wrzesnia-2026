@@ -57,8 +57,9 @@ async function init() {
     onEachFeature(feature, layer) {
       layer.on({
         mouseover(event) {
+          if (state.highlightNr) return;
           event.target.setStyle(hoverPrecinct(feature));
-          if (String(feature.properties.nr) !== String(state.highlightNr)) event.target.bringToFront();
+          event.target.bringToFront();
         },
         mouseout(event) {
           precinctLayer.resetStyle(event.target);
@@ -106,20 +107,20 @@ function stylePrecinct(feature) {
   return {
     ...base,
     color: "#ffffff",
-    weight: 2.25,
-    fillOpacity: Math.min(0.9, base.fillOpacity + 0.22),
+    weight: 3,
+    opacity: 1,
+    fillOpacity: Math.min(0.92, base.fillOpacity + 0.35),
   };
 }
 
 function hoverPrecinct(feature) {
-  if (String(feature.properties.nr) === String(state.highlightNr)) return stylePrecinct(feature);
   const base = stylePrecinct(feature);
   return {
     ...base,
     color: "#ffffff",
-    weight: 1.35,
-    opacity: 0.92,
-    fillOpacity: Math.min(0.62, base.fillOpacity + 0.14),
+    weight: 1.1,
+    opacity: 0.85,
+    fillOpacity: Math.min(0.55, base.fillOpacity + 0.08),
   };
 }
 
