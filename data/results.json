@@ -1,24 +1,24 @@
 {
   "status": "partial",
   "round": 1,
-  "updatedAt": "2026-09-27T23:40:12+02:00",
+  "updatedAt": "2026-09-27T23:42:27+02:00",
   "precinctsTotal": 454,
-  "precinctsReporting": 341,
-  "eligible": 412782,
-  "ballots": 178280,
-  "validCards": 178261,
-  "validVotes": 177257,
-  "invalidVotes": 1004,
-  "turnout": 43.19,
+  "precinctsReporting": 348,
+  "eligible": 423140,
+  "ballots": 183078,
+  "validCards": 183056,
+  "validVotes": 182024,
+  "invalidVotes": 1032,
+  "turnout": 43.26,
   "candidates": {
-    "drewnicki": 31304,
-    "gibala": 64613,
-    "gosek": 8537,
+    "drewnicki": 32322,
+    "gibala": 66185,
+    "gosek": 8763,
     "hoffman": 0,
-    "klimek": 7305,
-    "owca": 12127,
-    "piatkowska": 52701,
-    "pietrzyk": 670
+    "klimek": 7487,
+    "owca": 12444,
+    "piatkowska": 54139,
+    "pietrzyk": 684
   },
   "precincts": {
     "1": {
@@ -370,19 +370,21 @@
       }
     },
     "21": {
-      "reported": false,
-      "ballots": null,
-      "validVotes": null,
-      "invalidVotes": null,
+      "reported": true,
+      "eligible": 1414,
+      "ballots": 641,
+      "validCards": 641,
+      "validVotes": 636,
+      "invalidVotes": 5,
       "votes": {
-        "drewnicki": null,
-        "gibala": null,
-        "gosek": null,
-        "hoffman": null,
-        "klimek": null,
-        "owca": null,
-        "piatkowska": null,
-        "pietrzyk": null
+        "drewnicki": 179,
+        "gibala": 160,
+        "gosek": 41,
+        "hoffman": 0,
+        "klimek": 26,
+        "owca": 50,
+        "piatkowska": 180,
+        "pietrzyk": 0
       }
     },
     "22": {
@@ -510,19 +512,21 @@
       }
     },
     "29": {
-      "reported": false,
-      "ballots": null,
-      "validVotes": null,
-      "invalidVotes": null,
+      "reported": true,
+      "eligible": 1035,
+      "ballots": 486,
+      "validCards": 486,
+      "validVotes": 480,
+      "invalidVotes": 6,
       "votes": {
-        "drewnicki": null,
-        "gibala": null,
-        "gosek": null,
-        "hoffman": null,
-        "klimek": null,
-        "owca": null,
-        "piatkowska": null,
-        "pietrzyk": null
+        "drewnicki": 62,
+        "gibala": 144,
+        "gosek": 25,
+        "hoffman": 0,
+        "klimek": 17,
+        "owca": 51,
+        "piatkowska": 180,
+        "pietrzyk": 1
       }
     },
     "30": {
@@ -1640,19 +1644,21 @@
       }
     },
     "94": {
-      "reported": false,
-      "ballots": null,
-      "validVotes": null,
-      "invalidVotes": null,
+      "reported": true,
+      "eligible": 2214,
+      "ballots": 953,
+      "validCards": 953,
+      "validVotes": 950,
+      "invalidVotes": 3,
       "votes": {
-        "drewnicki": null,
-        "gibala": null,
-        "gosek": null,
-        "hoffman": null,
-        "klimek": null,
-        "owca": null,
-        "piatkowska": null,
-        "pietrzyk": null
+        "drewnicki": 148,
+        "gibala": 314,
+        "gosek": 52,
+        "hoffman": 0,
+        "klimek": 22,
+        "owca": 68,
+        "piatkowska": 341,
+        "pietrzyk": 5
       }
     },
     "95": {
@@ -1934,19 +1940,21 @@
       }
     },
     "111": {
-      "reported": false,
-      "ballots": null,
-      "validVotes": null,
-      "invalidVotes": null,
+      "reported": true,
+      "eligible": 1444,
+      "ballots": 643,
+      "validCards": 643,
+      "validVotes": 639,
+      "invalidVotes": 4,
       "votes": {
-        "drewnicki": null,
-        "gibala": null,
-        "gosek": null,
-        "hoffman": null,
-        "klimek": null,
-        "owca": null,
-        "piatkowska": null,
-        "pietrzyk": null
+        "drewnicki": 97,
+        "gibala": 190,
+        "gosek": 36,
+        "hoffman": 0,
+        "klimek": 19,
+        "owca": 49,
+        "piatkowska": 248,
+        "pietrzyk": 0
       }
     },
     "112": {
@@ -3246,19 +3254,21 @@
       }
     },
     "187": {
-      "reported": false,
-      "ballots": null,
-      "validVotes": null,
-      "invalidVotes": null,
+      "reported": true,
+      "eligible": 1806,
+      "ballots": 892,
+      "validCards": 889,
+      "validVotes": 880,
+      "invalidVotes": 9,
       "votes": {
-        "drewnicki": null,
-        "gibala": null,
-        "gosek": null,
-        "hoffman": null,
-        "klimek": null,
-        "owca": null,
-        "piatkowska": null,
-        "pietrzyk": null
+        "drewnicki": 144,
+        "gibala": 338,
+        "gosek": 50,
+        "hoffman": 0,
+        "klimek": 45,
+        "owca": 62,
+        "piatkowska": 239,
+        "pietrzyk": 2
       }
     },
     "188": {
@@ -6420,19 +6430,21 @@
       }
     },
     "368": {
-      "reported": false,
-      "ballots": null,
-      "validVotes": null,
-      "invalidVotes": null,
+      "reported": true,
+      "eligible": 2380,
+      "ballots": 1140,
+      "validCards": 1140,
+      "validVotes": 1140,
+      "invalidVotes": 0,
       "votes": {
-        "drewnicki": null,
-        "gibala": null,
-        "gosek": null,
-        "hoffman": null,
-        "klimek": null,
-        "owca": null,
-        "piatkowska": null,
-        "pietrzyk": null
+        "drewnicki": 371,
+        "gibala": 414,
+        "gosek": 19,
+        "hoffman": 0,
+        "klimek": 53,
+        "owca": 36,
+        "piatkowska": 241,
+        "pietrzyk": 6
       }
     },
     "369": {
@@ -7792,19 +7804,21 @@
       }
     },
     "445": {
-      "reported": false,
-      "ballots": null,
-      "validVotes": null,
-      "invalidVotes": null,
+      "reported": true,
+      "eligible": 65,
+      "ballots": 43,
+      "validCards": 43,
+      "validVotes": 42,
+      "invalidVotes": 1,
       "votes": {
-        "drewnicki": null,
-        "gibala": null,
-        "gosek": null,
-        "hoffman": null,
-        "klimek": null,
-        "owca": null,
-        "piatkowska": null,
-        "pietrzyk": null
+        "drewnicki": 17,
+        "gibala": 12,
+        "gosek": 3,
+        "hoffman": 0,
+        "klimek": 0,
+        "owca": 1,
+        "piatkowska": 9,
+        "pietrzyk": 0
       }
     },
     "446": {
