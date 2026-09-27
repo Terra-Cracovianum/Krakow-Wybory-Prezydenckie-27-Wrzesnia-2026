@@ -45,9 +45,16 @@ async function init() {
     worldCopyJump: false,
   });
   L.control.zoom({ position: "bottomright" }).addTo(map);
-  L.maplibreGL({
+  const basemap = L.maplibreGL({
     style: "https://tiles.openfreemap.org/styles/positron",
   }).addTo(map);
+  // The plugin's resize handler recenters the canvas without changing its
+  // pixel size, so a narrower map leaves the city shifted off the precincts.
+  map.off("resize", basemap._resize, basemap);
+  basemap._resize = function () {
+    resizeBasemap(this);
+  };
+  map.on("resize", basemap._resize, basemap);
   map.attributionControl.addAttribution(
     '<a href="https://openfreemap.org/">OpenFreeMap</a> © <a href="https://openmaptiles.org/">OpenMapTiles</a> <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · obwody: <a href="https://msip.krakow.pl/">MSIP Kraków</a>'
   );
@@ -76,8 +83,10 @@ async function init() {
   state.map = map;
   fitCity();
   const refitSoon = () => {
-    map.invalidateSize({ animate: false, pan: false });
-    if (!settling) fitCity();
+    if (settling) return;
+    map.invalidateSize({ animate: false });
+    fitCity();
+    syncBasemap();
   };
   map.on("resize", refitSoon);
   const refitObserver = new ResizeObserver(refitSoon);
@@ -195,17 +204,38 @@ function easeCity() {
   glideCity();
 }
 
+function resizeBasemap(layer) {
+  if (!layer || !layer._glMap || !layer._map || !layer._container) return;
+  const size = layer.getSize();
+  layer._container.style.width = size.x + "px";
+  layer._container.style.height = size.y + "px";
+  const canvas = layer._glMap._actualCanvas;
+  if (canvas) L.DomUtil.setTransform(canvas, L.point(0, 0), 1);
+  layer._zooming = false;
+  layer._glMap.resize();
+  layer._update();
+}
+
+function syncBasemap() {
+  const map = state.map;
+  if (!map) return;
+  map.eachLayer((layer) => {
+    if (layer._glMap) resizeBasemap(layer);
+  });
+}
+
 function glideCity() {
   const map = state.map;
   if (!map) return;
   const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const panel = document.querySelector(".panel");
   if (reduce) {
     settling = false;
     map.invalidateSize({ animate: false });
     fitCity();
+    syncBasemap();
     return;
   }
-  const panel = document.querySelector(".panel");
   settling = true;
   let finished = false;
   const finish = () => {
@@ -215,7 +245,8 @@ function glideCity() {
     panel.removeEventListener("transitionend", onEnd);
     window.clearTimeout(fallback);
     map.invalidateSize({ animate: false });
-    settleCity();
+    fitCity();
+    syncBasemap();
   };
   const onEnd = (event) => {
     if (event.target !== panel) return;
@@ -224,36 +255,6 @@ function glideCity() {
   };
   panel.addEventListener("transitionend", onEnd);
   const fallback = window.setTimeout(finish, 700);
-  const step = () => {
-    if (!settling) return;
-    map.invalidateSize({ animate: false, pan: false });
-    requestAnimationFrame(step);
-  };
-  requestAnimationFrame(step);
-}
-
-function settleCity() {
-  const map = state.map;
-  if (!map || fitting) return;
-  const size = map.getSize();
-  if (size.x < 40 || size.y < 40) return;
-  const pad = viewPadding();
-  map.setMinZoom(0);
-  const fitted = map.getBoundsZoom(state.cityBounds, false, pad.paddingTopLeft.add(pad.paddingBottomRight));
-  if (!Number.isFinite(fitted)) return;
-  map.setMinZoom(fitted);
-  const zoom = map.getZoom();
-  if (zoom != null && map.getBounds().contains(state.cityBounds) && Math.abs(zoom - fitted) < 0.05) return;
-  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if (reduce) {
-    map.fitBounds(state.cityBounds, { ...pad, animate: false });
-    return;
-  }
-  fitting = true;
-  map.once("moveend", () => {
-    fitting = false;
-  });
-  map.flyToBounds(state.cityBounds, { ...pad, duration: 0.45, easeLinearity: 0.85 });
 }
 
 function openStation(index, nr) {
