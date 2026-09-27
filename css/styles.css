@@ -1,11 +1,11 @@
 :root {
-  --ink: #f4efe6;
-  --muted: #b7b1a6;
-  --line: rgba(244, 239, 230, 0.14);
-  --panel: #14171c;
-  --panel-2: #1c2128;
-  --await: #d7c4a3;
-  color-scheme: dark;
+  --ink: #172026;
+  --muted: #5c6764;
+  --line: rgba(23, 32, 38, 0.1);
+  --panel: #f4f4f2;
+  --panel-2: #f4f5f4;
+  --await: #8a6230;
+  color-scheme: light;
 }
 
 * { box-sizing: border-box; }
@@ -281,15 +281,12 @@ h1 {
 .stage {
   position: absolute;
   inset: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 0;
+  background: #f4f4f2;
 }
 
 #map {
-  flex: 1 1 auto;
-  height: auto;
-  min-height: 140px;
+  position: absolute;
+  inset: 0;
   background: #f4f4f2;
 }
 
@@ -302,10 +299,12 @@ h1 {
   --muted: #5c6764;
   --panel-2: #f4f5f4;
   --await: #8a6230;
-  position: relative;
-  flex: 0 0 auto;
+  position: absolute;
   z-index: 850;
-  margin: 0 12px 12px calc(24px + min(320px, 100% - 24px));
+  left: calc(24px + min(320px, 100% - 24px));
+  right: 12px;
+  bottom: 12px;
+  margin: 0;
   padding: 14px 12px 14px 16px;
   border: 1px solid rgba(23, 32, 38, 0.08);
   border-radius: 16px;
@@ -660,9 +659,13 @@ h1 {
 
   .stage { inset: 0; }
 
-  #map { min-height: 160px; }
+  #map { min-height: 0; }
 
-  .place-sheet { margin: 0 8px 8px; }
+  .place-sheet {
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+  }
 
   .popup-blocks { flex-wrap: wrap; }
 
