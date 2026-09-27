@@ -191,11 +191,13 @@ function viewPadding() {
 function fitCity() {
   const map = state.map;
   if (!map || fitting === "city") return;
-  if (focusDone) {
-    map.off("moveend", focusDone);
-    focusDone = null;
+  if (map._loaded) {
+    if (focusDone) {
+      map.off("moveend", focusDone);
+      focusDone = null;
+    }
+    map.stop();
   }
-  map.stop();
   fitting = false;
   const size = map.getSize();
   if (size.x < 40 || size.y < 40) return;
@@ -204,7 +206,7 @@ function fitCity() {
   const fitted = map.getBoundsZoom(state.cityBounds, false, pad.paddingTopLeft.add(pad.paddingBottomRight));
   if (!Number.isFinite(fitted)) return;
   map.setMinZoom(fitted);
-  const zoom = map.getZoom();
+  const zoom = map._loaded ? map.getZoom() : null;
   if (zoom != null && map.getBounds().contains(state.cityBounds) && zoom <= fitted + 0.01) return;
   fitting = "city";
   map.fitBounds(state.cityBounds, { ...pad, animate: false });
@@ -273,7 +275,7 @@ function fitPrecinct(animate) {
   if (size.x < 40 || size.y < 40) return;
   const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const motion = animate !== false && !reduce;
-  map.stop();
+  if (map._loaded) map.stop();
   if (focusDone) map.off("moveend", focusDone);
   let settled = false;
   let timer = 0;
