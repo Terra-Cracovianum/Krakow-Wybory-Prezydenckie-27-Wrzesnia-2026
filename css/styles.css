@@ -611,15 +611,6 @@ h1 {
   .vote-lines .nums { justify-content: flex-start; }
 }
 
-.leaflet-div-icon.cluster {
-  width: 14px;
-  height: 14px;
-  border: 1px solid #14171c;
-  border-radius: 50%;
-  background: #f4efe6;
-  box-shadow: none;
-}
-
 .leaflet-control-zoom {
   border: 0 !important;
   box-shadow: 0 10px 28px rgba(23, 32, 38, 0.14) !important;
