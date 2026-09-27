@@ -463,7 +463,7 @@ function renderSummary() {
     statusLabel.textContent = "Oczekiwanie na wyniki";
   } else if (flowing) {
     statusLabel.textContent = "Wyniki spływają";
-    statusMeta.textContent = `${formatPercent(share)} · ${numberFormat.format(results.precinctsReporting)} z ${numberFormat.format(results.precinctsTotal)}`;
+    statusMeta.textContent = `${formatShare(share)} · ${numberFormat.format(results.precinctsReporting)} z ${numberFormat.format(results.precinctsTotal)}`;
   } else {
     statusLabel.textContent = results.round === 2 ? "Wyniki drugiej tury" : "Wyniki pełne";
   }
@@ -485,7 +485,7 @@ function renderPkwChip() {
   const share = total > 0 ? (reported / total) * 100 : 0;
   chip.style.setProperty("--share", String(share));
   const countLine = `${numberFormat.format(reported)} z ${numberFormat.format(total)} obwodów`;
-  const countedShare = `<b>${formatPercent(share)}</b><span>${numberFormat.format(reported)} z ${numberFormat.format(total)} obwodów</span>`;
+  const countedShare = `<b>${formatShare(share)}</b><span>${numberFormat.format(reported)} z ${numberFormat.format(total)} obwodów</span>`;
   if (results.sample) {
     chip.dataset.state = "sample";
     title.textContent = "Podgląd, nie wyniki PKW";
@@ -528,7 +528,7 @@ function renderProgress() {
   const total = results.precinctsTotal;
   const waiting = counted.precincts === 0;
   const status = document.querySelector("#progress-status");
-  const percent = formatPercent(total > 0 ? (counted.precincts / total) * 100 : 0);
+  const percent = formatShare(total > 0 ? (counted.precincts / total) * 100 : 0);
   status.textContent = waiting
     ? "Oczekiwanie"
     : counted.precincts >= total
@@ -743,6 +743,12 @@ function formatCount(value) {
 function pkwRound(value, digits) {
   const shifted = Number(`${value}e${digits}`);
   return Number(`${Math.round(shifted)}e-${digits}`);
+}
+
+function formatShare(value) {
+  if (typeof value !== "number" || Number.isNaN(value)) return "—";
+  const rounded = pkwRound(value, 2);
+  return `${new Intl.NumberFormat("pl-PL", { maximumFractionDigits: 2 }).format(rounded)}%`;
 }
 
 function formatPercent(value) {
