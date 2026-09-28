@@ -1335,6 +1335,90 @@ h1 {
   .runoff-copy strong { font-size: 0.84rem; }
 
   .runoff-copy span { font-size: 0.75rem; }
+
+  html.has-ticker .panel {
+    height: 48dvh;
+    max-height: 48dvh;
+  }
+
+  html.has-ticker .panel.is-place {
+    height: 68dvh;
+    max-height: 68dvh;
+  }
+
+  html.has-ticker h1 { display: none; }
+
+  html.has-ticker .pkw-chip { display: none; }
+
+  html.has-ticker .leaflet-control-zoom { margin-bottom: 96px !important; }
+
+  html.has-ticker .runoff {
+    bottom: 8px;
+    width: calc(100% - 16px);
+    padding: 8px 12px;
+    border-radius: 16px;
+  }
+
+  html.has-ticker .runoff-kicker,
+  html.has-ticker .runoff-when,
+  html.has-ticker .runoff-bar { display: none; }
+
+  html.has-ticker .runoff h2 {
+    margin: 0;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  html.has-ticker .runoff-places {
+    gap: 8px;
+    margin-top: 6px;
+  }
+
+  html.has-ticker .runoff-mark {
+    width: 22px;
+    height: 22px;
+    font-size: 0.72rem;
+  }
+
+  html.has-ticker .runoff-copy strong { font-size: 0.78rem; }
+
+  html.has-ticker .runoff-copy span { font-size: 0.7rem; }
+
+  html.has-ticker .totals {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 6px;
+    margin: 0 0 8px;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    overflow: visible;
+  }
+
+  html.has-ticker .totals div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    padding: 8px 8px 7px;
+    border-top: 0;
+    border-radius: 12px;
+    background: #f7f4ef;
+  }
+
+  html.has-ticker .totals div + div { border-top: 0; }
+
+  html.has-ticker .totals span {
+    font-size: 0.58rem;
+    letter-spacing: 0.06em;
+  }
+
+  html.has-ticker .totals strong { font-size: 1.02rem; }
 }
 
 @media (max-width: 860px) and (max-height: 700px) {
