@@ -210,8 +210,8 @@ function areaStyle(lead, selected, dim, kind) {
     };
   }
   return {
-    color: selected ? "#172026" : district ? "rgba(72, 58, 42, 0.42)" : "rgba(255,255,255,0.92)",
-    weight: selected ? 2.6 : district ? 1.15 : 0.45,
+    color: selected ? "#172026" : "rgba(255,255,255,0.92)",
+    weight: selected ? 1.6 : district ? 1.1 : 0.4,
     opacity: 1,
     fillColor: choropleth(lead.color, lead.share),
     fillOpacity: dim ? 0.34 : 0.9,
@@ -356,9 +356,9 @@ function fitDistrict(key, animate) {
   if (!target) return;
   const menu = document.querySelector("#district-menu");
   const pad = viewPadding();
-  map.fitBounds(target.getBounds(), {
-    paddingTopLeft: L.point((menu && !menu.hidden ? 250 : 20) + pad.paddingTopLeft.x, 20),
-    paddingBottomRight: pad.paddingBottomRight,
+  map.fitBounds(withSurroundings(target.getBounds(), 0.42), {
+    paddingTopLeft: L.point((menu && !menu.hidden ? 220 : 28) + pad.paddingTopLeft.x, 36),
+    paddingBottomRight: pad.paddingBottomRight.add([24, 36]),
     animate: animate !== false,
     maxZoom: 14,
   });
@@ -431,6 +431,17 @@ let settling = false;
 let focusDone = null;
 let cancelGlide = () => {};
 
+function withSurroundings(bounds, fraction) {
+  const sw = bounds.getSouthWest();
+  const ne = bounds.getNorthEast();
+  const latSpan = Math.max(ne.lat - sw.lat, 0.008);
+  const lngSpan = Math.max(ne.lng - sw.lng, 0.01);
+  return L.latLngBounds(
+    [sw.lat - latSpan * fraction, sw.lng - lngSpan * fraction],
+    [ne.lat + latSpan * fraction, ne.lng + lngSpan * fraction]
+  );
+}
+
 function viewPadding() {
   const mapEl = document.querySelector("#map").getBoundingClientRect();
   const zoom = document.querySelector(".leaflet-control-zoom");
@@ -456,14 +467,15 @@ function fitCity() {
   const size = map.getSize();
   if (size.x < 40 || size.y < 40) return;
   const pad = viewPadding();
+  const frame = withSurroundings(state.cityBounds, 0.16);
   map.setMinZoom(0);
-  const fitted = map.getBoundsZoom(state.cityBounds, false, pad.paddingTopLeft.add(pad.paddingBottomRight));
+  const fitted = map.getBoundsZoom(frame, false, pad.paddingTopLeft.add(pad.paddingBottomRight));
   if (!Number.isFinite(fitted)) return;
   map.setMinZoom(fitted);
   const zoom = map._loaded ? map.getZoom() : null;
-  if (zoom != null && map.getBounds().contains(state.cityBounds) && zoom <= fitted + 0.01) return;
+  if (zoom != null && map.getBounds().contains(frame) && zoom <= fitted + 0.01) return;
   fitting = "city";
-  map.fitBounds(state.cityBounds, { ...pad, animate: false });
+  map.fitBounds(frame, { ...pad, animate: false });
   fitting = false;
 }
 
@@ -546,7 +558,7 @@ function fitPrecinct(animate) {
   fitting = true;
   map.once("moveend", done);
   timer = window.setTimeout(done, motion ? 900 : 50);
-  map.fitBounds(bounds, { ...focusPadding(), maxZoom: 16, animate: motion, duration: 0.6 });
+  map.fitBounds(withSurroundings(bounds, 0.42), { ...focusPadding(), maxZoom: 15, animate: motion, duration: 0.6 });
 }
 
 function resizeBasemap(layer) {
