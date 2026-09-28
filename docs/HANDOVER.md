@@ -35,7 +35,7 @@ python3 -m http.server 8765 --bind 127.0.0.1
 
 Open `http://127.0.0.1:8765/`. Opening `index.html` as a file will fail, because the page fetches JSON.
 
-GitHub Pages serves the site at `https://terra-cracovianum.github.io/Krakow-Wybory-Prezydenckie-27-Wrzesnia-2026/`. The Pages source for this repository is the branch `cursor/krakow-election-map-d860`, folder `/`. `main` does not contain the site. A new repository should deploy whatever branch you intend to publish, and the canonical URL in `index.html` has to match that repository.
+GitHub Pages serves the site at `https://terra-cracovianum.github.io/Krakow-Wybory-Prezydenckie-27-Wrzesnia-2026/`. The published branch is `main`, folder `/`. A new repository should deploy whatever branch you intend to publish, and the canonical URL in `index.html` has to match that repository.
 
 Libraries, loaded from unpkg in `index.html`:
 
