@@ -35,4 +35,4 @@ Nie dopisujemy wyników z sondaży ani ze zrzutów nieoficjalnych. Kolory przy n
 
 Po zmergowaniu do `main`: Settings → Pages → Deploy from a branch → `main` → `/ (root)`. Strona nie wymaga budowania.
 
-Podgląd linku na X, Facebooku i w komunikatorach bierze się z `map-card.jpg` (1200×630, dzielnice pokolorowane według prowadzącego) oraz znaczników w `index.html`.
+Podgląd linku na X, Facebooku i w komunikatorach bierze się z `wyniki.jpg` (1200×630, baseline JPEG, dzielnice pokolorowane według prowadzącego) oraz znaczników w `index.html`. Adres obrazu jest stały, bez parametru w URL, bo X przy takim parametrze potrafi pokazać sam tytuł.
