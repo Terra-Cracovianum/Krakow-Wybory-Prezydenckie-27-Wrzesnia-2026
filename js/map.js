@@ -4,6 +4,11 @@ const state = {
   candidates: [],
   results: null,
   stations: null,
+  precinctFeatures: null,
+  districts: null,
+  districtLayer: null,
+  view: "precincts",
+  district: null,
   highlightNr: null,
   map: null,
   cityBounds: null,
@@ -44,16 +49,19 @@ function countVisit() {
 }
 
 async function init() {
-  const [candidateFile, results, precincts, stations] = await Promise.all([
+  const [candidateFile, results, precincts, stations, districts] = await Promise.all([
     fetch("data/candidates.json").then((response) => response.json()),
     fetch("data/results.json").then((response) => response.json()),
     fetch("data/precincts.geojson").then((response) => response.json()),
     fetch("data/stations.geojson").then((response) => response.json()),
+    fetch("data/districts.geojson").then((response) => response.json()),
   ]);
 
   state.candidates = candidateFile.candidates;
   state.results = results;
   state.stations = stations;
+  state.precinctFeatures = precincts;
+  state.districts = districts;
 
   renderSummary();
   renderCandidates();
@@ -106,12 +114,49 @@ async function init() {
     },
   }).addTo(map);
   state.precinctLayer = precinctLayer;
+  const districtLayer = L.geoJSON(districts, {
+    style: styleDistrict,
+    onEachFeature(feature, layer) {
+      layer.on({
+        mouseover(event) {
+          if (state.district) return;
+          event.target.setStyle(hoverDistrict(feature));
+          event.target.bringToFront();
+        },
+        mouseout(event) {
+          districtLayer.resetStyle(event.target);
+          bringSelectedDistrictToFront();
+        },
+        click() {
+          selectDistrict(feature.properties.dzielnica);
+        },
+      });
+    },
+  });
+  state.districtLayer = districtLayer;
   state.map = map;
+  renderLegend();
+  renderDistrictMenu();
+  document.querySelector("#mode-precincts").addEventListener("click", () => setMapView("precincts"));
+  document.querySelector("#mode-districts").addEventListener("click", () => {
+    if (state.view === "districts") {
+      const menu = document.querySelector("#district-menu");
+      menu.hidden = !menu.hidden;
+      return;
+    }
+    setMapView("districts");
+  });
+  document.querySelector("#district-menu").addEventListener("click", (event) => {
+    const button = event.target.closest("[data-district]");
+    if (!button) return;
+    selectDistrict(button.dataset.district);
+  });
   fitCity();
   const refitSoon = () => {
     if (settling) return;
     map.invalidateSize({ animate: false, pan: false });
     if (placeIsOpen()) fitPrecinct(false);
+    else if (state.view === "districts" && state.district) fitDistrict(state.district, false);
     else fitCity();
     syncBasemap();
   };
@@ -127,38 +172,61 @@ async function init() {
       event.preventDefault();
       query.focus();
     }
-    if (event.key === "Escape") closeSheet();
+    if (event.key === "Escape") {
+      const menu = document.querySelector("#district-menu");
+      if (state.view === "districts" && menu && !menu.hidden) {
+        menu.hidden = true;
+        return;
+      }
+      closeSheet();
+    }
   });
 }
 
 const pathEdge = { lineJoin: "round", lineCap: "round" };
 
 function stylePrecinct(feature) {
-  const leader = leaderOf(feature.properties.nr);
+  const lead = outcomeForNumbers([feature.properties.nr]);
   const selected = String(feature.properties.nr) === String(state.highlightNr);
-  const base = leader
-    ? { color: "rgba(255,255,255,0.8)", weight: 0.75, opacity: 1, fillColor: leader.color, fillOpacity: 0.7, ...pathEdge }
-    : { color: "rgba(255,255,255,0.45)", weight: 0.6, opacity: 1, fillColor: "#31404c", fillOpacity: 0.4, ...pathEdge };
-  if (state.highlightNr && !selected) return { ...base, fillOpacity: base.fillOpacity * 0.45 };
-  if (!selected) return base;
+  return areaStyle(lead, selected, Boolean(state.highlightNr && !selected), "precinct");
+}
+
+function styleDistrict(feature) {
+  const lead = outcomeForNumbers(feature.properties.nrs);
+  const selected = feature.properties.dzielnica === state.district;
+  return areaStyle(lead, selected, Boolean(state.district && !selected), "district");
+}
+
+function areaStyle(lead, selected, dim, kind) {
+  const district = kind === "district";
+  if (!lead) {
+    return {
+      color: "rgba(255,255,255,0.85)",
+      weight: district ? 1.2 : 0.4,
+      opacity: 1,
+      fillColor: "#d7deda",
+      fillOpacity: dim ? 0.28 : 0.55,
+      ...pathEdge,
+    };
+  }
   return {
-    ...base,
-    color: "#ffffff",
-    weight: 3,
+    color: selected ? "#172026" : district ? "rgba(72, 58, 42, 0.42)" : "rgba(255,255,255,0.92)",
+    weight: selected ? 2.6 : district ? 1.15 : 0.45,
     opacity: 1,
-    fillOpacity: Math.min(0.92, base.fillOpacity + 0.35),
+    fillColor: choropleth(lead.color, lead.share),
+    fillOpacity: dim ? 0.34 : 0.9,
+    ...pathEdge,
   };
 }
 
 function hoverPrecinct(feature) {
   const base = stylePrecinct(feature);
-  return {
-    ...base,
-    color: "#ffffff",
-    weight: 1.1,
-    opacity: 0.85,
-    fillOpacity: Math.min(0.55, base.fillOpacity + 0.08),
-  };
+  return { ...base, color: "#ffffff", weight: 1.4, fillOpacity: Math.min(0.98, base.fillOpacity + 0.08) };
+}
+
+function hoverDistrict(feature) {
+  const base = styleDistrict(feature);
+  return { ...base, color: "#172026", weight: 2, fillOpacity: Math.min(0.98, base.fillOpacity + 0.06) };
 }
 
 function bringSelectedToFront() {
@@ -167,6 +235,167 @@ function bringSelectedToFront() {
   state.precinctLayer.eachLayer((shape) => {
     if (String(shape.feature.properties.nr) === String(nr)) shape.bringToFront();
   });
+}
+
+function bringSelectedDistrictToFront() {
+  if (!state.district || !state.districtLayer) return;
+  state.districtLayer.eachLayer((shape) => {
+    if (shape.feature.properties.dzielnica === state.district) shape.bringToFront();
+  });
+}
+
+function paintDistricts() {
+  const layer = state.districtLayer;
+  if (!layer) return;
+  layer.eachLayer((shape) => {
+    layer.resetStyle(shape);
+    if (shape.feature.properties.dzielnica === state.district) shape.bringToFront();
+  });
+}
+
+const DISTRICT_TITLE = {
+  "Dzielnica I": "Stare Miasto",
+  "Dzielnica II": "Grzegórzki",
+  "Dzielnica III": "Prądnik Czerwony",
+  "Dzielnica IV": "Prądnik Biały",
+  "Dzielnica V": "Krowodrza",
+  "Dzielnica VI": "Bronowice",
+  "Dzielnica VII": "Zwierzyniec",
+  "Dzielnica VIII": "Dębniki",
+  "Dzielnica IX": "Łagiewniki-Borek Fałęcki",
+  "Dzielnica X": "Swoszowice",
+  "Dzielnica XI": "Podgórze Duchackie",
+  "Dzielnica XII": "Bieżanów-Prokocim",
+  "Dzielnica XIII": "Podgórze",
+  "Dzielnica XIV": "Czyżyny",
+  "Dzielnica XV": "Mistrzejowice",
+  "Dzielnica XVI": "Bieńczyce",
+  "Dzielnica XVII": "Wzgórza Krzesławickie",
+  "Dzielnica XVIII": "Nowa Huta",
+};
+
+const ROMAN = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII"];
+
+function districtRank(name) {
+  const index = ROMAN.indexOf(String(name).replace("Dzielnica ", ""));
+  return index < 0 ? 99 : index;
+}
+
+function outcomeForNumbers(nrs) {
+  const votes = {};
+  let valid = 0;
+  let reported = false;
+  for (const nr of nrs || []) {
+    const row = state.results.precincts[String(nr)];
+    if (!row || !row.reported) continue;
+    reported = true;
+    if (typeof row.validVotes === "number") valid += row.validVotes;
+    for (const candidate of state.candidates) {
+      if (candidate.withdrawn) continue;
+      const value = row.votes && row.votes[candidate.id];
+      if (typeof value === "number") votes[candidate.id] = (votes[candidate.id] || 0) + value;
+    }
+  }
+  if (!reported) return null;
+  let best = null;
+  for (const candidate of state.candidates) {
+    if (candidate.withdrawn) continue;
+    const count = votes[candidate.id] || 0;
+    if (!best || count > best.votes) best = { candidate, votes: count };
+  }
+  if (!best) return null;
+  return { ...best.candidate, votes: best.votes, share: valid > 0 ? best.votes / valid : 0 };
+}
+
+function choropleth(hex, share) {
+  const amount = 0.34 + Math.max(0, Math.min(1, (share - 0.25) / 0.25)) * 0.66;
+  const value = parseInt(hex.slice(1), 16);
+  const mix = (channel) => Math.round(244 + (channel - 244) * amount);
+  return `rgb(${mix((value >> 16) & 255)}, ${mix((value >> 8) & 255)}, ${mix(value & 255)})`;
+}
+
+function setMapView(view) {
+  if (placeIsOpen()) closeSheet();
+  state.view = view;
+  state.district = null;
+  state.highlightNr = null;
+  const districts = view === "districts";
+  if (districts) {
+    state.map.removeLayer(state.precinctLayer);
+    state.districtLayer.addTo(state.map);
+  } else {
+    state.map.removeLayer(state.districtLayer);
+    state.precinctLayer.addTo(state.map);
+  }
+  document.querySelector("#mode-precincts").setAttribute("aria-pressed", String(!districts));
+  document.querySelector("#mode-districts").setAttribute("aria-pressed", String(districts));
+  document.querySelector("#district-menu").hidden = !districts;
+  paintPrecincts();
+  paintDistricts();
+  renderLegend();
+  renderDistrictMenu();
+  fitCity();
+}
+
+function selectDistrict(key) {
+  state.district = key || null;
+  paintDistricts();
+  renderDistrictMenu();
+  document.querySelector("#district-menu").hidden = true;
+  if (state.district) fitDistrict(state.district, true);
+  else fitCity();
+}
+
+function fitDistrict(key, animate) {
+  const map = state.map;
+  if (!map || !state.districtLayer) return;
+  let target = null;
+  state.districtLayer.eachLayer((shape) => {
+    if (shape.feature.properties.dzielnica === key) target = shape;
+  });
+  if (!target) return;
+  const menu = document.querySelector("#district-menu");
+  const pad = viewPadding();
+  map.fitBounds(target.getBounds(), {
+    paddingTopLeft: L.point((menu && !menu.hidden ? 250 : 20) + pad.paddingTopLeft.x, 20),
+    paddingBottomRight: pad.paddingBottomRight,
+    animate: animate !== false,
+    maxZoom: 14,
+  });
+}
+
+function renderLegend() {
+  const box = document.querySelector("#map-legend");
+  const source = state.view === "districts" ? state.districts.features : state.precinctFeatures.features;
+  const seen = new Map();
+  for (const feature of source) {
+    const lead = outcomeForNumbers(state.view === "districts" ? feature.properties.nrs : [feature.properties.nr]);
+    if (lead && !seen.has(lead.id)) seen.set(lead.id, lead);
+  }
+  const rows = [...seen.values()].sort((a, b) => a.ballot - b.ballot);
+  box.innerHTML = rows.map((lead) => {
+    const pale = choropleth(lead.color, 0.25);
+    const full = choropleth(lead.color, 0.55);
+    return `<span class="legend-row"><i style="background:linear-gradient(90deg, ${pale}, ${full})"></i>${escapeHtml(lead.short)}</span>`;
+  }).join("") + (rows.length ? `<p class="legend-scale"><span>25%</span><span>50%</span></p>` : "");
+}
+
+function renderDistrictMenu() {
+  const list = document.querySelector("#district-list");
+  const whole = document.querySelector('#district-menu [data-district=""]');
+  if (whole) whole.setAttribute("aria-pressed", String(!state.district));
+  const features = [...state.districts.features].sort(
+    (a, b) => districtRank(a.properties.dzielnica) - districtRank(b.properties.dzielnica)
+  );
+  list.innerHTML = features.map((feature) => {
+    const key = feature.properties.dzielnica;
+    const lead = outcomeForNumbers(feature.properties.nrs);
+    const roman = key.replace("Dzielnica ", "");
+    const dot = lead ? `<i style="background:${lead.color}"></i>` : "";
+    return `<button type="button" data-district="${escapeHtml(key)}" aria-pressed="${state.district === key}">
+      <span>${roman}</span><strong>${escapeHtml(DISTRICT_TITLE[key] || key)}</strong>${dot}
+    </button>`;
+  }).join("");
 }
 
 function paintPrecincts() {

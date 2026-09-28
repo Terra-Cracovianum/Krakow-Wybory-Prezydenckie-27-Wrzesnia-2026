@@ -110,6 +110,17 @@
       </aside>
       <div class="stage">
         <main id="map" aria-label="Mapa Krakowa"></main>
+        <div class="map-tools">
+          <div class="map-switch" role="group" aria-label="Widok mapy">
+            <button type="button" id="mode-precincts" aria-pressed="true">Obwody</button>
+            <button type="button" id="mode-districts" aria-pressed="false">Dzielnice</button>
+          </div>
+          <div id="map-legend" class="map-legend" aria-label="Kolory na mapie"></div>
+          <div id="district-menu" class="district-menu" hidden>
+            <button type="button" data-district="">Całe miasto</button>
+            <div id="district-list"></div>
+          </div>
+        </div>
         <div id="pkw-wait" class="pkw-chip" data-state="awaiting" role="status" aria-live="polite" style="--share: 0">
           <span class="pkw-mark" aria-hidden="true"></span>
           <span class="pkw-copy">
