@@ -155,7 +155,7 @@ async function init() {
   const refitSoon = () => {
     if (settling) return;
     map.invalidateSize({ animate: false, pan: false });
-    if (placeIsOpen()) fitPrecinct(false);
+    if (placeIsOpen() && state.focusFeature) fitPrecinct(false);
     else if (state.view === "districts" && state.district) fitDistrict(state.district, false);
     else fitCity();
     syncBasemap();
@@ -339,11 +339,17 @@ function setMapView(view) {
 
 function selectDistrict(key) {
   state.district = key || null;
+  state.highlightNr = null;
   paintDistricts();
   renderDistrictMenu();
   document.querySelector("#district-menu").hidden = true;
-  if (state.district) fitDistrict(state.district, true);
-  else fitCity();
+  if (!state.district) {
+    if (placeIsOpen()) closeSheet();
+    else fitCity();
+    return;
+  }
+  showDistrict(state.district);
+  fitDistrict(state.district, true);
 }
 
 function fitDistrict(key, animate) {
@@ -590,7 +596,8 @@ function glideCity() {
   const apply = () => {
     settling = false;
     map.invalidateSize({ animate: false, pan: false });
-    if (placeIsOpen()) fitPrecinct(true);
+    if (placeIsOpen() && state.focusFeature) fitPrecinct(true);
+    else if (state.view === "districts" && state.district) fitDistrict(state.district, true);
     else {
       fitCity();
       syncBasemap();
@@ -645,15 +652,58 @@ function showPlace(feature, highlightNr) {
   const panel = document.querySelector(".panel");
   state.focusFeature = feature;
   const columns = feature.properties.obwody.length + (feature.properties.obwody.length > 1 ? 1 : 0);
+  panel.classList.remove("is-district");
   panel.classList.add("is-place");
   panel.style.setProperty("--place-cols", String(columns));
   city.hidden = true;
   place.hidden = false;
   place.innerHTML = stationPopup(feature, highlightNr);
+  bindPlaceActions(place);
+  requestAnimationFrame(() => easeCity());
+}
+
+function showDistrict(key) {
+  const feature = state.districts.features.find((item) => item.properties.dzielnica === key);
+  if (!feature) return;
+  const city = document.querySelector("#city-view");
+  const place = document.querySelector("#place-view");
+  const panel = document.querySelector(".panel");
+  state.focusFeature = null;
+  panel.classList.remove("is-place");
+  panel.classList.add("is-district");
+  panel.style.removeProperty("--place-cols");
+  city.hidden = true;
+  place.hidden = false;
+  place.innerHTML = districtSheet(feature);
+  bindPlaceActions(place);
+}
+
+function bindPlaceActions(place) {
   place.querySelectorAll("[data-close]").forEach((button) => {
     button.addEventListener("click", closeSheet);
   });
-  requestAnimationFrame(() => easeCity());
+  place.querySelectorAll("[data-obwod]").forEach((button) => {
+    button.addEventListener("click", () => openListedPrecinct(button.dataset.obwod));
+  });
+}
+
+function openListedPrecinct(nr) {
+  showPrecinctMap();
+  const index = stationIndexFor(nr);
+  if (index >= 0) openStation(index, nr);
+}
+
+function showPrecinctMap() {
+  state.view = "precincts";
+  state.district = null;
+  if (state.map.hasLayer(state.districtLayer)) state.map.removeLayer(state.districtLayer);
+  if (!state.map.hasLayer(state.precinctLayer)) state.precinctLayer.addTo(state.map);
+  document.querySelector("#mode-precincts").setAttribute("aria-pressed", "true");
+  document.querySelector("#mode-districts").setAttribute("aria-pressed", "false");
+  document.querySelector("#district-menu").hidden = true;
+  paintDistricts();
+  renderLegend();
+  renderDistrictMenu();
 }
 
 function closeSheet() {
@@ -664,11 +714,14 @@ function closeSheet() {
   place.innerHTML = "";
   city.hidden = false;
   const panel = document.querySelector(".panel");
-  panel.classList.remove("is-place");
+  panel.classList.remove("is-place", "is-district");
   panel.style.removeProperty("--place-cols");
   state.highlightNr = null;
   state.focusFeature = null;
+  state.district = null;
   paintPrecincts();
+  paintDistricts();
+  renderDistrictMenu();
   requestAnimationFrame(() => easeCity());
 }
 
@@ -932,21 +985,23 @@ function renderProgress() {
 }
 
 function renderCandidates() {
-  const list = document.querySelector("#candidates");
-  const totals = state.results.candidates;
+  document.querySelector("#candidates").innerHTML = candidateList(state.results.candidates, state.results.validVotes);
+}
+
+function candidateList(votesById, validVotes) {
   const max = Math.max(
     0,
     ...state.candidates.map((candidate) =>
-      typeof totals[candidate.id] === "number" ? totals[candidate.id] : 0
+      typeof votesById[candidate.id] === "number" ? votesById[candidate.id] : 0
     )
   );
-  list.innerHTML = state.candidates
+  return state.candidates
     .map((candidate) => {
-      const votes = totals[candidate.id];
+      const votes = votesById[candidate.id];
       const width = max > 0 && typeof votes === "number" ? (votes / max) * 100 : 0;
-      const label = percentLabel(votes, state.results.validVotes);
+      const label = percentLabel(votes, validVotes);
       const share = label === "—" ? "" : `<span class="sep"> · </span><span class="share">${label}</span>`;
-      const leader = max > 0 && votes === max ? " is-leader" : "";
+      const leader = max > 0 && votes === max && !candidate.withdrawn ? " is-leader" : "";
       return `<li class="candidate${candidate.withdrawn ? " withdrawn" : ""}${leader}">
         <header>
           <span class="swatch" style="background:${candidate.color}"></span>
@@ -1026,6 +1081,47 @@ function stationPopup(feature, highlightNr) {
     </div>`;
 }
 
+function districtSheet(feature) {
+  const numbers = [...feature.properties.nrs].sort((a, b) => Number(a) - Number(b));
+  const total = placeTotals(numbers);
+  const roman = feature.properties.dzielnica.replace("Dzielnica ", "");
+  const title = DISTRICT_TITLE[feature.properties.dzielnica] || feature.properties.dzielnica;
+  const chips = numbers
+    .map((nr) => `<button type="button" class="obwod-chip" data-obwod="${escapeHtml(nr)}">${escapeHtml(nr)}</button>`)
+    .join("");
+  const counted = `<b>${numberFormat.format(total.reportedCount)}</b><em> / ${numberFormat.format(numbers.length)}</em>`;
+  return `<div class="place-toolbar">
+      <button type="button" class="place-back" data-close>
+        <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M10 3.2L5.2 8 10 12.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Miasto
+      </button>
+      <button type="button" class="sheet-close" data-close aria-label="Zamknij">
+        <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M3.2 3.2l9.6 9.6M12.8 3.2L3.2 12.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <header class="popup-place">
+      <p class="popup-kicker">Dzielnica ${escapeHtml(roman)}</p>
+      <h3>${escapeHtml(title)}</h3>
+      <p class="place">${numberFormat.format(numbers.length)} ${obwodNoun(numbers.length)}</p>
+    </header>
+    <div class="obwod-chips" aria-label="Obwody dzielnicy">${chips}</div>
+    <section class="totals" aria-label="Wynik dzielnicy">
+      <div><span>Frekwencja</span><strong>${turnoutOf(total)}</strong></div>
+      <div><span>Obwody</span><strong>${counted}</strong></div>
+      <div><span>Ważne głosy</span><strong>${formatCount(total.validVotes)}</strong></div>
+    </section>
+    <ol class="candidates">${candidateList(total.votes, total.validVotes)}</ol>`;
+}
+
+function obwodNoun(count) {
+  const value = Math.abs(count);
+  const mod10 = value % 10;
+  const mod100 = value % 100;
+  if (mod10 === 1 && mod100 !== 11) return "obwód";
+  if (mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14)) return "obwody";
+  return "obwodów";
+}
+
 function precinctRow(nr) {
   return state.results.precincts[String(nr)] || null;
 }
@@ -1048,6 +1144,7 @@ function placeTotals(numbers) {
     reportedCount: rows.length,
     eligible: sumField(rows, "eligible"),
     ballots: sumField(rows, "ballots"),
+    validCards: sumField(rows, "validCards"),
     validVotes: sumField(rows, "validVotes"),
     invalidVotes: sumField(rows, "invalidVotes"),
     votes,
