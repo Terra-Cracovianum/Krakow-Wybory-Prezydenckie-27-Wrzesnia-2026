@@ -1,6 +1,6 @@
 # Wybory prezydenta Krakowa · 27 września 2026
 
-Statyczna strona na wieczór wyborczy: mapa Krakowa, wszystkie lokale i obwody oraz lista kandydatów. `data/results.json` jest pusty i czeka na oficjalne wyniki.
+Statyczna strona na wieczór wyborczy: mapa Krakowa, wszystkie lokale i obwody oraz lista kandydatów. `data/results.json` trzyma oficjalny wynik pierwszej tury (454/454). Opis dla osoby, która zrobi z tego stronę drugiej tury, jest w [docs/HANDOVER.md](docs/HANDOVER.md).
 
 ## Co jest na mapie
 
@@ -27,7 +27,7 @@ Jedyny plik do zmiany to [`data/results.json`](data/results.json). Wpisz oficjal
   - `invalidVotes`: głosy nieważne
   - `votes`: głosy na kandydatów, klucze jak w `candidates.json`, także `hoffman`
 
-Frekwencja w raporcie lokalu to `ballots / eligible`, gdy oba pola są liczbami. Bez uprawnionych zostaje „—”. Głosy Hoffmana zapisuj w `votes.hoffman`, ale nie wliczaj ich do `validVotes`: w tabeli widać liczbę i adnotację „wycofany”, bez procentu i paska, i nie malują mapy. Kolumna „Razem” sumuje tylko obwody z `reported: true` i podpisuje, ile z nich już spłynęło.
+Frekwencja w mieście i w raporcie lokalu to `validCards / eligible` (gdy brakuje `validCards`, strona bierze `ballots`). Bez uprawnionych zostaje „—”. Pole `turnout` w pliku jest tylko zapasem. Głosy Hoffmana zapisuj w `votes.hoffman`, ale nie wliczaj ich do `validVotes`: w tabeli widać liczbę i adnotację „wycofany”, bez procentu i paska, i nie malują mapy. Kolumna „Razem” sumuje tylko obwody z `reported: true` i podpisuje, ile z nich już spłynęło.
 
 Nie dopisujemy wyników z sondaży ani ze zrzutów nieoficjalnych. Kolory przy nazwiskach służą tylko do czytania mapy.
 
